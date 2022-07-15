@@ -18,12 +18,12 @@
 
             <button
               class="
-                p-2
+                p-4
               text-third 
               dark:text-primary 
               dark:bg-zinc-700 bg-zinc-300
                 focus-visible:ring-2 focus-visible:ring-green-400
-                rounded-lg
+                rounded-full
                 mt-4
               "
               @click="toggleDarkMode"
