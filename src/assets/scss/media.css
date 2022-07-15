@@ -1,0 +1,506 @@
+@charset "UTF-8";
+@media (max-width: 1440px) {
+  /*메인*/
+  .app-contents {
+    /*sec01*/
+    /*sec02*/
+    /*sec03*/
+    /*sec04*/
+    /*sec05*/
+    /*공통*/
+    /*서브*/
+  }
+  .app-contents .headlineTxt {
+    left: 50px;
+    top: 60px;
+  }
+  .app-contents .headlineTxt .inner .Aline {
+    font-size: 1.5rem;
+  }
+  .app-contents .headlineTxt .inner .Aline::after {
+    top: 0.7rem;
+    height: 1rem;
+  }
+  .app-contents .headlineTxt .inner .Bline {
+    font-size: 1rem;
+  }
+  .app-contents .headlineTxt .comment {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .app-contents .personal {
+    right: 50px;
+    bottom: 60px;
+  }
+  .app-contents .personal .personal__links .personal__item a {
+    font-size: 1rem;
+  }
+  .app-contents .personal .personal__links .personal__item span {
+    font-size: 0.8rem;
+    padding: 2px 0 0;
+  }
+  .app-contents .section01 .workingImg {
+    width: 300px;
+  }
+  .app-contents .section02 .container {
+    max-width: 95%;
+  }
+  .app-contents .section02 .container .innerWrap {
+    margin: 70px 0;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner {
+    padding: 3.8rem 0 0 7rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner h3 {
+    font-size: 2rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner p {
+    font-size: 1.3rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner ul li {
+    font-size: 0.9rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4 {
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4:before {
+    font-size: 1.2rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4 b {
+    font-size: 1.5rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4:after {
+    font-size: 1.2rem;
+  }
+  .app-contents .section02 .container .innerWrap .career {
+    padding: 10px 0 25px;
+  }
+  .app-contents .section02 .container .innerWrap .career h5 {
+    font-size: 1.2rem;
+  }
+  .app-contents .section02 .container .innerWrap .career ul li {
+    padding: 5px 0 0;
+  }
+  .app-contents .section02 .container .innerWrap .career ul li:first-child {
+    padding: 5px 0 0;
+  }
+  .app-contents .section02 .container .innerWrap .career ul li span {
+    font-size: 1rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_top h5 {
+    font-size: 1.7rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p {
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p b {
+    font-size: 1.5rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_side {
+    padding: 10px 0;
+  }
+  .app-contents .section03 .innerWrap .r_career_side ul {
+    padding: 0 20px 0 20px;
+  }
+  .app-contents .section03 .innerWrap .r_career_side ul li {
+    line-height: 35px;
+  }
+  .app-contents .section03 .innerWrap .r_career_side ul li span {
+    font-size: 1rem;
+    display: block;
+    line-height: 30px;
+  }
+  .app-contents .section03 .innerWrap .r_career_bottom {
+    padding: 0 20px 0;
+    margin: 20px 0 0;
+  }
+  .app-contents .section03 .innerWrap .r_career_bottom span {
+    font-size: 0.8rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper {
+    padding: 0 0px;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top h5 {
+    font-size: 1.7rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p {
+    line-height: 24px;
+    font-size: 1.2rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p b {
+    font-size: 1.5rem;
+  }
+  .app-contents .section05 .on .workbtnWrap span {
+    font-size: 1.2rem;
+  }
+  .app-contents .container {
+    max-width: 95%;
+  }
+  .app-contents .container .innerWrap {
+    margin: 70px 0;
+  }
+  .app-contents .pg-active .p01 {
+    top: 8%;
+    left: 40%;
+  }
+  .app-contents .pg-active .p02 {
+    bottom: 12%;
+    left: 40%;
+  }
+  .app-contents .pg-active .p03 {
+    bottom: 12%;
+    left: 12%;
+  }
+  .app-contents .pg-active .p04 {
+    bottom: 42%;
+    right: 12%;
+  }
+  .app-contents .pg-active .p05 {
+    top: 22%;
+    right: 15%;
+  }
+  .app-contents .pg-active .p06 {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+  /*헤더*/
+  .header {
+    left: 50px;
+    bottom: 60px;
+  }
+  .header .navigations div a {
+    font-size: 1.4rem;
+  }
+  /*서브*/
+  .pg-page .side_Styled {
+    right: 50px;
+  }
+  .pg-active .text .Mh1 {
+    bottom: 80px;
+    right: 50px;
+    font-size: 3rem;
+  }
+  .pg-active .text .Mh2 {
+    bottom: 40px;
+    right: 50px;
+    font-size: 2.5rem;
+  }
+  .text .wrapper .swiper-container {
+    height: 300px;
+  }
+  .text .wrapper .swiper-container img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .pg-active .text .Mh1 {
+    bottom: 40px;
+    right: 50px;
+    font-size: 3rem;
+  }
+  .pg-active .text .Mh2 {
+    bottom: 40px;
+    right: 50px;
+    font-size: 2.5rem;
+    display: none;
+  }
+  .modal-wrapper .modal-container {
+    width: 80%;
+  }
+  .modal-wrapper .modal-container .modal-body {
+    margin: 0px auto;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-title-wrapper {
+    font-size: 1.3rem;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-image-wrapper {
+    height: 35vh;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-content-wrapper {
+    font-size: 1rem;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-content-wrapper b {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .app-contents .headlineTxt .comment {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .app-contents .personal .personal__links .personal__item a {
+    font-size: 0.8rem;
+  }
+  .text .wrapper .swiper-container {
+    height: 250px;
+  }
+  .pg-page .skills_html .typing {
+    font-size: 2.6rem;
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+  }
+  .pg-active .text .Mh1 {
+    font-size: 2rem;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    line-height: 30px;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text .joinArea {
+    margin-bottom: 15px;
+    font-size: 0.6rem;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text .linkbt {
+    min-width: 35%;
+    font-size: 0.8rem;
+    border: 1px solid #666;
+  }
+  .modal-footer .footerLink a {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner {
+    padding: 3.8rem 0 0 3rem;
+  }
+  .app-contents .personal {
+    display: none;
+  }
+  .section01 .scrollIcon {
+    display: none;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4 {
+    padding: 0 0 15px 0;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4 {
+    font-size: 0.8rem;
+  }
+  .app-contents .section02 .container .innerWrap .career {
+    padding: 10px 0 0;
+  }
+  .app-contents .section02 .container .innerWrap .career ul li span {
+    font-size: 0.8rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_side {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    background: #000;
+    border-radius: 15px;
+    padding: 5px 0;
+    margin: 10px 0;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p {
+    font-size: 1rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p b {
+    font-size: 1.1rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_side ul li span {
+    font-size: 0.8rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p {
+    font-size: 1rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p b {
+    font-size: 1.1rem;
+  }
+  .pg-page .skills_html .typing {
+    font-size: 70px;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+  }
+  .modal-wrapper .modal-container {
+    width: 90%;
+  }
+  .modal-footer .footerLink a {
+    display: none;
+  }
+  .pg-active .text .Mh1 {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-contents .headlineTxt .comment {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4:after {
+    display: none;
+  }
+  .app-contents .section02 .container .innerWrap .Info_list h4:before {
+    display: none;
+  }
+  .section01 #canvas_area {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    left: 20px;
+  }
+  .section01 #canvas_area {
+    display: none;
+  }
+  .P_img {
+    padding-bottom: 1rem;
+  }
+  .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner {
+    padding: 1rem 0 1rem 0;
+  }
+  .app-contents .section03 .innerWrap .r_career_top h5 {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .app-contents .headlineTxt {
+    left: 20px;
+  }
+  .pg-page .side_Styled {
+    right: 20px;
+  }
+  .app-contents .section02 .container .innerWrap {
+    margin: 10px 0;
+    display: block;
+  }
+  .container .innerWrap .Info_picture {
+    width: 100%;
+    display: block;
+  }
+  .container .innerWrap .Info_list {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    height: 300px;
+    overflow: scroll;
+    background: #eee;
+  }
+  .app-contents .section03 .innerWrap .r_career_side {
+    margin-bottom: 1rem;
+  }
+  .r_career_bottom {
+    display: none;
+  }
+  .container .innerWrap .Info_list .P_basic {
+    padding: 0;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top h5 {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .container .innerWrap .innerWrapper .skills li {
+    width: 11%;
+  }
+  .app-contents .section05 {
+    display: none;
+  }
+  /**서브**/
+  .text .wrapper {
+    margin-left: 0;
+  }
+  .text .wrapper .swiper-container {
+    height: 200px;
+  }
+  .pg-page .skills_html .typing {
+    letter-spacing: -1px;
+    font-size: 1.6rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .app-contents .section03 .innerWrap .r_career_top p b {
+    font-size: 1rem;
+  }
+  .app-contents .section04 .container .innerWrap .innerWrapper .r_career_top p b {
+    font-size: 1rem;
+  }
+  #container #page-6 .text {
+    padding: 15px;
+  }
+  #container #page-6 .text h2 {
+    font-size: 1.5rem;
+  }
+  #container #page-6 .text p {
+    font-size: 1rem;
+  }
+  #container #page-6 .text button {
+    width: 100%;
+  }
+  #container #page-6 .contact_info span {
+    display: block;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    line-height: 25px;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text .joinArea {
+    margin-bottom: 5px;
+    font-size: 0.6rem;
+  }
+  .pg-wrapper .wrapper .swiper-container .swiper-slide .img_box .img_box_text .linkbt {
+    min-width: 35%;
+    font-size: 0.8rem;
+    border: 1px solid #666;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-title-wrapper {
+    font-size: 1.2rem;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-content-wrapper {
+    padding: 10px;
+    font-weight: 100;
+  }
+  .modal-wrapper .modal-container {
+    width: 100%;
+  }
+  .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-image-wrapper {
+    height: 22vh;
+  }
+  .app-contents .pg-active .enlargeable-image {
+    z-index: 9999;
+    position: relative;
+    left: 7rem;
+    top: auto;
+    bottom: 15%;
+    right: auto;
+    padding: 10px 0;
+    font-weight: 100;
+  }
+  .app-contents .pg-active .enlargeable-image .full {
+    top: 15px;
+  }
+  .section06 .footer .footer_wrap {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */
