@@ -1,6 +1,6 @@
 <template>
-  <div class="self-center lg:mt-80 mt-40 text-left">
-    <h2 class="comment lg:text-6xl text-4xl font-extrabold leading-tight dark:text-secondary text-secondary-dark">
+  <div class="self-center lg:mt-80 mt-32 text-left">
+    <h2 class="comment lg:text-6xl text-4xl lg:text-left text-center font-extrabold leading-tight dark:text-secondary text-secondary-dark">
       Various<br />Work Experiences<br />For your Brand
     </h2>
     <div class="my-14 lg:grid block grid-cols-5 justify-items-center">
@@ -28,7 +28,7 @@
         </div>        
       </div>      
     </div>
-    <div class="mt-4 block dark:text-secondary text-secondary-dark">
+    <div class="lg:mt-4 block dark:text-secondary text-secondary-dark">
       <!--기본정보(이력)-->
       <h4 class="lg:text-2xl text-base mb-10 font-light">
         <b class="lg:text-4xl text-2xl block font-extrabold mb-2">'적자생존은 만고불변의 진리'</b>

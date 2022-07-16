@@ -6,7 +6,7 @@
       <div class="flex flex-col text-center">
         <!--홈 로고 링크-->
         <router-link to="/">
-            <i class="fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark mb-3"><span class="text-3xl font-light hidden lg:inline-block align-text-top" style="font-family: 'Archivo Black', sans-serif;">Motor H</span></i>
+            <i class="fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark mb-3"><span class="lg:text-3xl text-2xl font-light block lg:inline-block align-text-top" style="font-family: 'Archivo Black', sans-serif;">Motor H</span></i>
             <p class="dark:text-secondary text-secondary-dark">Fronend Developer</p>
         </router-link>
         <!--다크모드-->
