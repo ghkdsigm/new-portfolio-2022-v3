@@ -1,7 +1,7 @@
 <template>
   <div class="dark:text-primary text-third">
-    <BackHome class="absolute"></BackHome>
-    <div>2</div>
+    <BackHome class="relative"></BackHome>
+    <div class="relative mt-4">2</div>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12">
+  <div class="lg:mt-12 mt-0">
     <router-link to="/" class="flex items-center" style="font-family: 'Archivo Black', sans-serif;">
       <!-- <svg version="1.1" class="w-4 dark:fill-orange-300 fill-blue-900 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
       <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
