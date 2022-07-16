@@ -1,7 +1,7 @@
 <template>
   <div class="self-center xl:mt-[35vh] lg:mt-80 md:mt-12 mt-12 text-right flex-col flex">
     <div style="text-align:right; text-align:-webkit-right;" >
-      <router-link :to="route.path" class="transition-all ease-in-out linkWrap block w-fit lg:my-20 my-6" v-for="route in routes" :key="route">
+      <router-link :to="route.path" class="transition-all ease-in-out linkWrap block w-fit 2xl:my-20 xl:my-12 my-6" v-for="route in routes" :key="route">
         <div v-if="route.meta.isMenu" class="">
             <i :class="route.icon"></i> 
             <span class="lg:ml-5 font-light lg:inline-block navLink hearderList text-5xl" :class="`${dark ? 'white_navLink' : 'dark_navLink'}`" style="font-family: 'Archivo Black', sans-serif;">{{route.title}}</span>
@@ -51,7 +51,7 @@ export default {
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */
-  @screen lg {
+  @screen xl {
    .hearderList{font-size: 10vh;}
   }
 </style>
