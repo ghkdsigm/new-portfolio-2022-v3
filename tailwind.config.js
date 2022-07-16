@@ -33,6 +33,10 @@ module.exports = {
         },
         margin: {
           '35vh': '35vh',
+        },
+        fontSize:{
+          '10vh' : '10vh',
+          '5vh' : '5vh'
         }
       },
     },

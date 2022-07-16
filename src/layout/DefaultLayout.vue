@@ -67,7 +67,7 @@
       </div>
     </div>    
     <!--메인섹션-->
-    <div class="lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto px-16 items-center text-center">      
+    <div class="lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto lg:px-16 px-6 items-center text-center">      
       <router-view></router-view>
     </div>
   </div>
