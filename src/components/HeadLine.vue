@@ -51,10 +51,7 @@ export default {
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */
-
-  @screen sm {
-    .hearderList{font-size: 7vh;}
-  }
+  .hearderList{font-size: 7vh;}
   @screen lg {
    .hearderList{font-size: 10vh;}
   }
