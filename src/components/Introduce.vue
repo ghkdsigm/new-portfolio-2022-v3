@@ -1,6 +1,6 @@
 <template>
   <div class="self-center lg:mt-80 mt-40 text-left">
-    <h2 class="comment lg:text-6xl text-3xl font-extrabold leading-tight dark:text-secondary text-secondary-dark">
+    <h2 class="comment lg:text-6xl text-4xl font-extrabold leading-tight dark:text-secondary text-secondary-dark">
       Various<br />Work Experiences<br />For your Brand
     </h2>
     <div class="my-14 lg:grid block grid-cols-5 justify-items-center">
