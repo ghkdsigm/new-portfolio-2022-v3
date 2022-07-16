@@ -51,6 +51,7 @@ export default {
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */
+  .hearderList:hover {transition: all .15s ease-out;}
   @screen xl {
    .hearderList{font-size: 10vh;}
   }

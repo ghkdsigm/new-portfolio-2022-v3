@@ -68,7 +68,11 @@
     </div>    
     <!--메인섹션-->
     <div class="lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto lg:px-16 px-6 items-center text-center">      
-      <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="route" mode="out-in">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
@@ -145,5 +149,19 @@ export default {
 </script>
 
 <style>
-
+/*컴포넌트 이동 트랜지션*/
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
+.route-enter-active{
+  transition: all 0.1s ease-out;
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.route-leave-active{
+  transition: all 0.1s ease-in;
+}
 </style>
