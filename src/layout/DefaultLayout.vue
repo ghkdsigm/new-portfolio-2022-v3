@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen mx-auto relative container">
+  <div class="lg:flex block lg:h-screen mx-auto relative container">
     <div class="" id="noise"></div>
     <!--사이드섹션-->
-    <div class="lg:w-1/6 w-0 lg:flex hidden py-5 justify-center h-screen items-center border-gray-200 dark:border-gray-800 text-center">
+    <div class="lg:w-1/6 w-full lg:flex block py-5 justify-center lg:h-screen items-center border-gray-200 dark:border-gray-800 text-center">
       <div class="flex flex-col text-center">
         <!--홈 로고 링크-->
         <router-link to="/">
