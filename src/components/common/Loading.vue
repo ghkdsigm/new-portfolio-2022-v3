@@ -29,7 +29,17 @@ export default {
   width: 64px;
   height: 64px;
   top: 47%;
-  left: 47%;
+  left: auto;
+}
+@media (max-width: 1024px) {
+  .lds-facebook {
+     position: absolute;
+    top: 55vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .lds-facebook div {
   display: inline-block;
