@@ -4,7 +4,8 @@ import createPersistedState from 'vuex-persistedstate'
 const store = createStore({
   state() {
     return {
-      dark: false
+      dark: false,
+      LoadingStatus: false
     }
   },
   getters:{
@@ -13,6 +14,12 @@ const store = createStore({
   mutations: {
     SET_DARK: (state, bool) => {
       state.dark = bool;
+    },
+    startSpinner(state){
+      state.LoadingStatus = true;
+    },
+    endSpinner(state){
+      state.LoadingStatus = false;
     }
   },
   actions:{

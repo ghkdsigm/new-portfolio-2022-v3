@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory} from 'vue-router'
-//import store from '../store'
+import store from '../store/index'
 import Home from '../pages/Home.vue'
 import Works from '../pages/Works.vue'
 import Career from '../pages/Career.vue'
@@ -21,6 +21,17 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+})
+
+router.beforeEach((to, from, next) => {
+    store.commit('startSpinner');
+    setTimeout(() => {
+        next();
+    }, 500);
+})
+
+router.afterEach((to, from) => {
+    store.commit('endSpinner');
 })
 
 

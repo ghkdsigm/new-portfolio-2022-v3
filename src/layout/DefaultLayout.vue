@@ -73,6 +73,7 @@
           <component :is="Component"></component>
         </transition>
       </router-view>
+      <Loading  :loading="$store.state.LoadingStatus"></Loading>
     </div>
   </div>
 </template>
@@ -81,8 +82,12 @@
 import { ref,onBeforeMount,onMounted, computed } from 'vue'
 import { useStore, mapGetters } from 'vuex'
 import router from '../router'
+import Loading from '../components/common/Loading.vue'
 
 export default {
+  components:{
+    Loading
+  },
   setup(){
     const routes = ref([])
 
