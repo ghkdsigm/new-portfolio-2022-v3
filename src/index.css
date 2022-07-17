@@ -25,4 +25,60 @@ body {color:#fff;font-family: 'Roboto', 'Noto Sans KR', sans-serif;font-size:16p
     z-index: 102;
 }
 
+/*매직마우스*/
+.no-touchevents body #magicMouseCursor {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000 !important;
+    border-radius: 50%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    transition: transform 0.00s, width 0.3s, height 0.3s;
+    pointer-events: none;
+  }
+  .no-touchevents.dark #magicMouseCursor {
+    border: 1px solid #fff !important;
+  }
+  body #magicMouseCursor.cursor-square {
+    border-radius: 0;
+  }
+  .no-touchevents body #magicPointer {
+    height: 10px;
+    width: 10px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #000 !important;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
+  }
+  .no-touchevents.dark body #magicPointer {
+    background: #fff !important;
+  }
+  body #magicPointer.is-hover {
+    background: red;
+  }
+  body #magicPointer.pointer-blur {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 15px -5px white;
+  }
+  body #magicPointer.pointer-overlay {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: difference;
+    box-shadow: 0px 0px 15px -5px white;
+  }
+  body .magic-hover {
+    transition: all 0.2s;
+  }
+  body .magic-hover:hover {
+    cursor: none;
+  }
+
 @keyframes noise{0%{background-position:0 0}to{background-position:100% 100%}}

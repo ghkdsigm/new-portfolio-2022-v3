@@ -5,7 +5,10 @@
       <router-link to="/works/work01">zz</router-link>
       <router-link to="/works/work02">xx</router-link>
       <div class="my-20 text-center">
-        <a href="aa" class="text-white hover:text-primary inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-lg text-base lg:w-fit w-5/12">신규구축 및 운영</a> <a href="bb" class="text-white hover:text-primary inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-lg text-base lg:w-fit w-5/12">관리 및 유지보수</a> <a href="cc" class="text-white hover:text-primary inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-lg text-base lg:w-fit w-5/12">프론트엔드</a> <a href="dd" class="text-white hover:text-primary inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-lg text-base lg:w-fit w-5/12">디자인</a>
+        <a href="aa" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">신규구축 및 운영</a> 
+        <a href="bb" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">관리 및 유지보수</a> 
+        <a href="cc" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">프론트엔드</a> 
+        <a href="dd" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">디자인</a>
       </div>
       <div id="#aa" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">신규구축 및 운영</h2>
@@ -16,7 +19,7 @@
               :key="index"
             >
               <router-link :to="portfolio.url" class="h-full flex">
-                <div class="rounded-2xl bg-bgWhite dark:bg-bgDark p-6 flex flex-col">
+                <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
                   <div class="">
                     <img :src="portfolio.image" alt="" class="rounded-2xl">
                   </div>
