@@ -16,13 +16,14 @@
           <h3 class="lg:text-4xl text-3xl dark:text-secondary font-bold">황 승 현</h3>
           <p class="lg:text-2xl text-xl py-2 text-third dark:text-third-dark">HWANG SEUNG HYUN</p>
           <ul class="font-light lg:text-lg text-base">
-            <li class="py-1">1990.01.13. Yangcheon-gu, Seoul, Republic of Korea</li>
+            <li class="py-1">1990.01.13. <br/>Yangcheon-gu, Seoul, Republic of Korea</li>
             <li class="py-1">ghkdsigm3@naver.com / ghkdsigm3@gmail.com</li>
-            <li class="py-1 flex"> 010-9406-3935 /
+            <li class="py-1 flex"> 010-9406-3935 
+              <!-- /
               <a href="javascript:void(0);" id="resume" class="flex">
                 <img src="" alt="이력서">
                 이력서 & 경력기술서.pdf
-              </a>
+              </a> -->
             </li>
           </ul>
         </div>        
@@ -30,7 +31,7 @@
     </div>
     <div class="lg:mt-4 block dark:text-secondary text-secondary-dark">
       <!--기본정보(이력)-->
-      <h4 class="lg:text-2xl text-base mb-10 font-light">
+      <h4 class="lg:text-xl text-base mb-10 font-light">
         <b class="lg:text-4xl text-2xl block font-extrabold mb-2">'적자생존은 만고불변의 진리'</b>
         주어진 어떠한 환경과 역할에서도<br /> 동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다. 
       </h4>
@@ -56,7 +57,7 @@
         </ul>
       </div>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Experience / Licenses</h5>
+        <h5 class="font-bold lg:text-3xl text-xl">Licenses</h5>
         <ul>
           <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2008.08.</span>
@@ -76,7 +77,7 @@
           </li>
         </ul>
       </div>
-      <div class="career mb-6">
+      <!-- <div class="career mb-6">
         <h5 class="font-bold lg:text-3xl text-xl">Skills / Tools</h5>
         <ul class="mytools">
           <li class="py-1 lg:text-lg text-base">
@@ -92,8 +93,8 @@
             <span class="font-light">Eclipse / VSCode / Powerpoint / Excel / Photoshop / Illustrator / Figma / Zeplin </span>
           </li>
         </ul>
-      </div>
-    </div>
+      </div> -->
+    </div>    
   </div> 
 </template>
 
