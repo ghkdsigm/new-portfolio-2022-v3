@@ -84,4 +84,13 @@ a:hover {
     cursor: none;
   }
 
+  .leading-3	{line-height: .75rem !important;} /* 12px */
+  .leading-4	{line-height: 1rem !important;} /* 16px */
+  .leading-5	{line-height: 1.25rem !important;} /* 20px */
+  .leading-6	{line-height: 1.5rem !important;} /* 24px */
+  .leading-7	{line-height: 1.75rem !important; }/* 28px */
+  .leading-8	{line-height: 2rem !important;} /* 32px */
+  .leading-9	{line-height: 2.25rem !important;} /* 36px */
+  .leading-10	{line-height: 2.5rem !important;} /* 40px */
+
 @keyframes noise{0%{background-position:0 0}to{background-position:100% 100%}}

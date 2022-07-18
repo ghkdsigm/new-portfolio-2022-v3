@@ -3,6 +3,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
+  important: false,
   darkMode: "class", // Tailwindcss 3.0 default is 'media',  'class'
   theme: {
     extend: {
