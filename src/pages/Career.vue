@@ -116,7 +116,7 @@
             </li>
           </ul>
           <div class="mt-10">
-            <button type="button" class="px-6 py-2 border-2 dark:border-gray-600 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third">More Projects</button>
+            <button type="button" class="px-8 py-2 border font-thin dark:border-gray-600 border-gray-300 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third">More Projects</button>
           </div>
         </div>        
       </div>
