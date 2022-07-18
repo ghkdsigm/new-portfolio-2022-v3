@@ -22,8 +22,8 @@
             그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">배움</b>을 또 다른 프로젝트에서 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">담아내고자</b> 합니다.
           </h4>
         </div>
-        <div class="career mb-6">
-          <h5 class="font-bold lg:text-3xl text-xl">Companies</h5>
+        <div class="career mb-10">
+          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third mb-4">History</h5>
           <ul>
             <li class="py-1 lg:text-lg text-sm">
               <span class="font-base"><b class="font-base">(現) HYPERNEST</b> 개발팀 기획 & 프론트 개발 총괄</span>
@@ -35,8 +35,8 @@
             </li>      
           </ul>
         </div>
-        <div class="career mb-6">
-          <h5 class="font-bold lg:text-3xl text-xl">Representive Projects</h5>
+        <div class="career mb-22">
+          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third mb-4">Representive Projects</h5>
           <ul>
             <li class="py-1 lg:text-lg text-sm">
               <span class="font-base"><b class="font-base lg:inline-block block">[Hypernest]</b> GXG.Style NFT 거래소 구축 및 운영</span>
@@ -53,6 +53,10 @@
             <li class="py-1 lg:text-lg text-sm">
               <span class="font-base"><b class="font-base lg:inline-block block">[국가대표선수촌]</b> 국가대표선수촌 개방 확대 지원 온라인 예약구축</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.06. - 21.10</span>
+            </li>
+            <li class="py-1 lg:text-lg text-sm">
+              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> KPGA 투어관리시스템 개선사업 입찰 자문위원</span>
+              <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.06.</span>
             </li>
             <li class="py-1 lg:text-lg text-sm">
               <span class="font-base"><b class="font-base lg:inline-block block">[제주유나이티드]</b> 제주유나이티드 내손안의전광판 플랫폼 운영 고도화 사업</span>
@@ -111,6 +115,9 @@
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2016.12. - 17.10</span>
             </li>
           </ul>
+          <div class="mt-10">
+            <button type="button" class="px-6 py-2 border-2 dark:border-gray-600 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third">More Projects</button>
+          </div>
         </div>        
       </div>
     </div>
