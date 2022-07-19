@@ -133,6 +133,12 @@
           </ul>
         </div>
       </div>
+      <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">기획 및 제안</h2>
+        <div class="my-4">
+          
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -77,6 +77,26 @@
           </li>
         </ul>
       </div>
+      <div class="career mb-6">
+        <h5 class="font-bold lg:text-3xl text-xl">Capability</h5>
+        <ul>          
+          <li class="py-1 lg:text-lg text-base">
+            <span class="font-light">UI · UX Design</span>
+          </li>
+          <li class="py-1 lg:text-lg text-base">
+            <span class="font-light">UI · UX Development</span>
+          </li>
+          <li class="py-1 lg:text-lg text-base">
+            <span class="font-light">Front-end Development</span>
+          </li>
+          <li class="py-1 lg:text-lg text-base">
+            <span class="font-light">Making Proposal</span>
+          </li>
+          <li class="py-1 lg:text-lg text-base">
+            <span class="font-light">Service Communication</span>
+          </li>
+        </ul>
+      </div>
       <!-- <div class="career mb-6">
         <h5 class="font-bold lg:text-3xl text-xl">Skills / Tools</h5>
         <ul class="mytools">
