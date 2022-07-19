@@ -43,13 +43,40 @@
       <div id="#bb" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">관리 및 유지보수</h2>
         <div class="my-4">
-          
+          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList(index)">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+                <div class="">
+                  <img :src="portfolio.image" alt="" class="rounded-2xl">
+                </div>
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                  <div class="py-3">
+                    <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
+                  </div>
+                </div>
+              </div>  
+            </li>
+          </ul>
         </div>
       </div>
       <div id="#cc" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">프론트엔드</h2>
         <div class="my-4">
-                 
+          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            <li v-for="(value, index) in this.datas.Content" :key="index">
+              <div>
+                <p>{{ value.title }}</p>
+                <p>{{ value.context }}</p>
+                <p>{{ value.created_at }}</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
@@ -64,8 +91,10 @@
 
 <script>
 import BackHome from '@/components/common/BackHome.vue'
+import data from '@/data'
 
 // import Swiper core and required modules
+import { onMounted } from 'vue'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -84,6 +113,7 @@ export default {
   },
   data(){
     return {
+      datas: data,
       swiperOptions: {
         slidesPerView: 2,
         spaceBetween: 50,
@@ -130,6 +160,9 @@ export default {
     const onSlideChange = () => {
       console.log('slide change');
     };
+    onMounted(()=>{
+      // console.log(data)
+    })
     return {
       onSwiper,
       onSlideChange,
@@ -146,6 +179,20 @@ export default {
       return this.$refs.mySwiper.$swiper;
     },
   },
+  methods:{
+  // 	detail(index){
+  // 		this.$route.push({
+  // 			name:"Detail",
+  // 			params:{ contentId: index}
+  // 		})
+  // 	},
+    clickList(index){
+    	this.$router.push({
+        name:'worksDetail',//detail
+        params:{contentId : index}
+      })
+    }
+  }
 }
 </script>
 
