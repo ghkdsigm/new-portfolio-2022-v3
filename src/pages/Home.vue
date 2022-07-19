@@ -13,7 +13,7 @@
       <Skills></Skills>
     </div>
     <div class="my-20">
-      <div class="max-h-[800px]overflow-hidden">
+      <div class="max-h-[800px] overflow-hidden">
         <img class="align-top" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/worksImg.png" alt="design image" />
       </div>
     </div>
