@@ -11,7 +11,7 @@
         <a href="dd" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">디자인</a>
       </div>
       <div id="#aa" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">신규구축 및 운영</h2>
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">신규구축 및 운영</h2>
         <div class="my-4">
           <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li              
@@ -40,7 +40,7 @@
           </ul>   -->
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.infodatas" :key="index" @click="clickList01(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
@@ -61,11 +61,11 @@
         </div>
       </div>
       <div id="#bb" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">관리 및 유지보수</h2>
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">관리 및 유지보수</h2>
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.opeartiondata" :key="index" @click="clickList02(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <div id="#cc" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">프론트엔드</h2>
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">프론트엔드</h2>
         <div class="my-4">
           <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(value, index) in this.datas.Content" :key="index">
@@ -99,7 +99,7 @@
           </ul> -->
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList03(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
@@ -120,7 +120,7 @@
         </div>
       </div>
       <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">디자인</h2>
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(value, index) in this.datas.Content" :key="index">

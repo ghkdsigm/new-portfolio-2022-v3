@@ -43,7 +43,7 @@ export default {
   }
   .dark_navLink:hover {color: #fff;}
   .white_navLink {    
-    color: #fff;
+    color: transparent;
     -webkit-text-stroke: 1px #11216b;
     text-stroke: 1px #11216b;
   }
