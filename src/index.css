@@ -25,7 +25,7 @@ a:hover {
     top: 0;
     transition: opacity 1s ease-out;
     width: 100vw;
-    z-index: 0;
+    z-index: -1;
 }
 
 /*매직마우스*/

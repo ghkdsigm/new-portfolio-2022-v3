@@ -13,7 +13,7 @@
       <div id="#aa" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">신규구축 및 운영</h2>
         <div class="my-4">
-          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li              
               v-for="(portfolio, index) in this.$store.state.frontworks"
               :key="index"
@@ -37,14 +37,34 @@
                 </div>   
               </router-link>           
             </li>
-          </ul>  
+          </ul>   -->
+          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            <li v-for="(portfolio, index) in this.$store.state.infodatas" :key="index" @click="clickList01(index)">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+                <div class="">
+                  <img :src="portfolio.image" alt="" class="rounded-2xl">
+                </div>
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                  <div class="py-3">
+                    <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
+                  </div>
+                </div>
+              </div>  
+            </li>
+          </ul>
         </div>
       </div>
       <div id="#bb" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">관리 및 유지보수</h2>
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
-            <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList(index)">
+            <li v-for="(portfolio, index) in this.$store.state.opeartiondata" :key="index" @click="clickList02(index)">
               <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
@@ -68,6 +88,40 @@
       <div id="#cc" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">프론트엔드</h2>
         <div class="my-4">
+          <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            <li v-for="(value, index) in this.datas.Content" :key="index">
+              <div>
+                <p>{{ value.title }}</p>
+                <p>{{ value.context }}</p>
+                <p>{{ value.created_at }}</p>
+              </div>
+            </li>
+          </ul> -->
+          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList03(index)">
+              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col">
+                <div class="">
+                  <img :src="portfolio.image" alt="" class="rounded-2xl">
+                </div>
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                  <div class="py-3">
+                    <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
+                  </div>
+                </div>
+              </div>  
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
+        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">디자인</h2>
+        <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(value, index) in this.datas.Content" :key="index">
               <div>
@@ -77,12 +131,6 @@
               </div>
             </li>
           </ul>
-        </div>
-      </div>
-      <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-40">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4">디자인</h2>
-        <div class="my-4">
-        
         </div>
       </div>
     </div>
@@ -172,6 +220,7 @@ export default {
   created() {
     this.$store.dispatch("FECTH_MYFRONT");
     this.$store.dispatch("FETCH_OPERATION");
+    this.$store.dispatch("FETCH_INFO");
     return
   },
   computed: {
@@ -186,12 +235,24 @@ export default {
   // 			params:{ contentId: index}
   // 		})
   // 	},
-    clickList(index){
+    clickList01(index){
     	this.$router.push({
-        name:'worksDetail',//detail
+        name:'worksDetailNew',//detail
         params:{contentId : index}
       })
-    }
+    },
+    clickList02(index){
+    	this.$router.push({
+        name:'worksDetailOperation',//detail
+        params:{contentId : index}
+      })
+    },
+    clickList03(index){
+    	this.$router.push({
+        name:'worksDetailFront',//detail
+        params:{contentId : index}
+      })
+    },
   }
 }
 </script>

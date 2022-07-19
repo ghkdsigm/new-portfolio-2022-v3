@@ -7,6 +7,7 @@ const store = createStore({
     return {
       dark: false,
       LoadingStatus: false,
+      infodatas: [],
       opeartiondata: [],
       frontworks: [],
     }
@@ -25,7 +26,7 @@ const store = createStore({
       state.LoadingStatus = false;
     },
     SET_INFO(state, payload) {
-      state.datas = payload;
+      state.infodatas = payload;
     },
     SET_OPERATION(state, payload) {
       state.opeartiondata = payload;

@@ -8,7 +8,9 @@ import Contact from '../pages/Contact.vue'
 import Study from '../pages/Study.vue'
 import Work01 from '../pages/works/Work01.vue'
 import Work02 from '../pages/works/Work02.vue'
-import WorksDetail from '../pages/works/WorksDetail.vue'
+import WorksDetailNew from '../pages/works/WorksDetailNew.vue'
+import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
+import WorksDetailFront from '../pages/works/WorksDetailFront.vue'
 // import Loading from '../components/common/Loading.vue'
 
 const routes = [
@@ -16,7 +18,9 @@ const routes = [
     { path: '/info', name: 'info', component: Info, title: 'INFOMATION', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
     { path: '/career', name: 'career', component: Career, title: 'CAREER', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
     { path: '/works', name: 'works', component: Works, title: 'WORKS', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
-    { path: '/works/:contentId', name: 'worksDetail', component: WorksDetail, title: 'WORKSDETAIL', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
+    { path: '/works/new/:contentId', name: 'worksDetailNew', component: WorksDetailNew, title: 'WORKSDETAILNEW', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
+    { path: '/works/operation/:contentId', name: 'worksDetailOperation', component: WorksDetailOperation, title: 'WORKSDETAILOPERATION', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
+    { path: '/works/frontend/:contentId', name: 'worksDetailFront', component: WorksDetailFront, title: 'WORKSDETAILFRONT', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
     { path: '/works/work01', name: 'work01', component: Work01, title: 'WORK01', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
     { path: '/works/work02', name: 'work02', component: Work02, title: 'WORK02', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
     // { 
