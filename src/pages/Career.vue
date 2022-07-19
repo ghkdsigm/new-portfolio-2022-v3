@@ -12,6 +12,13 @@
             alt="earth gif" 
             class="mix-blend-exclusion"
           />
+          <!-- <img 
+            src="@/assets/images/earth.gif"
+            alt="earth gif" 
+            class="mix-blend-exclusion"
+            @load="image"
+            v-if="image"
+          /> -->
           <!-- src="@/assets/images/earth.gif"  -->
           <!-- style="mix-blend-mode: exclusion !important;" -->
           <!--기본정보(이력)-->
@@ -132,23 +139,49 @@ export default {
   components:{
     BackHome
   },
-  // data () {
+  // data() {
   //   return {
-  //     image: "",//url for placeholder image
-  //     //source: '@/assets/images/earth.gif'
+  //     isImageLoaded: false
   //   }
   // },
-  // setup(){
-  //   const earth = ref();
-  //   onMounted(() => {
-  //     $refs.earth.classList.add('mix-blend-exclusion');
-  //   });
-  //   return { earth };
-  //   //this.image=require('@/assets/images/earth.gif');
+  // methods: {
+  //   onImageLoad () {
+  //     this.isImageLoaded = true
+  //   }
   // },
+  // watch: {
+  //   isImageLoaded: function(newValue, oldValue) {
+  //     console.log("New value is: " + newValue)
+  //     console.log("Old value is: " + oldValue)
+  //   }
+  // },
+  // created(){
+  //   this.$ref.earthImg.classList.add('ss')
+  // }
+  // setup(){
+  //   const earthImg = ref('');
+  //   onMounted(()=>{
+  //     earthImg.classList.add("ss");
+  //     // this.$nextTick(() => {
+  //     //   this.earthImg.title.classList.add("red");
+  //     // });
+  //   })
+  //   return {earthImg}
+  // }
+  // setup(props) {
+  //   const isLoaded = ref(false);
+
+  //   watch(() => props.image, (image) => {
+  //       isLoaded.value = false;
+
+  //       const img = new Image();
+  //       img.onload = () => isLoaded.value = true;
+  //       img.src = image;
+  //   }, { immediate: true });
+  // }
 }
 </script>
 
 <style>
-
+/* .ss {mix-blend-mode: exclusion !important;} */
 </style>
