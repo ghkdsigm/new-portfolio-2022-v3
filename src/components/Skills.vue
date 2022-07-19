@@ -26,7 +26,7 @@
         <h5 class="font-bold lg:text-3xl text-xl">Tools</h5>
         <ul class="mytools">          
           <li class="py-1 lg:text-lg text-base">
-            <span class="font-light">Eclipse / VSCode / Powerpoint / Excel / Photoshop / Illustrator / Figma / Zeplin </span>
+            <span class="font-light">Eclipse / VSCode / Visual Studio / Powerpoint / Excel / Photoshop / Illustrator / Figma / Zeplin </span>
           </li>
         </ul>
       </div>
