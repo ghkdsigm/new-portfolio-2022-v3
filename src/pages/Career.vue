@@ -22,11 +22,11 @@
           <!-- src="@/assets/images/earth.gif"  -->
           <!-- style="mix-blend-mode: exclusion !important;" -->
           <!--기본정보(이력)-->
-          <h4 class="lg:text-2xl text-base mb-10 font-light lg:leading-10 leading-7">
-            수많은 대국민 서비스 프로젝트에서 다양한 역할로서의 업무 수행을 통해<br/>
-            <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">성공적인 결과</b>를 이끌어낸 경험은<br /> 
+          <h4 class="lg:text-2xl text-base mb-10 font-light lg:leading-10 sm:leading-7">
+            수많은 대국민 서비스 프로젝트에서 <br/>다양한 역할로서의 업무 수행을 통해<br/>
+            <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">성공적인 결과</b>를 이끌어낸 경험과 결과는<br /> 
             누구도 쉽게 겪어보지못할 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">소중한 경험</b>이라 생각하며,<br/>
-            그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">배움</b>을 또 다른 프로젝트에서 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">담아내고자</b> 합니다.
+            그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">배움</b>을 <br/>또 다른 프로젝트에서 새롭게 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">담아내고자</b> 합니다.
           </h4>
         </div>
         <div class="career mb-10">

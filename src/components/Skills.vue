@@ -9,7 +9,7 @@
         더욱 폭넓게 확장된 업무 수행 능력을 기를것입니다.
       </h4>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Skills</h5>
+        <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Skills</h5>
         <ul class="mytools">
           <li class="py-1 lg:text-lg text-base">
             <span class="font-light">Html5 / Css3 / Scss / Tailwind.css / Bootstrap / Mudblazor</span>
@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Tools</h5>
+        <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Tools</h5>
         <ul class="mytools">          
           <li class="py-1 lg:text-lg text-base">
             <span class="font-light">VSCode / Visual Studio / Eclipse / Powerpoint / Excel / Photoshop / Illustrator / Figma / Zeplin </span>

@@ -36,7 +36,7 @@
         주어진 어떠한 환경과 역할에서도<br /> 동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다. 
       </h4>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Educations</h5>
+        <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Educations</h5>
         <ul>
           <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2008.03.</span>
@@ -57,7 +57,7 @@
         </ul>
       </div>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Licenses</h5>
+        <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Licenses</h5>
         <ul>
           <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2008.08.</span>
@@ -78,7 +78,7 @@
         </ul>
       </div>
       <div class="career mb-6">
-        <h5 class="font-bold lg:text-3xl text-xl">Capability</h5>
+        <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Capability</h5>
         <ul>          
           <li class="py-1 lg:text-lg text-base">
             <span class="font-light">UI · UX Design</span>
