@@ -18,7 +18,7 @@
           <ul class="font-light lg:text-lg text-base">
             <li class="py-1">1990.01.13. <br/>Yangcheon-gu, Seoul, Republic of Korea</li>
             <li class="py-1">ghkdsigm3@naver.com / ghkdsigm3@gmail.com</li>
-            <li class="py-1 flex"> 010-9406-3935 
+            <li class="py-1 flex"> +82 10.9406-3935 
               <!-- /
               <a href="javascript:void(0);" id="resume" class="flex">
                 <img src="" alt="이력서">
