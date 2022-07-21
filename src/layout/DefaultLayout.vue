@@ -18,7 +18,7 @@
                     inline-block
                   text-third 
                   dark:text-primary 
-                  dark:bg-zinc-700 bg-zinc-300
+                  dark:bg-zinc-700 dark:hover:bg-zinc-600 bg-zinc-300 hover:bg-zinc-200
                     focus-visible:ring-2 focus-visible:ring-green-400
                     rounded-full
                     mt-4
@@ -38,7 +38,7 @@
                     p-4
                   text-third 
                   dark:text-primary 
-                  dark:bg-zinc-700 bg-zinc-300
+                  dark:bg-zinc-700 dark:hover:bg-zinc-600 bg-zinc-300 hover:bg-zinc-200
                     focus-visible:ring-2 focus-visible:ring-green-400
                     rounded-full
                     mt-4
