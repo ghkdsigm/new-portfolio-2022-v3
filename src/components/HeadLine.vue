@@ -51,8 +51,22 @@ export default {
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */
+  .hearderList {font-size: 5vh;} 
   .hearderList:hover {transition: all .15s ease-out;}
-  @screen xl {
+  
+  @screen sm {
+   .hearderList{font-size: 8vh;}
+  } 
+  @screen md {
    .hearderList{font-size: 10vh;}
+  } 
+  @screen lg {
+   .hearderList{font-size: 11vh;}
+  }
+  @screen xl {
+   .hearderList{font-size: 13vh;}
+  }
+  @screen 2xl {
+   .hearderList{font-size: 14vh;}
   }
 </style>
