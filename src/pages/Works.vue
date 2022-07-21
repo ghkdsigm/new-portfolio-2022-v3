@@ -51,7 +51,7 @@
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
                   </div>
                 </div>
@@ -76,7 +76,7 @@
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
                   </div>
                 </div>
@@ -110,7 +110,7 @@
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="rounded-xl bg-white dark:bg-slate-800 py-2 px-6">View</span>
+                    <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
                   </div>
                 </div>

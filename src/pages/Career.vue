@@ -46,79 +46,79 @@
           <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third mb-4">Representive Projects</h5>
           <ul>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[Hypernest]</b> GXG.Style NFT 거래소 구축 및 운영</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[HYPERNEST]</b> GXG.Style NFT 거래소 신규 구축 및 운영</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2022.05. - 22.11</span>              
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[Hypernest]</b> GotG.World 개편</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[HYPERNEST]</b> GotG.World 홈페이지 개편</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2022.05. - 22.07</span>              
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 정보광장 개선 및 운영</span>
-              <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2016.12. - 21.11</span>              
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 정보광장 포탈 사이트 개선 및 운영</span>
+              <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.06. - 21.11</span>              
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[국가대표선수촌]</b> 국가대표선수촌 개방 확대 지원 온라인 예약구축</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[국가대표선수촌]</b> 국가대표선수촌 개방 확대 지원 온라인 예약구축</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.06. - 21.10</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> KPGA 투어관리시스템 개선사업 입찰 자문위원</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> KPGA 투어 관리 및 운영시스템 개선사업 입찰 자문위원</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.06.</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[제주유나이티드]</b> 제주유나이티드 내손안의전광판 플랫폼 운영 고도화 사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[제주유나이티드]</b> 제주유나이티드 내손안의전광판 플랫폼 운영 고도화 사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2021.03. - 21.09</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국도핑방지위원회]</b> 보건의료인 도핑방지 인증제도 온라인 학습관리시스템 구축</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국도핑방지위원회]</b> 보건의료인 도핑방지 인증제도 온라인 학습관리시스템(LMS) 구축</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.08. - 20.12</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 정보광장 웹사이트 기능고도화 작업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 정보광장 포탈 웹사이트 기능고도화 작업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.08. - 20.12</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[경남체육회]</b> 경남청소년스포츠한마당 대회 앱 개발 및 운영 사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[경남체육회]</b> 경남 청소년 스포츠한마당 비대면 대회 앱 개발 및 운영 사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.10. - 20.11</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국도핑방지위원회]</b> 도핑검사 포털(ADTIS) 및 검사관 온라인 교육시스템 구축 사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국도핑방지위원회]</b> 도핑검사 포털(ADTIS) 및 검사관 온라인 교육시스템 구축 사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.07. - 20.11</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 협회 홈페이지 윤리교육 일정관리시스템 개발 및 관리기능개선</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 협회 홈페이지 윤리교육 일정관리시스템 개발 및 관리기능개선</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.07. - 20.08</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> 한국 프로스포츠 정보광장포탈 웹사이트 개선</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> 한국 프로스포츠 정보광장 포탈 웹사이트 개선 사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.03. - 20.06</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[대한체육회]</b> 대한체육회 국가대표 선수촌 방문예약 시스템 개선사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[대한체육회]</b> 대한체육회 국가대표 선수촌 방문예약 시스템 개선사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2019.11. - 20.04</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 암표 신고 사이트 구축</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[한국프로스포츠협회]</b> 프로스포츠 암표 신고 사이트 구축</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2020.02. - 20.02</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[대한체육회]</b> 대한체육회 100주년 기념 홈페이지 개편 사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[대한체육회]</b> 대한체육회 100주년 기념 홈페이지 개편 사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2019.09. - 19.12</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[대한체육회]</b> 한국 체육을 빛낸 100인 후보자 추천 홈페이지 구축 및 운영</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[대한체육회]</b> 한국 체육을 빛낸 100인 후보자 추천 홈페이지 구축 및 운영</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2019.06. - 19.11</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[대한체육회]</b> 2019 대한민국 스포츠영웅 선정절차 시스템 구축운영</span>
-              <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2019.07. - 19.09</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[대한체육회]</b> 2016, 17, 18, 19, 20, 21 대한민국 스포츠영웅 선정절차 시스템 구축 및 운영</span>
+              <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2016.07. - 21.09</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[K-LEAGUE]</b> K리그 심판교육사이트 운영위탁</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-lbaseight lg:inline-block block">[K-LEAGUE]</b> K리그 심판교육사이트 운영위탁</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2018.03. - 18.12</span>
             </li>
             <li class="py-1 lg:text-lg text-base">
-              <span class="font-base"><b class="font-base lg:inline-block block">[경찰청]</b> 사이버 경찰청 홈페이지 개편사업</span>
+              <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[경찰청]</b> 사이버 경찰청 홈페이지 개편사업</span>
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2016.12. - 17.10</span>
             </li>
           </ul>
