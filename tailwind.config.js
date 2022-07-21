@@ -15,7 +15,7 @@ module.exports = {
         dark: '#1a91da',
         light: '#a5d0f5',
         lighter: '#D4E5F4',
-        bgWhite: '#EFEFEF',
+        bgWhite: '#e1e1e1',
 
         'primary-dark': '#0D2438',
 				'secondary-dark': '#000',
