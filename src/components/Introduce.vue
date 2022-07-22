@@ -31,8 +31,8 @@
     </div>
     <div class="lg:mt-4 block dark:text-secondary text-secondary-dark">
       <!--기본정보(이력)-->
-      <h4 class="lg:text-xl text-base mb-10 font-light">
-        <b class="lg:text-4xl text-2xl block font-extrabold mb-2">'적자생존은 만고불변의 진리'</b>
+      <h4 class="lg:text-2xl text-base mb-10 font-light">
+        <b class="lg:text-4xl text-2xl block font-extrabold mb-3">'적자생존은 만고불변의 진리'</b>
         주어진 어떠한 환경과 역할에서도<br /> 동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다. 
       </h4>
       <div class="career mb-6">
