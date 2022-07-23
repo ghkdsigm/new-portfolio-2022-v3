@@ -13,7 +13,7 @@
       <!--기본정보(정보)-->
       <div class="col-span-3 flex items-center dark:text-secondary text-secondary-dark lg:mt-0 mt-12">
         <div>
-          <h3 class="lg:text-5xl text-3xl dark:text-secondary font-bold">황 승 현</h3>
+          <h3 class="xl:text-5xl lg:text-4xl text-3xl dark:text-secondary font-bold">황 승 현</h3>
           <p class="lg:text-2xl text-xl py-2 text-third dark:text-third-dark">HWANG SEUNG HYUN</p>
           <ul class="font-light lg:text-lg text-base">
             <li class="py-1">1990.01.13. <br/>Yangcheon-gu, Seoul, Republic of Korea</li>
