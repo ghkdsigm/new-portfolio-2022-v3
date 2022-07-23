@@ -6,11 +6,11 @@
     </div>
     <div class="relative lg:mt-20 mt-4 text-left">
       <div class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-20">
-        <div class="lg:flex items-center block">
+        <div class="xl:flex items-center lg:block block">
           <img 
             src="@/assets/images/earth.gif"
             alt="earth gif" 
-            class="mix-blend-exclusion"
+            class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto"
           />
           <!-- <img 
             src="@/assets/images/earth.gif"
@@ -22,7 +22,7 @@
           <!-- src="@/assets/images/earth.gif"  -->
           <!-- style="mix-blend-mode: exclusion !important;" -->
           <!--기본정보(이력)-->
-          <h4 class="lg:text-2xl text-base mb-10 font-light lg:leading-10 sm:leading-7">
+          <h4 class="xl:text-2xl lg:text-xl md:text-lg text-base mb-10 font-light xl:leading-10 lg:leading-10 md:leading-8 sm:leading-7">
             수많은 대국민 서비스 프로젝트에서 <br/>다양한 역할로서의 업무 수행을 통해<br/>
             <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">성공적인 결과</b>를 이끌어낸 경험과 결과는<br /> 
             누구도 쉽게 겪어보지못할 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">소중한 경험</b>이라 생각하며,<br/>
@@ -123,7 +123,7 @@
             </li>
           </ul>
           <div class="mt-10">
-            <button type="button" class="px-8 py-2 border font-thin dark:border-gray-600 border-gray-300 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third lg:w-fit w-full">More Projects</button>
+            <button type="button" class="px-8 py-2 border font-thin dark:border-gray-600 border-gray-300 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third lg:w-fit w-full lg:text-xl text-base">More Projects</button>
           </div>
         </div>        
       </div>
