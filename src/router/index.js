@@ -9,10 +9,11 @@ import Study from '../pages/Study.vue'
 import Work01 from '../pages/works/Work01.vue'
 import Work02 from '../pages/works/Work02.vue'
 import WorksDetailNew from '../pages/works/WorksDetailNew.vue'
+import WorksDetailFront from '../pages/works/worksDetailFront.vue'
 import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
-import WorksDetailFront from '../pages/works/WorksDetailFront.vue'
-import Scroll from '../components/common/Scroll.vue'
+import NotFound from '../pages/NotFound.vue'
 
+const newLocal = true
 //const routes = [
     // { path: '/', name: 'home', component: Home, title: 'HOME', icon: 'fas fa-home fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
     // { path: '/info', name: 'info', component: Info, title: 'INFOMATION', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
@@ -54,25 +55,30 @@ import Scroll from '../components/common/Scroll.vue'
 
 const router = createRouter({
     history: createWebHistory(),
+    scrollBehavior(){
+        return{ top:0 }
+    },
     routes: [
         { path: '/', name: 'home', component: Home, title: 'HOME', icon: 'fas fa-home fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/info', name: 'info', component: Info, title: 'INFO', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/career', name: 'career', component: Career, title: 'CAREER', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/works', name: 'works', component: Works, title: 'WORKS', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/works/new/:contentId', name: 'worksDetailNew', component: WorksDetailNew, title: 'WORKSDETAILNEW', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
-        { path: '/works/operation/:contentId', name: 'worksDetailOperation', component: WorksDetailOperation, title: 'WORKSDETAILOPERATION', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
+        { path: '/works/operation/:contentId', name: 'worksDetailOperation', component: WorksDetailOperation, title: 'WORKSDETAILOPERATION', meta: { isMenu: false, layout: 'SubLayout', requireAuth: newLocal } },
         { path: '/works/frontend/:contentId', name: 'worksDetailFront', component: WorksDetailFront, title: 'WORKSDETAILFRONT', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         { path: '/works/work01', name: 'work01', component: Work01, title: 'WORK01', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         { path: '/works/work02', name: 'work02', component: Work02, title: 'WORK02', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         { path: '/study', name: 'study', component: Study, title: 'STUDY', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/contact', name: 'contact', component: Contact, title: 'CONTACT', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
-        
+        {
+            path: '/:notFound(.*)',
+            name: 'notfound',
+            component: NotFound,
+            title: 'NOTFOUND',
+            meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
+        },
         //{ path: '/scroll', name: 'scroll', component: Scroll, title: 'SCROLL', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
-    ],
-    scrollBehavior(to, from, savedPosition) {
-        // always scroll to top
-        return { top: 0 }
-    },
+    ],    
 })
 
 router.beforeEach((to, from, next) => {
