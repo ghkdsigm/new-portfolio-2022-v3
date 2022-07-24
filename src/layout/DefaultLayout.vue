@@ -130,7 +130,7 @@ export default {
     //스크롤버튼이벤트
     let scrollTopbt = function(){
       let rightWrap = document.querySelector('.rightWrap')        
-      rightWrap.scrollTop = 0
+      return rightWrap.scrollTop = 0
     }  
 
     //다크모드
