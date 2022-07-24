@@ -86,19 +86,33 @@
       </div>
     </div>    
     <!--메인섹션-->
-    <div class="lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto lg:px-16 px-6 items-center text-center">      
+    <div class="rightWrap lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto lg:px-16 px-6 items-center text-center" ref="scrollRight">      
       <router-view v-slot="{ Component }">
         <transition name="route" mode="out-in">
           <component :is="Component"></component>
         </transition>
       </router-view>
       <Loading  :loading="$store.state.LoadingStatus"></Loading>
+      <!-- invisible -->
+      <div
+          ref="scrollTopButton"
+          @click="scrollTopbt"
+          class="invisible fixed bottom-0 right-0 flex justify-end pb-8 pr-8 transition duration-150 ease-out"
+      > 
+          <div
+              class="dark:bg-zinc-900 border dark:border-zinc-700 dark:hover:border-primary border-zinc-400 hover:border-third bg-zinc-300 dark:text-gray-400 text-gray-600 dark:hover:text-gray-800 hover:text-white dark:hover:bg-primary hover:bg-third transition w-20 h-20 rounded-full flex items-center justify-center font-medium"
+          >
+              <button type="button">
+                  TOP
+              </button>
+          </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { ref,onBeforeMount,onMounted, computed } from 'vue'
+import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount } from 'vue'
 import { useStore, mapGetters } from 'vuex'
 import router from '../router'
 import Loading from '../components/common/Loading.vue'
@@ -109,6 +123,15 @@ export default {
   },
   setup(){
     const routes = ref([])
+    //스크롤영역
+    let scrollRight = ref()
+    //스크롤버튼
+    let scrollTopButton = ref() 
+    //스크롤버튼이벤트
+    let scrollTopbt = function(){
+      let rightWrap = document.querySelector('.rightWrap')        
+      rightWrap.scrollTop = 0
+    }  
 
     //다크모드
     //const isDark = ref(true)
@@ -132,8 +155,30 @@ export default {
       if(localStorage.getItem('changeDark') == 'true'){
         document.documentElement.classList.remove('dark'); 
         document.documentElement.style.background = 'white';
-      }
-    });
+      }      
+
+      //스크롤영역 좌표
+      let rightWrap = document.querySelector('.rightWrap')  
+      rightWrap.addEventListener("scroll",function(){
+        if (scrollRight.value.scrollTop > 2000) {
+            scrollTopButton.value.classList.remove("invisible");
+        } else {
+            scrollTopButton.value.classList.add("invisible");
+        }
+      }) 
+    })
+
+    onBeforeUnmount(()=>{
+      //스크롤영역 좌표
+      let rightWrap = document.querySelector('.rightWrap')  
+      rightWrap.removeEventListener("scroll",function(){
+        if (scrollRight.value.scrollTop > 2000) {
+            scrollTopButton.value.classList.remove("invisible");
+        } else {
+            scrollTopButton.value.classList.add("invisible");
+        }
+      })
+    })
 
     return {
       routes,
@@ -141,6 +186,9 @@ export default {
       isDark,
       isShow,
       changeDark, 
+      scrollTopButton,
+      scrollTopbt,
+      scrollRight
     }
   },
   methods:{

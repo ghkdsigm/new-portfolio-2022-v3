@@ -55,8 +55,10 @@ const newLocal = true
 
 const router = createRouter({
     history: createWebHistory(),
-    scrollBehavior(){
-        return{ top:0 }
+    scrollBehavior(to, from, next){
+        //let scrollPosition = rightWrap.scrollY || rightWrap.scrollTop;    
+        let rightWrap = document.querySelector('.rightWrap')        
+        return rightWrap.scrollTop = 0
     },
     routes: [
         { path: '/', name: 'home', component: Home, title: 'HOME', icon: 'fas fa-home fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
@@ -82,7 +84,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    store.commit('startSpinner');
+    store.commit('startSpinner');    
     setTimeout(() => {
         next();
     }, 500);

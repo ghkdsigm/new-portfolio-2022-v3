@@ -25,13 +25,14 @@ export default {
     let scrollTopButton = ref()
 
     let scrollTopbt = function(){
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      let rightWrap = document.querySelector('.rightWrap')        
+      rightWrap.scrollTop = 0
     }  
 
     onMounted(()=>{
       window.addEventListener("scroll",function(){
-        if (window.scrollY > 0) {
-            console.log(1)
+        if (rightWrap.scrollY > 0) {
+            console.log(rightWrap.scrollY)
             scrollTopButton.value.classList.remove("invisible");
         } else {
             scrollTopButton.value.classList.add("invisible");
