@@ -1,120 +1,79 @@
 <template>
   <div>
-    <ul>
-      <li v-for="(aa, index) in 5" :key="index">
-        <div style="margin:500px 0 500px">
-          ddddddddddddddddddddd
+    <!-- invisible -->
+    <div
+        ref="scrollTopButton"
+        @click="scrollTopbt"
+        class="fixed bottom-0 right-0 flex justify-end pb-3 pr-5 transition duration-150 ease-out"
+    > 
+        <div
+            class="text-gray-400 hover:text-blue-400 transition"
+        >
+            <button type="button">
+                Scroll to top
+            </button>
         </div>
-      </li>
-    </ul>
-    <a @click="scrollTop" v-show="visible" class="bottom-right"> Top </a>
+    </div>
   </div>
 </template>
 
 <script>
+import { reactive, ref, onMounted, onBeforeUnmount } from 'vue'
+
 export default {
-  data(){
+  setup() {
+    let scrollTopButton = ref()
+
+    let scrollTopbt = function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }  
+
+    onMounted(()=>{
+      window.addEventListener("scroll",function(){
+        if (window.scrollY > 0) {
+            console.log(1)
+            scrollTopButton.value.classList.remove("invisible");
+        } else {
+            scrollTopButton.value.classList.add("invisible");
+        }
+      })      
+    })
+
+    onBeforeUnmount(()=>{
+      window.removeEventListener("scroll",function(){
+        if (window.scrollY > 0) {
+            console.log(1)
+            scrollTopButton.value.classList.remove("invisible");
+        } else {
+            scrollTopButton.value.classList.add("invisible");
+        }
+      })
+    })
     return {
-      visible: false,
+      scrollTopButton,
+      scrollTopbt
     }
   },
-  mounted(){
-    
-  },
-
-  beforeMount() {
-    window.addEventListener("scroll", this.scrollListener);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.scrollListener);
-  },
-
-  methods:{
-    scrollTop() {
-      this.intervalId = setInterval(() => {
-        if (window.pageYOffset === 0) {
-          clearInterval(this.intervalId);
-        }
-        window.scroll(0, window.pageYOffset - 50);
-      }, 2);
-    },
-    scrollListener(e) {
-      this.visible = window.scrollY > 1000;
-    },
-    scrollToElement() {
-      let element = document.getElementById("toEls");
-      element.scrollIntoView({ behavior: "smooth", block: "end" });
-    },
-  }
 }
 </script>
 
-<style>
-.scrollIcon {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    width: 50px;
-    height: 80px;}
-    .line {
-      width: 10px;
-      height: 2px;
-      background: #fff;
-      position: absolute;
-      left: 50%;
-      top: 32px;
-      text-align: center;
-      margin-left: -8px;
-    }
-    .up  span {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        width: 18px;
-        height: 18px;
-        margin-left: -12px;
-        border-left: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-        -webkit-animation: sdb 3s infinite;
-        animation: sdb 3s infinite;
-        opacity: 0;
-        box-sizing: border-box;      
-      }
-
-      
-    .down span {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 18px;
-      height: 18px;
-      margin-left: -12px;
-      border-left: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      -webkit-animation: sdb 3s infinite;
-      animation: sdb 3s infinite;
-      opacity: 0;
-      box-sizing: border-box;       
-    }
-.bottom-right {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  z-index: 9999;
-  background: #000;
-  color: #fff;
-  padding: 20px;
-  border-radius: 55%;
-  align-items: center;
+<style scoped>
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
   font-weight: 500;
-  font-size: 1.2rem;
-  border: 1px solid #fff;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 </style>
