@@ -57,8 +57,23 @@ const router = createRouter({
     history: createWebHistory(),
     scrollBehavior(to, from, next){
         //let scrollPosition = rightWrap.scrollY || rightWrap.scrollTop;    
-        let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
-        return rightWrap.scrollTop = 0
+        
+        // let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
+        // return rightWrapper.scrollTop = 0  
+
+        // let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')
+        // return rightWrapper.scrollTop = 0  
+        
+        
+        // const worksDetailNew = 'worksDetailNew'
+        // const worksDetailOperation = 'worksDetailOperation'
+        // const worksDetailFront = 'worksDetailFront'
+
+        // if(to.name == worksDetailNew){
+        //     let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')
+        //     return rightWrapper.scrollTop = 'a'  
+        // } 
+       
     },
     routes: [
         { path: '/', name: 'home', component: Home, title: 'HOME', icon: 'fas fa-home fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
@@ -85,6 +100,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     store.commit('startSpinner');    
+
     setTimeout(() => {
         next();
     }, 500);
