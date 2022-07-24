@@ -100,7 +100,7 @@
           class="invisible fixed bottom-0 right-0 flex justify-end pb-8 pr-8 transition duration-150 ease-out"
       > 
           <div
-              class="dark:bg-zinc-900 border dark:border-zinc-700 dark:hover:border-primary border-zinc-400 hover:border-third bg-zinc-300 dark:text-gray-400 text-gray-600 dark:hover:text-gray-800 hover:text-white dark:hover:bg-primary hover:bg-third transition xl:w-20 xl:h-20 md:w-16 md:h-16 rounded-full flex items-center justify-center font-medium"
+              class="dark:bg-zinc-900 border dark:border-zinc-700 dark:hover:border-primary border-zinc-400 hover:border-third bg-zinc-200 dark:text-gray-400 text-gray-600 dark:hover:text-gray-800 hover:text-white dark:hover:bg-primary hover:bg-third transition xl:w-20 xl:h-20 md:w-16 md:h-16 rounded-full flex items-center justify-center font-medium"
           >
               <button type="button">
                   TOP
