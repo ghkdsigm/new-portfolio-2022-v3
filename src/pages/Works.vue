@@ -4,7 +4,7 @@
     <div class="relative mt-4 text-left">
       <!-- <router-link to="/works/work01">zz</router-link>
       <router-link to="/works/work02">xx</router-link> -->
-      <div class="my-20 text-center">
+      <div class="lg:my-20 my-12 text-center">
         <a href="aa" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">신규구축 및 운영</a> 
         <a href="bb" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">관리 및 유지보수</a> 
         <a href="cc" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">프론트엔드</a> 
