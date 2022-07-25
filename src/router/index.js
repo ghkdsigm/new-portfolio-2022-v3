@@ -84,7 +84,7 @@ const router = createRouter({
         if(router.currentRoute.value.name !== 'worksDetailNew'){
             let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
             rightWrap.scrollTop = 0
-        }        
+        }      
     },
 })
 
