@@ -167,7 +167,7 @@ export default {
         else {
             scrollTopButton.value.classList.add("invisible");
         }
-
+        //스크롤영역 좌표 - 홈 downscroll 버튼 
         if(scrollRight.value.scrollTop > 0 && router.currentRoute.value.name == 'home'){
             scrollAni.style.display = 'none';
         } else if(scrollRight.value.scrollTop == 0 && router.currentRoute.value.name == 'home'){
