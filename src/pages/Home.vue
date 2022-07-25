@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--스크롤 애니메이션 버튼-->
-    <div class="flex h-20 absolute bottom-0 downarrow" ref="downarrow">
+    <div class="flex h-20 absolute bottom-0">
       <div class="flex">
         <div class='icon-scroll'></div>
       </div>

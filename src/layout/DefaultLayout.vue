@@ -133,9 +133,6 @@ export default {
       return rightWrap.scrollTop = 0
     }  
 
-    //다운 에로우
-    let downarrow = ref()
-
     //다크모드
     //const isDark = ref(true)
     const store = useStore()
@@ -168,12 +165,6 @@ export default {
         } else {
             scrollTopButton.value.classList.add("invisible");
         }
-        //다운에로우
-        if (scrollRight.value.scrollTop > 0) {
-            downarrow.value.classList.remove("invisible");
-        } else {
-            downarrow.value.classList.add("invisible");
-        }
       }) 
     })
 
@@ -186,12 +177,6 @@ export default {
         } else {
             scrollTopButton.value.classList.add("invisible");
         }
-        //다운에로우
-        if (scrollRight.value.scrollTop > 0) {
-            downarrow.value.classList.remove("invisible");
-        } else {
-            downarrow.value.classList.add("invisible");
-        }
       })
     })
 
@@ -203,8 +188,7 @@ export default {
       changeDark, 
       scrollTopButton,
       scrollTopbt,
-      scrollRight,
-      downarrow
+      scrollRight
     }
   },
   methods:{
