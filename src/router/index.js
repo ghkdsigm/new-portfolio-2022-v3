@@ -76,10 +76,16 @@ const router = createRouter({
         },
         //{ path: '/scroll', name: 'scroll', component: Scroll, title: 'SCROLL', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
     ],   
-    scrollBehavior(to, from, savedPosition) {
-        // always scroll to top
-        return { top: 0 }
-    }, 
+    scrollBehavior(to, from, next){
+        //let scrollPosition = rightWrap.scrollY || rightWrap.scrollTop;    
+        //let rightWrap = document.querySelector('.rightWrap')        
+        
+        //페이지 이동시 스크롤탑이동
+        if(router.currentRoute.value.name !== 'worksDetailNew'){
+            let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
+            rightWrap.scrollTop = 0
+        }        
+    },
 })
 
 router.beforeEach((to, from, next) => {
