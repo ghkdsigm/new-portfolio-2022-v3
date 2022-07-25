@@ -17,13 +17,14 @@ module.exports = {
         light: '#a5d0f5',
         lighter: '#D4E5F4',
         bgWhite: '#e1e1e1',
+        tranparent: 'transparent',
 
         'primary-dark': '#0D2438',
 				'secondary-dark': '#000',
         'third-dark': '#ffb300',
         'fourth-dark': '#0e0e0e4a',
 				'ternary-dark': '#1E3851',
-        'bgDark': '#35353C'
+        'bgDark': '#35353C',
       },
       container: {
         // screen: {
@@ -40,6 +41,9 @@ module.exports = {
           '35vh': '35vh',
         },
         fontSize:{
+          '20vh' : '20vh',
+          '19vh' : '19vh',
+          '18vh' : '18vh',
           '17vh' : '17vh',
           '16vh' : '16vh',
           '15vh' : '15vh',
