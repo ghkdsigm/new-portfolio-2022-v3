@@ -15,7 +15,7 @@
 
 # server setting
 [[redirects]]
-  from = "/:notFound(.*)"
+  from = "/*"
   to = "/index.html"
   status = 200
   force = false

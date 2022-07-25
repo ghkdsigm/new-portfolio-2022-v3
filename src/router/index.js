@@ -11,7 +11,7 @@ import Study from '../pages/Study.vue'
 import WorksDetailNew from '../pages/works/WorksDetailNew.vue'
 import WorksDetailFront from '../pages/works/worksDetailFront.vue'
 import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
-import NotFound from '../pages/NotFound.vue'
+// import NotFound from '../pages/NotFound.vue'
 
 const newLocal = true
 //const routes = [
@@ -87,13 +87,13 @@ const router = createRouter({
         //{ path: '/works/work02', name: 'work02', component: Work02, title: 'WORK02', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         { path: '/study', name: 'study', component: Study, title: 'STUDY', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/contact', name: 'contact', component: Contact, title: 'CONTACT', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
-        {
-            path: '/:notFound(.*)',
-            name: 'notfound',
-            component: NotFound,
-            title: 'NOTFOUND',
-            meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
-        },
+        // {
+        //     path: '/:notFound(.*)',
+        //     name: 'notfound',
+        //     component: NotFound,
+        //     title: 'NOTFOUND',
+        //     meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
+        // },
         //{ path: '/scroll', name: 'scroll', component: Scroll, title: 'SCROLL', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
     ],    
 })
