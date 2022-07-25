@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--스크롤 애니메이션 버튼-->
-    <div class="flex h-20 absolute bottom-0 scrollAni lg:visible hidden">
+    <div class="flex h-20 absolute bottom-0 scrollAni lg:visible invisible">
       <div class="flex">
         <!-- <div class='icon-scroll'></div> -->
         <svg class="arrows">
