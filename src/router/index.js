@@ -9,7 +9,7 @@ import Study from '../pages/Study.vue'
 //import Work01 from '../pages/works/Work01.vue'
 //import Work02 from '../pages/works/Work02.vue'
 import WorksDetailNew from '../pages/works/WorksDetailNew.vue'
-import WorksDetailFront from '../pages/works/worksDetailFront.vue'
+import WorksDetailFront from '../pages/works/WorksDetailFront.vue'
 import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
 // import NotFound from '../pages/NotFound.vue'
 
@@ -55,26 +55,6 @@ import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
 
 const router = createRouter({
     history: createWebHistory(),
-    scrollBehavior(to, from, next){
-        //let scrollPosition = rightWrap.scrollY || rightWrap.scrollTop;    
-        
-        // let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
-        // return rightWrapper.scrollTop = 0  
-
-        // let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')
-        // return rightWrapper.scrollTop = 0  
-        
-        
-        // const worksDetailNew = 'worksDetailNew'
-        // const worksDetailOperation = 'worksDetailOperation'
-        // const worksDetailFront = 'worksDetailFront'
-
-        // if(to.name == worksDetailNew){
-        //     let rightWrapper = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')
-        //     return rightWrapper.scrollTop = 'a'  
-        // } 
-       
-    },
     routes: [
         { path: '/', name: 'home', component: Home, title: 'HOME', icon: 'fas fa-home fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/info', name: 'info', component: Info, title: 'INFO', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
@@ -95,7 +75,11 @@ const router = createRouter({
         //     meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
         // },
         //{ path: '/scroll', name: 'scroll', component: Scroll, title: 'SCROLL', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
-    ],    
+    ],   
+    scrollBehavior(to, from, savedPosition) {
+        // always scroll to top
+        return { top: 0 }
+    }, 
 })
 
 router.beforeEach((to, from, next) => {
