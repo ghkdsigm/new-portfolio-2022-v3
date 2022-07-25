@@ -1,5 +1,11 @@
 <template>
   <div>
+    <!--스크롤 애니메이션 버튼-->
+    <div class="flex h-20 absolute bottom-0 downarrow" ref="downarrow">
+      <div class="flex">
+        <div class='icon-scroll'></div>
+      </div>
+    </div>
     <div class="">
       <HeadLineVue></HeadLineVue>
     </div>
@@ -36,5 +42,53 @@ export default {
 </script>
 
 <style>
-
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+}
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  background: transparent;
+  margin-left: -4px;
+  top: 8px;
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #0D2438;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+.dark .icon-scroll:before {
+  background: transparent;
+  border-top: 25px solid #ffb300;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
 </style>

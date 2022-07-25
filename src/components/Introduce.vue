@@ -13,7 +13,7 @@
       <!--기본정보(정보)-->
       <div class="col-span-3 flex items-center dark:text-secondary text-secondary-dark lg:mt-0 mt-12">
         <div>
-          <h3 class="xl:text-5xl lg:text-4xl text-3xl dark:text-secondary font-bold">황 승 현</h3>
+          <h3 class="lg:text-5xl text-3xl dark:text-secondary font-bold">황 승 현</h3>
           <p class="lg:text-2xl text-xl py-2 text-third dark:text-third-dark">HWANG SEUNG HYUN</p>
           <ul class="font-light lg:text-lg text-base">
             <li class="py-1">1990.01.13. <br/>Yangcheon-gu, Seoul, Republic of Korea</li>
@@ -38,19 +38,19 @@
       <div class="career mb-6">
         <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Educations</h5>
         <ul>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2008.03.</span>
             <span class="pl-4">서울양정고등학교 졸업</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2016.01.</span>
             <span class="pl-4">경기대학교 경영학과 졸업</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2016.12.</span>
             <span class="pl-4">NCS 기반 반응형 디지털웹(웹표준&웹접근성) 과정 수료</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2022.01.</span>
             <span class="pl-4">패스트캠퍼스 프론트엔드 초격차 패키지 온라인 교육 과정 수료</span>
           </li>
@@ -59,19 +59,19 @@
       <div class="career mb-6">
         <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">Licenses</h5>
         <ul>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2008.08.</span>
             <span class="pl-4">자동차1종보통면허 취득</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2012.03.</span>
             <span class="pl-4">텔레마케팅관리사 취득</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2016.01.</span>
             <span class="pl-4">한국사능력검정 1급 취득</span>
           </li>
-          <li class="py-1 lg:text-lg text-base flex">
+          <li class="py-1 lg:text-lg text-base">
             <span class="font-medium">2019.08.</span>
             <span class="pl-4">정보처리기사 취득</span>
           </li>

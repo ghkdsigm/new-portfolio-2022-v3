@@ -12,6 +12,7 @@ module.exports = {
         primary: '#ffb300',
         secondary: '#fff',
         third: '#11216b',
+        fourth: '#cfcfcf4a',
         dark: '#1a91da',
         light: '#a5d0f5',
         lighter: '#D4E5F4',
@@ -20,6 +21,7 @@ module.exports = {
         'primary-dark': '#0D2438',
 				'secondary-dark': '#000',
         'third-dark': '#ffb300',
+        'fourth-dark': '#0e0e0e4a',
 				'ternary-dark': '#1E3851',
         'bgDark': '#35353C'
       },

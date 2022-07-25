@@ -40,7 +40,7 @@
           </ul>   -->
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.infodatas" :key="index" @click="clickList01(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
+              <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
@@ -65,7 +65,7 @@
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.opeartiondata" :key="index" @click="clickList02(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
+              <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
@@ -99,7 +99,7 @@
           </ul> -->
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList03(index)">
-              <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-bgDark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
+              <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
                 <div class="">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
