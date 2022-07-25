@@ -160,22 +160,32 @@ export default {
       //스크롤영역 좌표
       let rightWrap = document.querySelector('.rightWrap')  
       rightWrap.addEventListener("scroll",function(){
+        let scrollAni = document.querySelector('.scrollAni')
         if (scrollRight.value.scrollTop > 2000) {
-            scrollTopButton.value.classList.remove("invisible");
-        } else {
+            scrollTopButton.value.classList.remove("invisible");            
+        } else if(scrollRight.value.scrollTop > 0){
+            scrollAni.style.display = 'none';
+        }         
+        else {
             scrollTopButton.value.classList.add("invisible");
+            scrollAni.style.display = 'block';
         }
       }) 
     })
 
     onBeforeUnmount(()=>{
-      //스크롤영역 좌표
+      //스크롤영역 좌표      
       let rightWrap = document.querySelector('.rightWrap')  
       rightWrap.removeEventListener("scroll",function(){
+        let scrollAni = document.querySelector('.scrollAni')
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");
-        } else {
+        } else if(scrollRight.value.scrollTop > 0){
+            scrollAni.style.display = 'none';
+        }         
+        else {
             scrollTopButton.value.classList.add("invisible");
+            scrollAni.style.display = 'block';
         }
       })
     })
