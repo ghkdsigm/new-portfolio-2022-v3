@@ -163,14 +163,16 @@ export default {
         let scrollAni = document.querySelector('.scrollAni')
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");            
-        } else if(scrollRight.value.scrollTop > 0 && router.currentRoute.value.name == 'home'){
-            scrollAni.style.display = 'none';
-        }  else if(scrollRight.value.scrollTop == 0 && router.currentRoute.value.name == 'home'){
-            scrollAni.style.display = 'block';
-        }         
+        }      
         else {
             scrollTopButton.value.classList.add("invisible");
         }
+
+        if(scrollRight.value.scrollTop > 0 && router.currentRoute.value.name == 'home'){
+            scrollAni.style.display = 'none';
+        } else if(scrollRight.value.scrollTop == 0 && router.currentRoute.value.name == 'home'){
+            scrollAni.style.display = 'block';
+        }    
       }) 
     })
 
