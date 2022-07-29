@@ -270,7 +270,6 @@ export default {
     // }
     scrollToAnchorPoint(refName) {
         const el = this.$refs[refName]
-        console.log(el)
         el.scrollIntoView({ behavior: 'smooth'})
     }
   }
