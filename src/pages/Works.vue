@@ -5,12 +5,13 @@
       <!-- <router-link to="/works/work01">zz</router-link>
       <router-link to="/works/work02">xx</router-link> -->
       <div class="lg:my-20 my-12 text-center">
-        <a href="aa" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">신규구축 및 운영</a> 
-        <a href="bb" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">관리 및 유지보수</a> 
-        <a href="cc" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">프론트엔드</a> 
-        <a href="dd" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">디자인</a>
+        <a @click="scrollToAnchorPoint('workCategory01')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">신규구축 및 운영</a> 
+        <a @click="scrollToAnchorPoint('workCategory02')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">관리 및 유지보수</a> 
+        <a @click="scrollToAnchorPoint('workCategory03')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">프론트엔드</a> 
+        <a @click="scrollToAnchorPoint('workCategory04')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">디자인</a>
+        <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">기획 및 문서</a>
       </div>
-      <div id="#aa" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory01" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">신규구축 및 운영</h2>
         <div class="my-4">
           <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
@@ -60,7 +61,7 @@
           </ul>
         </div>
       </div>
-      <div id="#bb" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory02" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">관리 및 유지보수</h2>
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
@@ -85,7 +86,7 @@
           </ul>
         </div>
       </div>
-      <div id="#cc" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory03" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">프론트엔드</h2>
         <div class="my-4">
           <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
@@ -119,7 +120,7 @@
           </ul>
         </div>
       </div>
-      <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory04" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
         <div class="my-4">
           <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
@@ -133,7 +134,7 @@
           </ul>
         </div>
       </div>
-      <div id="#dd" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory05" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">기획 및 제안</h2>
         <div class="my-4">
           
@@ -259,6 +260,19 @@ export default {
         params:{contentId : index}
       })
     },
+    // clickAchor(){
+    //   this.$router.push(
+    //   { 
+    //       path: "/mypage", 
+    //       query: { section: "profile" }, 
+    //       hash: "#ref_code"}
+    //   )
+    // }
+    scrollToAnchorPoint(refName) {
+        const el = this.$refs[refName]
+        console.log(el)
+        el.scrollIntoView({ behavior: 'smooth'})
+    }
   }
 }
 </script>
