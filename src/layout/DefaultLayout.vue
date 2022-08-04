@@ -83,7 +83,8 @@
           <!--로그인 + 회원가입-->
           <div>
             <router-link to="/login">
-                <p class="dark:text-secondary text-secondary-dark text-base">Sign in</p>
+              <p v-if="!stateusers" class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third" @click="onLogout">Logout</p>
+              <p v-else class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third">Sign in</p>
             </router-link>
           </div>
           <!-- <router-link :to="route.path" :class="`transition-all ease-in-out hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 px-4 py-2 rounded-full  cursor-pointer dark:text-gray-300 ${router.currentRoute.value.name == route.name ? 'text-primary dark:text-primary'  : ''}`" v-for="route in routes" :key="route">
@@ -122,16 +123,19 @@
 </template>
 
 <script>
-import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount } from 'vue'
+import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount, watchEffect  } from 'vue'
 import { useStore, mapGetters } from 'vuex'
 import router from '../router'
+import { auth } from '../firebase'
 import Loading from '../components/common/Loading.vue'
+import swal from 'sweetalert'
 
 export default {
   components:{
     Loading
   },
   setup(){
+    let stateusers = ref(false)
     const routes = ref([])
     //스크롤영역
     let scrollRight = ref()
@@ -141,7 +145,7 @@ export default {
     let scrollTopbt = function(){
       let rightWrap = document.querySelector('.rightWrap')        
       return rightWrap.scrollTop = 0
-    }  
+    }    
 
     //다크모드
     //const isDark = ref(true)
@@ -149,6 +153,28 @@ export default {
     let isDark = localStorage.getItem('darkMode') == 'true'
     let isShow = localStorage.getItem('darkModeShow') == 'true'
     let changeDark = localStorage.getItem('changeDark') == 'true'
+
+    //const currentUser = computed(() => {store.getters.users})
+    
+    watchEffect(() => {
+      // pretend you have a getData getter in store
+      const datass = store.getters.users;
+      if(datass === null) {
+        stateusers.value = true
+      } else {
+        stateusers.value = false
+      }
+    })
+
+    const onLogout = async () => {
+      if(confirm('로그아웃 하시겠습니다?')){
+        await auth.signOut()
+        stateusers.value = true
+        store.commit('SET_USER', null)
+        swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
+        await router.replace('/login')
+      }      
+    }    
     
     onBeforeMount(()=>{
       //routes.value = router.options.routes
@@ -165,7 +191,7 @@ export default {
       if(localStorage.getItem('changeDark') == 'true'){
         document.documentElement.classList.remove('dark'); 
         document.documentElement.style.background = 'white';
-      }      
+      }        
 
       //스크롤영역 좌표
       let rightWrap = document.querySelector('.rightWrap')  
@@ -207,7 +233,9 @@ export default {
       changeDark, 
       scrollTopButton,
       scrollTopbt,
-      scrollRight
+      scrollRight,
+      stateusers,
+      onLogout
     }
   },
   methods:{
@@ -233,7 +261,7 @@ export default {
     }
   },
   computed: {
-      ...mapGetters(['dark'])
+      ...mapGetters(['dark']),
     },
   
 }

@@ -10,12 +10,12 @@ const store = createStore({
       infodatas: [],
       opeartiondata: [],
       frontworks: [],
-      user: null,
+      users: null,
     }
   },
   getters:{
     dark: (state) => state.dark,
-    user: (state) => state.user
+    users: (state) => state.users
   },
   mutations: {
     SET_DARK: (state, bool) => {
@@ -36,13 +36,13 @@ const store = createStore({
     SET_MYFRONT(state, payload) {
       state.frontworks = payload;
     },
-    SET_USER: (state, user) => {
-      state.user = user
+    SET_USER(state, payload) {
+      state.users = payload;
     },
   },
   actions:{
     toggleDarkMode({ commit }, payload){
-        commit('SET_DARK', payload)
+      commit('SET_DARK', payload)
     },
     FETCH_INFO(context) {
       MyInfoList()
@@ -70,7 +70,7 @@ const store = createStore({
         .catch(err => {
           console.log(err);
         });
-    },
+    }
   },
   plugins: [createPersistedState()],
 })
