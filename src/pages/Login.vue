@@ -61,7 +61,7 @@ export default {
                
                // 유저정보 가져오기
                const doc = await USER_COLEECTION.doc(user.uid).get()
-               console.log(doc.data())
+               //console.log(doc.data())
                // 유저정보 vuex보내기
                store.commit('SET_USER', doc.data())
                swal("인증 완료!", "인증이 완료되었습니다, 환영합니다!", "success");                
