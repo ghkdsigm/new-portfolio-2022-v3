@@ -15,6 +15,8 @@ module.exports = {
         third: '#11216b',
         thirdHover: '#182f96',
         fourth: '#cfcfcf4a',
+        fifth: '#42b883',
+        fifthHover: "#42d392",
         dark: '#1a91da',
         light: '#a5d0f5',
         lighter: '#D4E5F4',

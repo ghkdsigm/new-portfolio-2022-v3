@@ -35,7 +35,7 @@ a, button:hover {
     height: 55px !important;
     border: 1px solid #000 !important;
     border-radius: 50%;
-    z-index: 9999;
+    z-index: 99999 !important;
     left: -12px;
     top: -12px;
     transition: transform 0.00s, width 0.3s, height 0.3s;
@@ -55,11 +55,12 @@ a, button:hover {
     position: fixed;
     background: #000 !important;
     border-radius: 50%;
+    z-index: 99999;
     pointer-events: none;
     transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
   }
   .no-touchevents.dark body #magicPointer {
-    background: #fff !important;
+    background: rgb(255, 179, 0) !important;
   }
   body #magicPointer.is-hover {
     background: red;
