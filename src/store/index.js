@@ -14,7 +14,8 @@ const store = createStore({
     }
   },
   getters:{
-    dark: (state) => state.dark
+    dark: (state) => state.dark,
+    user: (state) => state.user
   },
   mutations: {
     SET_DARK: (state, bool) => {

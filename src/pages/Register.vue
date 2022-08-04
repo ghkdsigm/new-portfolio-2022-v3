@@ -27,6 +27,7 @@ import BackHome from '../components/common/BackHome.vue'
 import { ref } from 'vue'
 import { auth, USER_COLEECTION } from '../firebase'
 import { useRouter } from 'vue-router' 
+import swal from 'sweetalert'
 
 export default {
   components:{
@@ -42,11 +43,11 @@ export default {
         const onRegister = async () => {
 
             if(!username.value){
-                return alert('아이디를 입력해주세요')
+                return swal("Error",'아이디를 입력해주세요', "warning")
             } else if (!email.value){
-                return  alert('이메일을 입력해주세요')
+                return swal("Error",'이메일을 입력해주세요', "warning")
             } else if (!password.value){
-                return  alert('패스워드를 입력해주세요')
+                return swal("Error",'패스워드를 입력해주세요', "warning")
             }
 
             try{
@@ -65,21 +66,22 @@ export default {
                     //followings: [],
                     created_at: Date.now(),
                 })
-                alert('가입이 완료되었습니다, 로그인 해주세요!')
+                //alert('가입이 완료되었습니다, 로그인 해주세요!')
+                swal("가입 완료!", "가입이 완료되었습니다, 로그인 해주세요!", "success");
                 router.push("/login")
             } catch(e){
                 switch (e.code) {
                 case 'auth/invalid-email':
-                    alert('이메일을 바르게 입력해주세요')
+                    swal("Fail",'이메일을 바르게 입력해주세요',"error")
                     break
                 case 'auth/weak-password':
-                    alert('비밀번호가 너무 쉬워요')
+                    swal("Fail",'비밀번호가 너무 쉬워요',"error")
                     break
                 case 'auth/email-already-in-use':
-                    alert('이미 가입되어 있는 이메일 입니다.')
+                    swal("Fail",'이미 가입되어 있는 이메일 입니다.',"error")
                     break
                 default:
-                    alert('회원가입 실패')
+                    swal("Fail",'회원가입 실패',"error")
                     break
                 }
             } finally {

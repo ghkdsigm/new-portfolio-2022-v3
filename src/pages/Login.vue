@@ -27,6 +27,7 @@ import { ref, onMounted } from 'vue'
 import { auth, USER_COLEECTION } from '../firebase'
 import { useRouter } from 'vue-router'
 import store from '../store'
+import swal from 'sweetalert'
 
 export default {
   components:{
@@ -40,15 +41,17 @@ export default {
        const router = useRouter()
 
        onMounted(()=>{
-           //console.log(store.state.user)
+          //  console.log(store.state.user)
        })
 
        const onLogin = async () => {
 
             if (!email.value){
-                return  alert('이메일을 입력해주세요')
+                //return  alert('이메일을 입력해주세요')
+                return swal("Error", "이메일을 입력해주세요", "warning");
             } else if (!password.value){
-                return  alert('패스워드를 입력해주세요')
+                //return  alert('패스워드를 입력해주세요')
+                return swal("Error", "패스워드를 입력해주세요", "warning");
             }
 
            try{
@@ -61,20 +64,25 @@ export default {
                //console.log(doc.data())
                // 유저정보 vuex보내기
                store.commit('SET_USER', doc.data())
+               swal("인증 완료!", "인증이 완료되었습니다, 환영합니다!", "success");                
                router.replace("/") //router.push로 갔을경우 뒤로갔을때 다시 로그인 화면이 뜨기때문에 replace로 처음값을지정
            } catch(e) {
                 switch (e.code) { //fire auth 에러코드 인터넷 검색하면 많이 나옴
                 case 'auth/invalid-email':
-                    alert('잘못된 이메일 형식입니다.')
+                    //alert('잘못된 이메일 형식입니다.')
+                    swal("Fail","잘못된 이메일 형식입니다.","error");
                     break
                 case 'auth/wrong-password':
-                    alert('비밀번호가 틀립니다. 다시 시도해주세요.')
+                    //alert('비밀번호가 틀립니다. 다시 시도해주세요.')
+                    swal("Fail","비밀번호가 틀립니다. 다시 시도해주세요.","error");
                     break
                 case 'auth/user-not-found':
-                    alert('등록되지 않은 이메일입니다.')
+                    //alert('등록되지 않은 이메일입니다.')
+                    swal("Fail","등록되지 않은 이메일입니다.","error");
                     break
                 default:
-                    alert(e.message)
+                    //alert(e.message)
+                    swal(e.message);
                     break
                 }
            } finally {
