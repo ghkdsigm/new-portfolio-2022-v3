@@ -3,13 +3,17 @@
     <div class="" id="noise"></div>
     <!--사이드섹션-->
     <div class="lg:w-1/6 w-full lg:flex block py-5 justify-center lg:h-screen items-center border-gray-200 dark:border-gray-800 text-center">
-      <div class="flex flex-col text-center">
+      <div class="flex flex-col text-center justify-between h-full">
+        <!--사이드메뉴1-->
+        <div></div>
+        <!--사이드메뉴2-->
         <div>
           <!--홈 로고 링크-->
           <router-link to="/">
               <i class="fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark mb-3"><span class="lg:text-3xl text-2xl font-light block lg:inline-block align-text-top" style="font-family: La Belle Aurore;">Motor H</span></i>
               <p class="dark:text-secondary text-secondary-dark">Fronend Developer</p>
           </router-link>
+          <!--git + 다크모드-->
           <div class="flex justify-center">
             <!--git버튼-->
             <div class="mx-2">
@@ -72,10 +76,16 @@
                   
                 </button>
             </div>            
-          </div>
+          </div>          
         </div>
-        <!--사이드메뉴-->
-        <div class="flex flex-col items-start space-y-3 lg:mt-4 lg:mb-4">
+        <!--사이드메뉴3-->
+        <div class="flex lg:mb-4 mb-2 justify-center">
+          <!--로그인 + 회원가입-->
+          <div>
+            <router-link to="/login">
+                <p class="dark:text-secondary text-secondary-dark text-base">Sign in</p>
+            </router-link>
+          </div>
           <!-- <router-link :to="route.path" :class="`transition-all ease-in-out hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 px-4 py-2 rounded-full  cursor-pointer dark:text-gray-300 ${router.currentRoute.value.name == route.name ? 'text-primary dark:text-primary'  : ''}`" v-for="route in routes" :key="route">
             <div v-if="route.meta.isMenu">
                 <i :class="route.icon"></i> 

@@ -10,6 +10,7 @@ const store = createStore({
       infodatas: [],
       opeartiondata: [],
       frontworks: [],
+      user: null,
     }
   },
   getters:{
@@ -33,6 +34,9 @@ const store = createStore({
     },
     SET_MYFRONT(state, payload) {
       state.frontworks = payload;
+    },
+    SET_USER: (state, user) => {
+      state.user = user
     },
   },
   actions:{
