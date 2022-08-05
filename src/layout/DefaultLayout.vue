@@ -83,8 +83,8 @@
           <!--로그인 + 회원가입-->
           <div>
             <router-link to="/login">
-              <p v-if="!stateusers" class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third" @click="onLogout">Logout</p>
-              <p v-else class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third">Sign in</p>
+              <p v-if="!stateusers" class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third lg:mt-0 mt-4" @click="onLogout">Logout</p>
+              <p v-else class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third lg:mt-0 mt-4">Sign in</p>
             </router-link>
           </div>
           <!-- <router-link :to="route.path" :class="`transition-all ease-in-out hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 px-4 py-2 rounded-full  cursor-pointer dark:text-gray-300 ${router.currentRoute.value.name == route.name ? 'text-primary dark:text-primary'  : ''}`" v-for="route in routes" :key="route">

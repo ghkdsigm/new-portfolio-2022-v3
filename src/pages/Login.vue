@@ -1,12 +1,12 @@
 <template>
   <div class="dark:text-primary text-black">
-    <div class="flex h-screen justify-center items-center">
+    <div class="flex lg:h-screen justify-center lg:items-center items-start lg:mt-0 mt-10">
       <div class="flex flex-col">
         <span class="text-2xl font-bold dark:text-white text-center pb-2">
-          <i class="fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark mb-3">
+          <i class="lg:block hidden fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark">
             <span class="lg:text-4xl text-3xl font-light block lg:inline-block align-text-top" style="font-family: La Belle Aurore;">Motor H</span>
           </i>
-          <br/>  <span class="text-medium">LOGIN</span>
+          <br class="lg:contents hidden" />  <span class="lg:text-3xl text-2xl">LOGIN</span>
         </span>
         <input v-model="email" type="text" class="my-2 w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white rounded-full" placeholder="이메일" />
         <input v-model="password" ref="myinput" @keyup.enter="onLogin" type="password" class="my-2 w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white rounded-full" placeholder="비밀번호" />

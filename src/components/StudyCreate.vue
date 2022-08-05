@@ -2,7 +2,7 @@
     <div>
         <BackStudy class="relative"></BackStudy>
         <div class="m-auto z-10">        
-            <div class="flex justify-between items-center mt-14 mb-10">
+            <div class="flex justify-between items-center mt-14 mb-4">
                 <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">STUDY CREATE</h2>   
             </div>
 
