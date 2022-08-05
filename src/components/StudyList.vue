@@ -48,6 +48,7 @@ import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount, watchEffect  } 
 import { mapGetters } from 'vuex'
 import swal from 'sweetalert'
 import store from '../store'
+import router from '../router'
 
 export default {
     setup(){
@@ -78,8 +79,9 @@ export default {
             }
         })
 
-        const needLogin = () =>{
+        const needLogin = async () =>{
             swal('Error!','로그인이 필요합니다.','warning')
+            await router.replace('/login')
         }
 
         //computed 안의 함수

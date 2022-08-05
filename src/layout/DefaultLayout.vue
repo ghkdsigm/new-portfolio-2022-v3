@@ -176,7 +176,7 @@ export default {
         let stateuser = stateusers.value = true
         store.commit('toggleStateUser', stateuser)
         swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
-        //await router.replace('/login')
+        await router.replace('/login')
       }      
     }    
     
