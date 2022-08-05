@@ -11,15 +11,20 @@ const store = createStore({
       opeartiondata: [],
       frontworks: [],
       users: null,
+      stateusers: false
     }
   },
   getters:{
     dark: (state) => state.dark,
-    users: (state) => state.users
+    users: (state) => state.users,
+    stateuser: (state) => state.stateusers
   },
   mutations: {
     SET_DARK: (state, bool) => {
       state.dark = bool;
+    },
+    SET_STATEUSER:(state, bool) => {
+      state.stateusers = bool;
     },
     startSpinner(state){
       state.LoadingStatus = true;
@@ -43,6 +48,9 @@ const store = createStore({
   actions:{
     toggleDarkMode({ commit }, payload){
       commit('SET_DARK', payload)
+    },
+    toggleStateUser({ commit }, payload){
+      commit('SET_STATEUSER', payload)
     },
     FETCH_INFO(context) {
       MyInfoList()

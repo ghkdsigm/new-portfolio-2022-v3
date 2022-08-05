@@ -160,9 +160,11 @@ export default {
       // pretend you have a getData getter in store
       const datass = store.getters.users;
       if(datass === null) {
-        stateusers.value = true
+        let stateuser = stateusers.value = true
+        store.dispatch('toggleStateUser', stateuser)
       } else {
-        stateusers.value = false
+        let stateuser = stateusers.value = false
+        store.dispatch('toggleStateUser', stateuser)
       }
     })
 
@@ -171,8 +173,10 @@ export default {
         await auth.signOut()
         stateusers.value = true
         store.commit('SET_USER', null)
+        let stateuser = stateusers.value = true
+        store.commit('toggleStateUser', stateuser)
         swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
-        await router.replace('/login')
+        //await router.replace('/login')
       }      
     }    
     

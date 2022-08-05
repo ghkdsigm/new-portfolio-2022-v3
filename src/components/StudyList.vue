@@ -4,7 +4,8 @@
         <div class="flex justify-between items-center mt-14 mb-10">
             <p class="dark:text-white text-sm">TOTAL : <span class="dark:text-fifth dark:hover:text-fifthHover font-bold text-base">{{items.length}}</span></p>
             <input type="text" placeholder="TITLE을 입력하세요" v-model="search" class="bg-transparent border dark:border-gray-400 border-gray-500 hover:border-third dark:hover:border-primary py-2 px-6 rounded-full dark:text-white">
-            <button class="px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">Create</button>
+            <button v-if="stateusers" class="px-6 py-2 border dark:text-gray-500 dark:border-gray-500 text-gray-400 border-gray-400 rounded-lg" @click="needLogin">Create</button>
+            <button v-else class="px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">Create</button>
         </div>
         <table class="w-full text-white table-auto border-collapse table">
             <colgroup>
@@ -41,9 +42,13 @@
 
 <script>
 import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount, watchEffect  } from 'vue'
+import { mapGetters } from 'vuex'
+import swal from 'sweetalert'
+import store from '../store'
 
 export default {
     setup(){
+        let stateusers = ref(false)
         const search = ref('')
         const items = ref([
             { title: 'Stackoverflow', register: 'Admin', date: 'asdfasdf', link: 'asdfasdf'  },
@@ -58,6 +63,22 @@ export default {
             
         ]);
 
+        watchEffect( async() => {
+            // pretend you have a getData getter in store
+            //const store = useStore()
+            const datass = await store.getters.stateuser;
+            console.log(datass)
+            if(datass) {
+                stateusers.value = true
+            } else {
+                stateusers.value = false
+            }
+        })
+
+        const needLogin = () =>{
+            swal('Error!','로그인이 필요합니다.','warning')
+        }
+
         //computed 안의 함수
         const filteritem = computed(() => {           
             return items.value.filter(item => {
@@ -68,9 +89,14 @@ export default {
         return {
             items,
             filteritem,
-            search
+            search,
+            needLogin,
+            stateusers
         }
-    }
+    },
+    computed: {
+    ...mapGetters(['stateuser'])
+  },
 }
 </script>
 
