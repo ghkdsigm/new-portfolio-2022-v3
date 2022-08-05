@@ -8,7 +8,7 @@
           </i>
           <br/>  <span class="text-medium">SIGNUP</span>
         </span>
-        <input v-model="username" type="text" class="my-2 rounded-full w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white" placeholder="아이디" />
+        <input v-model="username" type="text" class="my-2 rounded-full w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white" placeholder="닉네임" />
         <input v-model="email" type="text" class="my-2 rounded-full w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white" placeholder="이메일" />
         <input v-model="password" @keyup.enter="onRegister" type="password" class="my-2 rounded-full w-96 px-4 py-3 border border-gray-300 dark:border-gray-400 focus:ring-2 focus:border-primary focus:outline-none dark:bg-transparent dark:text-white" placeholder="비밀번호" />
         <span class="dark:text-gray-400 text-gray-500 text-sm text-right w-96">※ 패스워드는 6글자 이상 입력해주세요!</span>
@@ -43,7 +43,7 @@ export default {
         const onRegister = async () => {
 
             if(!username.value){
-                return swal("Error",'아이디를 입력해주세요', "warning")
+                return swal("Error",'닉네임을 입력해주세요', "warning")
             } else if (!email.value){
                 return swal("Error",'이메일을 입력해주세요', "warning")
             } else if (!password.value){

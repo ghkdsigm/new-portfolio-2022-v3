@@ -14,6 +14,7 @@ import WorksDetailOperation from '../pages/works/WorksDetailOperation.vue'
 import NotFound from '../pages/NotFound.vue'
 import Login from '../pages/Login.vue'
 import Register from '../pages/Register.vue'
+import StudyCreate from '../components/StudyCreate.vue'
 
 //const newLocal = true
 //const routes = [
@@ -71,6 +72,8 @@ const router = createRouter({
         { path: '/contact', name: 'contact', component: Contact, title: 'CONTACT', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: true, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/login', name: 'login', component: Login, title: 'LOGIN', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/register', name: 'register', component: Register, title: 'REGISTER', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
+        { path: '/studycreate', name: 'studycreate', component: StudyCreate, title: 'STUDYCREATE', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
+        
         {
             path: '/:notFound(.*)',
             name: 'notfound',
