@@ -118,6 +118,8 @@
               </button>
           </div>
       </div>
+      <!-- particle -->
+      <Particle class="canvasBG"></Particle>
     </div>
   </div>
 </template>
@@ -129,13 +131,16 @@ import router from '../router'
 import { auth } from '../firebase'
 import Loading from '../components/common/Loading.vue'
 import swal from 'sweetalert'
+import Particle from '../components/common/Particle.vue'
 
 export default {
   components:{
-    Loading
+    Loading,
+    Particle
   },
   setup(){
     let stateusers = ref(false)
+    //let canvasBg = ref(false)
     const routes = ref([])
     //스크롤영역
     let scrollRight = ref()
@@ -154,7 +159,9 @@ export default {
     let isShow = localStorage.getItem('darkModeShow') == 'true'
     let changeDark = localStorage.getItem('changeDark') == 'true'
 
-    //const currentUser = computed(() => {store.getters.users})
+    const currentHome = computed(() => {
+      return router.currentRoute._value.name
+    })
     
     watchEffect(() => {
       // pretend you have a getData getter in store
@@ -166,6 +173,16 @@ export default {
         let stateuser = stateusers.value = false
         store.dispatch('toggleStateUser', stateuser)
       }
+           
+      //particle 함수
+      // let currentHome = router.currentRoute._value.name
+      // if(currentHome == 'home'){
+      //   console.log(1)
+      //   canvasBg.value = false
+      // } else {          
+      //   console.log(2)
+      //   canvasBg.value = true
+      // }   
     })
 
     const onLogout = async () => {
@@ -213,7 +230,7 @@ export default {
         } else if(scrollRight.value.scrollTop == 0 && router.currentRoute.value.name == 'home'){
             scrollAni.style.display = 'block';
         }    
-      }) 
+      })     
     })
 
     onBeforeUnmount(()=>{
@@ -239,7 +256,9 @@ export default {
       scrollTopbt,
       scrollRight,
       stateusers,
-      onLogout
+      onLogout,  
+      currentHome,
+      //canvasBg
     }
   },
   methods:{

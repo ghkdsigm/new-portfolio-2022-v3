@@ -9,7 +9,7 @@
         </transition>
       </router-view>
       <Loading  :loading="$store.state.LoadingStatus"></Loading>
-      <!-- invisible -->
+      <!-- Top 버튼 -->
       <div
           ref="scrollTopButton"
           @click="scrollTopbt"

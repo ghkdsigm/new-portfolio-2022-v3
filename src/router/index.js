@@ -92,6 +92,13 @@ const router = createRouter({
             let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
             rightWrap.scrollTop = 0
         }      
+
+        let canvasBg = document.querySelector('.canvasBG')
+        if(to.path !== '/'){            
+            canvasBg.style.display = 'none'
+        } else if(to.path == '/') {
+            canvasBg.style.display = 'block'
+        }
     },
 })
 
