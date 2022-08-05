@@ -290,7 +290,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /*컴포넌트 이동 트랜지션*/
 .route-enter-from {
   opacity: 0;

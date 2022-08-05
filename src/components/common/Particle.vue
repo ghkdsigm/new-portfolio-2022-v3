@@ -1,5 +1,5 @@
 <template>
-  <div class="canvasWrap">
+  <div class="canvasWrap lg:visible invisible">
     <canvas id="canvas"></canvas>
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
     <filter id="goo">
