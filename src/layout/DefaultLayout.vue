@@ -11,7 +11,7 @@
           <!--홈 로고 링크-->
           <router-link to="/">
               <i class="fab fa-twitter transition-all ease-in-out text-third dark:text-third-dark hover:text-dark mb-3"><span class="lg:text-3xl text-2xl font-light block lg:inline-block align-text-top" style="font-family: La Belle Aurore;">Motor H</span></i>
-              <p class="dark:text-secondary text-secondary-dark" style="font-family: 'Squada One', cursive;">Fronend Developer</p>
+              <p class="dark:text-secondary text-secondary-dark lg:text-xl text-lg" style="font-family: 'Squada One', cursive;">Frontend Developer</p>
           </router-link>
           <!--git + 다크모드-->
           <div class="flex justify-center">
@@ -83,8 +83,8 @@
           <!--로그인 + 회원가입-->
           <div>
             <router-link to="/login">
-              <p v-if="!stateusers" class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third lg:mt-0 mt-4" @click="onLogout" style="font-family: 'Squada One', cursive;">Logout</p>
-              <p v-else class="dark:text-secondary text-secondary-dark text-base dark:hover:text-primary hover:text-third lg:mt-0 mt-4" style="font-family: 'Squada One', cursive;">Sign in</p>
+              <p v-if="!stateusers" class="dark:text-secondary text-secondary-dark  lg:text-xl text-lg dark:hover:text-primary hover:text-third lg:mt-0 mt-4" @click="onLogout" style="font-family: 'Squada One', cursive;">Logout</p>
+              <p v-else class="dark:text-secondary text-secondary-dark  lg:text-xl text-lg dark:hover:text-primary hover:text-third lg:mt-0 mt-4" style="font-family: 'Squada One', cursive;">Sign in</p>
             </router-link>
           </div>
           <!-- <router-link :to="route.path" :class="`transition-all ease-in-out hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 px-4 py-2 rounded-full  cursor-pointer dark:text-gray-300 ${router.currentRoute.value.name == route.name ? 'text-primary dark:text-primary'  : ''}`" v-for="route in routes" :key="route">
