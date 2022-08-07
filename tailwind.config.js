@@ -22,6 +22,7 @@ module.exports = {
         lighter: '#D4E5F4',
         bgWhite: '#e1e1e1',
         tranparent: 'transparent',
+        basicBg: '#1b1d20',
 
         'primary-dark': '#0D2438',
 				'secondary-dark': '#000',
