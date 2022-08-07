@@ -88,9 +88,9 @@
                 </tbody>
             </table>
             <div class="flex lg:justify-end justify-center lg:mb-0 mb-6">
-                <route-link to="" class="mt-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
+                <button type="button" class="mt-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
                     Register
-                </route-link>
+                </button>
             </div>
         </div>
     </div>
