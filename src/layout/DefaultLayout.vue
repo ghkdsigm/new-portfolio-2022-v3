@@ -151,7 +151,10 @@ export default {
       let rightWrap = document.querySelector('.rightWrap')        
       return rightWrap.scrollTop = 0
     }    
+    //유저정보 vuex에서 가져오기
+    const currentUser = computed(() => store.state.user)
 
+    
     //다크모드
     //const isDark = ref(true)
     const store = useStore()
@@ -165,7 +168,7 @@ export default {
     
     watchEffect(() => {
       // pretend you have a getData getter in store
-      const datass = store.getters.users;
+      const datass = store.state.user;
       if(datass === null) {
         let stateuser = stateusers.value = true
         store.dispatch('toggleStateUser', stateuser)
@@ -187,11 +190,11 @@ export default {
 
     const onLogout = async () => {
       if(confirm('로그아웃 하시겠습니다?')){
-        await auth.signOut()
         stateusers.value = true
         store.commit('SET_USER', null)
-        let stateuser = stateusers.value = true
-        store.commit('toggleStateUser', stateuser)
+        //let stateuser = stateusers.value = true
+        //store.commit('toggleStateUser', stateuser)
+        await auth.signOut()
         swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
         await router.replace('/login')
       }      
@@ -258,6 +261,7 @@ export default {
       stateusers,
       onLogout,  
       currentHome,
+      currentUser
       //canvasBg
     }
   },

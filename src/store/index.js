@@ -10,13 +10,14 @@ const store = createStore({
       infodatas: [],
       opeartiondata: [],
       frontworks: [],
-      users: null,
+      user: null,
+      //users: null,
       stateusers: false
     }
   },
   getters:{
     dark: (state) => state.dark,
-    users: (state) => state.users,
+    //users: (state) => state.users,
     stateuser: (state) => state.stateusers
   },
   mutations: {
@@ -41,8 +42,11 @@ const store = createStore({
     SET_MYFRONT(state, payload) {
       state.frontworks = payload;
     },
-    SET_USER(state, payload) {
-      state.users = payload;
+    // SET_USERS(state, payload) {
+    //   state.users = payload;
+    // },
+    SET_USER: (state, user) => {
+      state.user = user
     },
   },
   actions:{

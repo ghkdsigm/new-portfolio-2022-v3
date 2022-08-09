@@ -64,6 +64,7 @@ export default {
                //console.log(doc.data())
                // 유저정보 vuex보내기
                store.commit('SET_USER', doc.data())
+               //store.commit('SET_USERS', doc.data())
                swal("인증 완료!", "인증이 완료되었습니다, 환영합니다!", "success");                
                router.replace("/") //router.push로 갔을경우 뒤로갔을때 다시 로그인 화면이 뜨기때문에 replace로 처음값을지정
            } catch(e) {
