@@ -56,18 +56,18 @@ export default {
   .hearderList:hover {transition: all .15s ease-out;}
   
   @screen sm {
-   .hearderList{font-size: 10vh;}
-  } 
-  @screen md {
    .hearderList{font-size: 12vh;}
   } 
+  @screen md {
+   .hearderList{font-size: 14vh;}
+  } 
   @screen lg {
-   .hearderList{font-size: 13vh;}
-  }
-  @screen xl {
    .hearderList{font-size: 15vh;}
   }
+  @screen xl {
+   .hearderList{font-size: 18vh;}
+  }
   @screen 2xl {
-   .hearderList{font-size: 17vh;}
+   .hearderList{font-size: 18vh;}
   }
 </style>

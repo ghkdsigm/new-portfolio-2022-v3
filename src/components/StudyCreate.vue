@@ -69,7 +69,9 @@
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-400 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
-                                <div   ref="refEditor" class="EditorWrapper">2222</div>
+                                <TuiEditor v-model="edittext"></TuiEditor>
+                                {{edittext}}
+                                <TuiViewer :content="edittext"></TuiViewer>
                             </div>
                         </td>
                     </tr>
@@ -98,48 +100,31 @@
 
 <script>
 import BackStudy from './common/BackStudy.vue'
+import TuiEditor from './editor/TuiEditor.vue'
+import TuiViewer from './editor/TuiViewer.vue'
 
-import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
-import 'tui-color-picker/dist/tui-color-picker.css';
-import '@toast-ui/editor-plugin-color-syntax/dist/toastui-editor-plugin-color-syntax.css';
-import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
-
-import Editor from "@toast-ui/editor";
-import "@toast-ui/editor/dist/toastui-editor.css"; // Editor's Style
 import { ref, onMounted } from "vue";
 
 export default {
     components:{
-        BackStudy
+        BackStudy,
+        TuiEditor,
+        TuiViewer
     },
     setup(){
-        const refEditor = ref(null); // template의 ref의 값과 동일한 변수 선언
+        const edittext = ref('asdfasdf')
         const langList = ref([{text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2js'}, {text:'vue3', lang:'vue3js'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'etc', lang:'etc'}])
     
         const changeLang = () => {
             console.log("dd");
         }
 
-        onMounted( () => { 
-            console.log("onMounted")
-        
-            console.log("====" + refEditor.value)
-            const editor  = new Editor({
-                el: refEditor.value,
-                height: "500px",
-                initialEditType: "markdown",
-                previewStyle: "vertical",
-                //plugins: [[codeSyntaxHighlight, { highlighter: Prism }]],
-                plugins: [colorSyntax]
-            });    
-            editor.getMarkdown();
+        onMounted( () => {            
         })
-        return {
-            refEditor,
+        return {            
             langList,
-            changeLang
+            changeLang,
+            edittext
         }
     }
 }
@@ -151,7 +136,5 @@ export default {
 .table tbody tr:hover {background:transparent  !important;}
 .dark .table tbody tr:nth-of-type(even){background: transparent;}
 .table tbody tr:nth-of-type(even){background: transparent;}
-
-.EditorWrapper {background:#fff;}
 
 </style>
