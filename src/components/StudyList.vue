@@ -40,41 +40,41 @@
                 </tr>
             </tbody>
         </table> -->
-
-
-        <table class="w-full text-white table-auto border-collapse table">
-            <colgroup>
-                <col width="10%" />
-                <col width="*" />
-                <col width="15%" />
-                <col width="10%" />
-                <col width="10%" />
-            </colgroup>
-            <thead>
-                <tr>
-                    <th class="lg:text-base text-sm py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">CATEGORY</th>
-                    <th class="lg:text-base text-sm py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">TITLE</th>
-                    <th class="lg:text-base text-sm py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">REGISTOR</th>
-                    <th class="lg:text-base text-sm py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">DATE</th>
-                    <th class="lg:text-base text-sm py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">DETAIL</th>
-                </tr>
-            </thead>            
-            <tbody>
-                <tr 
-                    v-for="(item, i) in tweets"
-                    :key="i">
-                    <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-medium lg:text-base text-sm">{{ item.category }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-normal lg:text-base text-sm">{{ item.board_body }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">{{ item.username }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">
-                        <router-link :to="item.uid">
-                            More
-                        </router-link> 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="overflow-x-auto mb-10">
+            <table class="w-full lg:min-w-full min-w-max text-white table-auto border-collapse table">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="*" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="lg:text-sm text-xs py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">CATEGORY</th>
+                        <th class="lg:text-sm text-xs py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">TITLE</th>
+                        <th class="lg:text-sm text-xs py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">REGISTOR</th>
+                        <th class="lg:text-sm text-xs py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">DATE</th>
+                        <th class="lg:text-sm text-xs py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">DETAIL</th>
+                    </tr>
+                </thead>            
+                <tbody>
+                    <tr 
+                        v-for="(item, i) in tweets"
+                        :key="i">
+                        <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-normal lg:text-base text-sm">{{ item.category }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-base text-sm lg:px-2 px-1">{{ item.board_body }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">{{ item.username }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">
+                            <router-link :to="item.uid">
+                                More
+                            </router-link> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 
@@ -170,7 +170,7 @@ export default {
 
 <style scoped>
 .dark .table tbody tr:hover {background:#00000080 !important;}
-.table tbody tr:hover {background:#d8d8d894  !important;}
+.table tbody tr:hover {background:#a4baca2e  !important;}
 .dark .table tbody tr:nth-of-type(even){background: #1111112e;}
-.table tbody tr:nth-of-type(even){background: #dadada4d;}
+.table tbody tr:nth-of-type(even){background: #dadada1f;}
 </style>

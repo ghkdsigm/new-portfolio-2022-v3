@@ -165,6 +165,10 @@ export default {
     const currentHome = computed(() => {
       return router.currentRoute._value.name
     })
+
+    const scrollAct = computed(()=>{
+      return document.querySelector('.scrollAni')
+    })
     
     watchEffect(() => {
       // pretend you have a getData getter in store
@@ -177,6 +181,13 @@ export default {
         store.dispatch('toggleStateUser', stateuser)
       }
            
+      //스크롤영역 좌표 - 홈 downscroll 버튼 
+      // if(currentScroll > 0){
+      //   scrollAni.style.display = 'none';
+      // } else if(currentScroll == 0){
+      //   scrollAni.style.display = 'block';
+      // }  
+      
       //particle 함수
       // let currentHome = router.currentRoute._value.name
       // if(currentHome == 'home'){
@@ -217,11 +228,33 @@ export default {
         document.documentElement.style.background = 'white';
       }        
 
-      //스크롤영역 좌표
-      let rightWrap = document.querySelector('.rightWrap')  
+      //스크롤영역 좌표  
+      let rightWrap = document.querySelector('.rightWrap')        
+      
+      // window.addEventListener("load",function(){
+      //   let rightWrap = document.querySelector('.rightWrap') 
+      //   let scrollAni = document.querySelector('.scrollAni')
+      //   if(rightWrap.scrollTop > 0){
+      //     console.log(2)
+      //   } else if(rightWrap.scrollTop == 0){
+          
+      //     console.log(1)
+      //   }
+      // })     
+      
+      window.addEventListener("load",function(){
+        console.log(scrollAct)
+        // let scrollAni = document.querySelector('.scrollAni')
+        // if(rightWrap.scrollTop > 0 && router.currentRoute.value.name == 'home'){
+        //   scrollAni.style.display = 'none';
+        // } else if(rightWrap.scrollTop == 0 && router.currentRoute.value.name == 'home'){
+        //   scrollAni.style.display = 'block';
+        // }
+      })
+
       rightWrap.addEventListener("scroll",function(){
         let scrollAni = document.querySelector('.scrollAni')
-        scrollAni.style.display = 'block';
+        scrollTopButton.value.style.display = 'block';
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");            
         }      
@@ -229,11 +262,16 @@ export default {
             scrollTopButton.value.classList.add("invisible");
         }
         //스크롤영역 좌표 - 홈 downscroll 버튼 
-        if(scrollRight.value.scrollTop > 0 && router.currentRoute.value.name == 'home'){
-            scrollAni.style.display = 'none';
-        } else if(scrollRight.value.scrollTop == 0 && router.currentRoute.value.name == 'home'){
-            scrollAni.style.display = 'block';
-        }    
+        // if(router.currentRoute.value.name == 'home'){
+        //   console.log(rightWrap.scrollTop)
+        //   console.log(1)
+        // }        
+        
+        if(rightWrap.scrollTop > 0 && router.currentRoute.value.name == 'home'){
+          scrollAni.style.display = 'none';
+        } else if(rightWrap.scrollTop == 0 && router.currentRoute.value.name == 'home'){
+          scrollAni.style.display = 'block';
+        }
       })     
     })
 
@@ -262,7 +300,8 @@ export default {
       stateusers,
       onLogout,  
       currentHome,
-      currentUser
+      currentUser,
+      scrollAct
       //canvasBg
     }
   },
