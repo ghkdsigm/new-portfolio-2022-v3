@@ -1,7 +1,7 @@
 <template>
     <div>
         <BackStudy class="relative"></BackStudy>
-        <div class="m-auto z-10">        
+        <div class="m-auto z-10 mb-32">        
             <div class="flex justify-between items-center mt-14 mb-4">
                 <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">STUDY CREATE</h2>   
             </div>
@@ -9,8 +9,8 @@
             <!--게시글 등록-->
             <table class="w-full text-white table-auto border-collapse table border-t border-slate-400 dark:border-slate-700">
                 <colgroup>
-                    <col width="20%" />
-                    <col width="80%" />
+                    <col width="15%" />
+                    <col width="85%" />
                 </colgroup>
                 <!-- <thead>
                     <tr>
@@ -22,14 +22,14 @@
                 </thead>             -->
                 <tbody>
                     <tr>
-                        <th class="text-third dark:text-white py-5 border-b border-slate-300 dark:border-slate-700 lg:pl-10 pl-4 font-medium lg:text-center text-left">
-                            <h4 class="lg:text-xl text-sm font-bold">
+                        <th class="text-third dark:text-white py-5 border-b border-slate-300 dark:border-slate-700 font-medium lg:text-center text-left">
+                            <h4 class="lg:text-base text-sm font-bold">
                                 CATEGORY
                             </h4>
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4 text-left">
-                                <select name="" id="" v-model="selectedcategory"  @change="changeLang()" class="dark:bg-basicBg bg-transparent border border-gray-400 dark:border-gray-500 dark:text-white text-black rounded-lg py-3 px-6">
+                                <select name="" id="" v-model="selectedcategory"  @change="changeLang()" class="dark:bg-basicBg bg-transparent border border-gray-400 dark:border-gray-500 dark:text-white text-black rounded-lg py-2 pr-6 pl-3">
                                     <option v-for="item in langList" :key="item.text" :value="item.lang">
                                         {{ item.text }}
                                     </option>
@@ -38,14 +38,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="text-third dark:text-white py-5 border-b border-slate-300 dark:border-slate-700 lg:pl-10 pl-4 font-medium lg:text-center text-left">
-                            <h4 class="lg:text-xl text-sm font-bold">
+                        <th class="text-third dark:text-white py-5 border-b border-slate-300 dark:border-slate-700 font-medium lg:text-center text-left">
+                            <h4 class="lg:text-base text-sm font-bold">
                                 TITLE
                             </h4>
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
-                                <textarea v-model="boardBody" rows="1" placeholder="제목을 입력해주세요." class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 p-4 rounded-lg"></textarea>
+                                <textarea v-model="boardBody" rows="1" placeholder="제목을 입력해주세요." class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -62,8 +62,8 @@
                         </td>
                     </tr> -->
                     <tr>
-                        <th class="text-third dark:text-white  py-5 border-b border-slate-400 dark:border-slate-700 lg:pl-10 pl-4 font-medium lg:text-center text-left">
-                            <h4 class="lg:text-xl text-sm font-bold">
+                        <th class="text-third dark:text-white  py-5 border-b border-slate-400 dark:border-slate-700 font-medium lg:text-center text-left">
+                            <h4 class="lg:text-base text-sm font-bold">
                                 CONTENT
                             </h4>
                         </th>
@@ -71,7 +71,7 @@
                             <div class="w-full px-4">
                                 <TuiEditor v-model="edittext"></TuiEditor>
                                 {{edittext}}
-                                <TuiViewer :content="edittext"></TuiViewer>
+                                <!-- <TuiViewer :content="edittext"></TuiViewer> -->
                             </div>
                         </td>
                     </tr>
@@ -89,8 +89,11 @@
                     </tr> -->
                 </tbody>
             </table>
-            <div class="flex lg:justify-end justify-center lg:mb-0 mb-6">
-                <button @click="save" type="button" class="mt-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
+            <div class="flex lg:justify-end justify-center lg:mb-0 mb-6 mt-4">
+                <router-link to="/study" type="button" class="mr-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
+                    List
+                </router-link>
+                <button @click="save" type="button" class="text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
                     Register
                 </button>
             </div>

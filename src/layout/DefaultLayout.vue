@@ -221,6 +221,7 @@ export default {
       let rightWrap = document.querySelector('.rightWrap')  
       rightWrap.addEventListener("scroll",function(){
         let scrollAni = document.querySelector('.scrollAni')
+        scrollAni.style.display = 'block';
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");            
         }      

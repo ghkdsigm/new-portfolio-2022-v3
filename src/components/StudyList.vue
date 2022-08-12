@@ -65,9 +65,9 @@
                     :key="i">
                     <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-medium lg:text-base text-sm">{{ item.category }}</td>
                     <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-normal lg:text-base text-sm">{{ item.board_body }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-normal lg:text-base text-sm">{{ item.username }}</td>
+                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">{{ item.username }}</td>
                     <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
-                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-normal lg:text-base text-sm">
+                    <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-thin lg:text-sm text-xs">
                         <router-link :to="item.uid">
                             More
                         </router-link> 
