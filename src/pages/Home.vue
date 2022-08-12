@@ -144,4 +144,7 @@ export default {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+.scrollAni {
+  display:block
+}
 </style>
