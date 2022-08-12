@@ -4,8 +4,8 @@
         <div class="lg:flex block justify-between items-center mt-14 mb-10">
             <p class="lg:flex hidden dark:text-white lg:text-medium text-sm">TOTAL : <span class="pl-1 dark:text-fifth dark:hover:text-fifthHover font-bold lg:text-medium text-sm">{{tweets.length}}</span></p>
             <input type="text" placeholder="CATEGORY를 입력하세요" v-model="search" class="bg-transparent border dark:border-gray-400 border-gray-500 hover:border-third dark:hover:border-primary py-2 px-6 rounded-full dark:text-white">
-            <button v-if="stateusers" class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:text-gray-500 dark:border-gray-500 text-gray-400 border-gray-400 rounded-lg" @click="needLogin">Create</button>
-            <router-link to="/studycreate" v-else class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">Create</router-link>
+            <button v-if="stateusers" class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:text-gray-500 dark:border-gray-500 text-gray-400 border-gray-400 rounded-lg" @click="needLogin">글쓰기</button>
+            <router-link to="/studycreate" v-else class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">글쓰기</router-link>
         </div>
         <!-- <table class="w-full text-white table-auto border-collapse table">
             <colgroup>
@@ -65,7 +65,7 @@
                         <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-light lg:text-sm text-xs">{{ item.category }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs lg:px-2 px-1 leading-7 text-left">{{ item.board_body }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ item.username }}</td>
-                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ moment(item.created_at).format('YY. MM. DD.') }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">
                             <router-link :to="item.uid">
                                 자세히보기
