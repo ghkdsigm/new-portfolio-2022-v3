@@ -1,5 +1,5 @@
 <template>
-  <div class="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-0">
+  <div class="picWrapper grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-0">
     <div class="flex items-center h-80 overflow-hidden"><img src="@/assets/images/11.jpg" class="object-cover object-center h-full w-full" alt=""></div>
     <!-- With 박지성 -->
     <div class="flex items-center h-80 overflow-hidden"><img src="@/assets/images/22.jpg" class="object-cover object-center h-full w-full" alt=""></div>
@@ -28,4 +28,21 @@ export default {
 </script>
 
 <style scoped>
+.picWrapper > div {
+    filter: grayscale(30%) contrast(1) brightness(80%);
+}
+.picWrapper > div:hover {
+  filter: grayscale(0%) contrast(1) brightness(100%);
+}
+/* .picWrapper > div img {
+  opacity: 0.5;
+} */
+.picWrapper > div:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
 </style>

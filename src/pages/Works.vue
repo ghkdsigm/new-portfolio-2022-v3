@@ -39,22 +39,22 @@
               </router-link>           
             </li>
           </ul>   -->
-          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <ul class="worksUl grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.infodatas" :key="index" @click="clickList01(index)">
               <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
-                <div class="">
+                <div class="imgZbg">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
-                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
                     <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
                     <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <!-- <div class="flex justify-between items-center">
                     <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
-                  </div>
+                  </div> -->
                 </div>
               </div>  
             </li>
@@ -64,22 +64,22 @@
       <div ref="workCategory02" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">관리 및 유지보수</h2>
         <div class="my-4">
-          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <ul class="worksUl grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.opeartiondata" :key="index" @click="clickList02(index)">
               <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
-                <div class="">
+                <div class="imgZbg">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
-                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
                     <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
                     <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <!-- <div class="flex justify-between items-center">
                     <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
-                  </div>
+                  </div> -->
                 </div>
               </div>  
             </li>
@@ -98,22 +98,22 @@
               </div>
             </li>
           </ul> -->
-          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <ul class="worksUl grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(portfolio, index) in this.$store.state.frontworks" :key="index" @click="clickList03(index)">
               <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
-                <div class="">
+                <div class="imgZbg">
                   <img :src="portfolio.image" alt="" class="rounded-2xl">
                 </div>
-                <div class="pt-6 pb-3 px-0 flex-1 flex justify-between flex-col">
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
                     <h3 class="font-bold py-1 text-xl">{{ portfolio.title }}</h3>
                     <p class="dark:text-gray-300 text-gray-900 text-base">참여도 : {{ portfolio.party }}</p>
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{ portfolio.tag }}</p>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <!-- <div class="flex justify-between items-center">
                     <span class="rounded-xl bg-white dark:bg-slate-600 py-2 px-6">View</span>
                     <a class="text-base" target="_blank" :href="`${portfolio.url}`">바로가기</a>
-                  </div>
+                  </div> -->
                 </div>
               </div>  
             </li>
@@ -123,7 +123,7 @@
       <div ref="workCategory04" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
         <div class="my-4">
-          <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <ul class="worksUl grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <li v-for="(value, index) in this.datas.Content" :key="index">
               <div>
                 <p>{{ value.title }}</p>
@@ -276,6 +276,25 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.worksUl li {
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.worksUl li .imgZbg {
+  /* mix-blend-mode: multiply; */
+  filter: grayscale(80%) contrast(1) brightness(90%);
+}
+.worksUl li:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px -15px #000000d1;
+}
+.worksUl li:hover > div {
+  border-radius: 10px;
+}
+.worksUl li:hover .imgZbg {
+  filter: grayscale(0%) contrast(1) brightness(100%);
+}
+.dark .worksUl li:hover {
+  box-shadow: 0 10px 20px -15px #000000d1;
+}
 </style>
