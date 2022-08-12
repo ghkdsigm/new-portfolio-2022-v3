@@ -40,7 +40,7 @@
                 </tr>
             </tbody>
         </table> -->
-        <div class="overflow-x-auto mb-10">
+        <div class="overflow-x-auto mb-32">
             <table class="w-full lg:min-w-full min-w-max text-white table-auto border-collapse table">
                 <colgroup>
                     <col width="15%" />
@@ -62,13 +62,13 @@
                     <tr 
                         v-for="(item, i) in tweets"
                         :key="i">
-                        <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-normal lg:text-base text-sm">{{ item.category }}</td>
-                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-base text-sm lg:px-2 px-1">{{ item.board_body }}</td>
-                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">{{ item.username }}</td>
-                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
-                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-thin lg:text-sm text-xs">
+                        <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-light lg:text-sm text-xs">{{ item.category }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs lg:px-2 px-1 leading-7 text-left">{{ item.board_body }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ item.username }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ moment(item.created_at).format('YY년 M월 DD일 HH:mm') }}</td>
+                        <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">
                             <router-link :to="item.uid">
-                                More
+                                자세히보기
                             </router-link> 
                         </td>
                     </tr>
