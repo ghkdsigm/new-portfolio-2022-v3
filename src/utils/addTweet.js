@@ -1,14 +1,16 @@
-import { TWEET_COLEECTION, USER_COLEECTION } from '../firebase'
+import { BOARD_COLEECTION, USER_COLEECTION } from '../firebase'
 import firebase from 'firebase'
 import store from '../store'
 
-export default (tweetBody, currentUser) => {
+export default (selectedcategory, boardBody, edittext, currentUser) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const doc = TWEET_COLEECTION.doc()
+      const doc = BOARD_COLEECTION.doc()
       await doc.set({
         id: doc.id,
-        tweet_body: tweetBody,
+        category:selectedcategory,
+        board_body: boardBody,
+        body:edittext,
         uid: currentUser.uid,
         created_at: Date.now(),
         num_comments: 0,

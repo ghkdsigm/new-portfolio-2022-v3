@@ -29,7 +29,7 @@
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4 text-left">
-                                <select name="" id="" v-model="selected"  @change="changeLang()" class="dark:bg-basicBg bg-transparent border border-gray-400 dark:border-gray-500 dark:text-white text-black rounded-lg py-3 px-6">
+                                <select name="" id="" v-model="selectedcategory"  @change="changeLang()" class="dark:bg-basicBg bg-transparent border border-gray-400 dark:border-gray-500 dark:text-white text-black rounded-lg py-3 px-6">
                                     <option v-for="item in langList" :key="item.text" :value="item.lang">
                                         {{ item.text }}
                                     </option>
@@ -45,7 +45,7 @@
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
-                                <input type="text" class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 p-4 rounded-lg">
+                                <textarea v-model="boardBody" rows="1" placeholder="제목을 입력해주세요." class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 p-4 rounded-lg"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -90,7 +90,7 @@
                 </tbody>
             </table>
             <div class="flex lg:justify-end justify-center lg:mb-0 mb-6">
-                <button type="button" class="mt-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
+                <button @click="save" type="button" class="mt-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
                     Register
                 </button>
             </div>
@@ -102,8 +102,11 @@
 import BackStudy from './common/BackStudy.vue'
 import TuiEditor from './editor/TuiEditor.vue'
 import TuiViewer from './editor/TuiViewer.vue'
+import addTweet from '../utils/addTweet'
+import store from '../store'
 
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useRouter } from 'vue-router'
 
 export default {
     components:{
@@ -112,11 +115,27 @@ export default {
         TuiViewer
     },
     setup(){
+        const boardBody = ref('')
         const edittext = ref('asdfasdf')
-        const langList = ref([{text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2js'}, {text:'vue3', lang:'vue3js'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'etc', lang:'etc'}])
-    
+        const currentUser = computed(() => store.state.user)
+        const langList = ref([{text:'선택', lang: 'selected'}, {text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2'}, {text:'vue3', lang:'vue3'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'etc', lang:'etc'}])
+        const selectedcategory = ref('selected')
+        const router = useRouter()
+
         const changeLang = () => {
-            console.log("dd");
+            console.log(selectedcategory.value)
+        }
+        const save = async () => {
+            try {
+                await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value)
+                alert('게시글이 등록되었습니다!')            
+                selectedcategory.value = 'selected'
+                boardBody.value = ''
+                edittext.value = ''
+                router.replace("/study")
+            } catch (e) {
+                console.log('on add tweet error on homepage:', e)
+            }
         }
 
         onMounted( () => {            
@@ -124,7 +143,11 @@ export default {
         return {            
             langList,
             changeLang,
-            edittext
+            edittext,
+            boardBody,
+            currentUser,
+            selectedcategory,
+            save
         }
     }
 }
