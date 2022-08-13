@@ -130,7 +130,6 @@ import { useStore, mapGetters } from 'vuex'
 import router from '../router'
 import { auth } from '../firebase'
 import Loading from '../components/common/Loading.vue'
-import swal from 'sweetalert'
 import Particle from '../components/common/Particle.vue'
 
 export default {

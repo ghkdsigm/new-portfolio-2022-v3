@@ -62,12 +62,12 @@
                         </td>
                     </tr> -->
                     <tr>
-                        <th class="text-third dark:text-white  py-5 border-b border-slate-400 dark:border-slate-700 font-medium lg:text-center text-left">
+                        <th class="text-third dark:text-white  py-5 border-b border-slate-300 dark:border-slate-700 font-medium lg:text-center text-left">
                             <h4 class="lg:text-base text-sm font-bold">
                                 CONTENT
                             </h4>
                         </th>
-                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-400 dark:border-slate-700 font-base">
+                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
                                 <TuiEditor v-model="edittext"></TuiEditor>
                                 {{edittext}}
@@ -81,17 +81,18 @@
                                 HASHTAG
                             </h4>
                         </th>
-                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
+                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-400 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
                                 <div class="flex-col">
-                                    <div class="flex mb-4 border border-gray-600 rounded-sm">
-                                        <input type="text" v-model="hashplus" class="bg-transparent py-2 px-4" @keyup.enter="hashplusaction"/>
-                                        <button type="button" @click="hashplusaction">+</button>
+                                    <div class="flex w-fit mb-4 border dark:border-gray-600 border-gray-400 rounded-lg overflow-hidden relative">
+                                        <input type="text" placeholder="해시태그를 입력해주세요." v-model="hashplus" class="bg-transparent py-2 pl-4 pr-14" @keyup.enter="hashplusaction"/>
+                                        <button type="button" class="absolute right-0 bg-indigo-600 text-white leading-6 font-bold text-lg py-2 px-3" @click="hashplusaction">+</button>
                                     </div>
                                     <ul class="flex">
-                                        <li class="flex pr-2" v-for="(item, index) in addedhashtag" :key="index">
-                                            <span class="px-4 py-2 border border-gray-600 rounded-full">
+                                        <li ref="delhash" class="flex pr-2" v-for="(item, index) in addedhashtag" :key="index">
+                                            <span class="px-4 py-2 border dark:border-gray-600 border-gray-400  rounded-full flex-row items-center">
                                                 {{'#' + item}}
+                                                <span @click="delhashaction" class="ml-2 px-2 dark:hover:text-black hover:text-white dark:hover:bg-primary hover:bg-third text-center rounded-full flex-row items-center font-thin">X</span>
                                             </span>
                                         </li>
                                     </ul>
@@ -131,6 +132,7 @@ export default {
     },
     setup(){
         const hashplus = ref('')
+        const delhash = ref()
         const addedhashtag = ref([])
         const boardBody = ref('')
         const edittext = ref('asdfasdf')
@@ -144,8 +146,9 @@ export default {
         }
         const save = async () => {
             try {
-                await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value)
-                alert('게시글이 등록되었습니다!')            
+                await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value, addedhashtag.value)
+                //alert('게시글이 등록되었습니다!')        
+                swal("등록완료", "게시글이 등록되었습니다!", "success");    
                 selectedcategory.value = 'selected'
                 boardBody.value = ''
                 edittext.value = ''
@@ -160,7 +163,14 @@ export default {
             if(hashplus.value !== ''){
                 addedhashtag.value.push(hashplus.value)
                 hashplus.value = ''
+            } else {
+                //alert('해시태그를 입력해주세요.')
+                swal("Error", "해시태그를 입력해주세요.", "warning");
             }
+        }
+
+        const delhashaction = (el) => {
+            return el.target.parentNode.parentNode.remove();
         }
 
         onMounted( () => {            
@@ -175,7 +185,9 @@ export default {
             save,
             hashplus,
             hashplusaction,
-            addedhashtag
+            addedhashtag,
+            delhash,
+            delhashaction
         }
     }
 }

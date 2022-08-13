@@ -27,7 +27,6 @@ import BackHome from '../components/common/BackHome.vue'
 import { ref } from 'vue'
 import { auth, USER_COLEECTION } from '../firebase'
 import { useRouter } from 'vue-router' 
-import swal from 'sweetalert'
 
 export default {
   components:{

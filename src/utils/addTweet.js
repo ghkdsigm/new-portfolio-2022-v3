@@ -2,7 +2,7 @@ import { BOARD_COLEECTION, USER_COLEECTION } from '../firebase'
 import firebase from 'firebase'
 import store from '../store'
 
-export default (selectedcategory, boardBody, edittext, currentUser) => {
+export default (selectedcategory, boardBody, edittext, currentUser, addedhashtag) => {
   return new Promise(async (resolve, reject) => {
     try {
       const doc = BOARD_COLEECTION.doc()
@@ -11,6 +11,7 @@ export default (selectedcategory, boardBody, edittext, currentUser) => {
         category:selectedcategory,
         board_body: boardBody,
         body:edittext,
+        hashtag: addedhashtag,
         uid: currentUser.uid,
         created_at: Date.now(),
         num_comments: 0,
