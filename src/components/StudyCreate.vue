@@ -159,7 +159,6 @@ export default {
             e.preventDefault()            
             if(hashplus.value !== ''){
                 addedhashtag.value.push(hashplus.value)
-                console.log(addedhashtag.value)
                 hashplus.value = ''
             }
         }
