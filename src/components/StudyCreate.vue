@@ -75,24 +75,36 @@
                             </div>
                         </td>
                     </tr>
-                    <!-- <tr>
-                        <th class="text-third dark:text-white  py-5 border-b border-slate-400 dark:border-slate-700 lg:pl-10 pl-4 font-medium lg:text-center text-left">
-                            <h4 class="lg:text-xl text-sm font-bold">
-                                FILE UPLOAD
+                    <tr>
+                        <th class="text-third dark:text-white  py-5 border-b border-slate-400 dark:border-slate-700 font-medium lg:text-center text-left">
+                            <h4 class="lg:text-base text-sm font-bold">
+                                HASHTAG
                             </h4>
                         </th>
-                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-400 dark:border-slate-700 font-base">
+                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
-                                <input type="file" class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 p-4 rounded-lg">
+                                <div class="flex-col">
+                                    <div class="flex mb-4 border border-gray-600 rounded-sm">
+                                        <input type="text" v-model="hashplus" class="bg-transparent py-2 px-4" @keyup.enter="hashplusaction"/>
+                                        <button type="button" @click="hashplusaction">+</button>
+                                    </div>
+                                    <ul class="flex">
+                                        <li class="flex pr-2" v-for="(item, index) in addedhashtag" :key="index">
+                                            <span class="px-4 py-2 border border-gray-600 rounded-full">
+                                                {{'#' + item}}
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </td>
-                    </tr> -->
+                    </tr>
                 </tbody>
             </table>
             <div class="flex lg:justify-end justify-center lg:mb-0 mb-6 mt-4">
-                <router-link to="/study" type="button" class="mr-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
+                <!-- <router-link to="/study" type="button" class="mr-4 text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
                     List
-                </router-link>
+                </router-link> -->
                 <button @click="save" type="button" class="text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent  dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium  rounded-md">
                     Register
                 </button>
@@ -118,10 +130,12 @@ export default {
         TuiViewer
     },
     setup(){
+        const hashplus = ref('')
+        const addedhashtag = ref([])
         const boardBody = ref('')
         const edittext = ref('asdfasdf')
         const currentUser = computed(() => store.state.user)
-        const langList = ref([{text:'선택', lang: 'selected'}, {text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2'}, {text:'vue3', lang:'vue3'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'etc', lang:'etc'}])
+        const langList = ref([{text:'선택', lang: 'selected'}, {text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2'}, {text:'vue3', lang:'vue3'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'algorithm', lang:'algorithm'}, {text:'etc', lang:'etc'}])
         const selectedcategory = ref('selected')
         const router = useRouter()
 
@@ -141,6 +155,15 @@ export default {
             }
         }
 
+        const hashplusaction = (e) => {
+            e.preventDefault()            
+            if(hashplus.value !== ''){
+                addedhashtag.value.push(hashplus.value)
+                console.log(addedhashtag.value)
+                hashplus.value = ''
+            }
+        }
+
         onMounted( () => {            
         })
         return {            
@@ -150,7 +173,10 @@ export default {
             boardBody,
             currentUser,
             selectedcategory,
-            save
+            save,
+            hashplus,
+            hashplusaction,
+            addedhashtag
         }
     }
 }
