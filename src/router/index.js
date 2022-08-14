@@ -16,6 +16,7 @@ import NotFound from '../pages/NotFound.vue'
 import Login from '../pages/Login.vue'
 import Register from '../pages/Register.vue'
 import StudyCreate from '../components/StudyCreate.vue'
+import StudyDetailView from '../components/StudyDetailView.vue'
 
 //const newLocal = true
 //const routes = [
@@ -75,6 +76,7 @@ const router = createRouter({
         { path: '/login', name: 'login', component: Login, title: 'LOGIN', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/register', name: 'register', component: Register, title: 'REGISTER', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/studycreate', name: 'studycreate', component: StudyCreate, title: 'STUDYCREATE', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
+        { path: '/study/board/:id', name: 'studyDetailView', component: StudyDetailView, title: 'STUDYDETAILVIEW', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         
         {
             path: '/:notFound(.*)',
@@ -106,10 +108,10 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     store.commit('startSpinner');    
-
-    setTimeout(() => {
-        next();
-    }, 500);
+    next()
+    // setTimeout(() => {
+    //     next();
+    // }, 500);
 })
 
 router.afterEach((to, from) => {

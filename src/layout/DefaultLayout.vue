@@ -137,7 +137,7 @@ export default {
     Loading,
     Particle
   },
-  setup(){
+  setup(){    
     let stateusers = ref(false)
     //let canvasBg = ref(false)
     const routes = ref([])
@@ -162,13 +162,9 @@ export default {
     let changeDark = localStorage.getItem('changeDark') == 'true'
 
     const currentHome = computed(() => {
-      return router.currentRoute._value.name
+      return router.currentRoute.value.path
     })
 
-    const scrollAct = computed(()=>{
-      return document.querySelector('.scrollAni')
-    })
-    
     watchEffect(() => {
       // pretend you have a getData getter in store
       const datass = store.state.user;
@@ -179,7 +175,8 @@ export default {
         let stateuser = stateusers.value = false
         store.dispatch('toggleStateUser', stateuser)
       }
-           
+      //console.log(currentHome.value)     
+
       //스크롤영역 좌표 - 홈 downscroll 버튼 
       // if(currentScroll > 0){
       //   scrollAni.style.display = 'none';
@@ -215,7 +212,9 @@ export default {
       routes.value = router.options.routes.filter((route) => route.meta.isMenu == true)
     });
 
-    onMounted(()=>{
+    onMounted(()=>{            
+      // let scrollAni22 = document.getElementsByClassName('scrollAni')[0]
+      // console.log(scrollAni22)
       document.documentElement.style.background = '#1b1d20';
       let set = store.state.darkmode;
       if(set == true){
@@ -228,49 +227,45 @@ export default {
       }        
 
       //스크롤영역 좌표  
-      let rightWrap = document.querySelector('.rightWrap')        
+      let rightWrap = document.querySelector('.rightWrap')          
       
-      // window.addEventListener("load",function(){
-      //   let rightWrap = document.querySelector('.rightWrap') 
-      //   let scrollAni = document.querySelector('.scrollAni')
-      //   if(rightWrap.scrollTop > 0){
-      //     console.log(2)
-      //   } else if(rightWrap.scrollTop == 0){
-          
-      //     console.log(1)
-      //   }
-      // })     
       
-      window.addEventListener("load",function(){
-        console.log(scrollAct)
-        // let scrollAni = document.querySelector('.scrollAni')
-        // if(rightWrap.scrollTop > 0 && router.currentRoute.value.name == 'home'){
-        //   scrollAni.style.display = 'none';
-        // } else if(rightWrap.scrollTop == 0 && router.currentRoute.value.name == 'home'){
-        //   scrollAni.style.display = 'block';
-        // }
-      })
+      // window.addEventListener("load",function(){ 
+      //   let scrollAni = document.getElementsByClassName('scrollAni')[0] 
+      //   scrollAni.style.display ='block';
+      // })
+
+      //스크롤 이벤트시 이벤트한번만 되는 전역변수
+      let scrollcheck = true;
 
       rightWrap.addEventListener("scroll",function(){
-        let scrollAni = document.querySelector('.scrollAni')
+        
         scrollTopButton.value.style.display = 'block';
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");            
         }      
         else {
             scrollTopButton.value.classList.add("invisible");
-        }
-        //스크롤영역 좌표 - 홈 downscroll 버튼 
-        // if(router.currentRoute.value.name == 'home'){
-        //   console.log(rightWrap.scrollTop)
-        //   console.log(1)
-        // }        
+        } 
         
-        if(rightWrap.scrollTop > 0 && router.currentRoute.value.name == 'home'){
-          scrollAni.style.display = 'none';
-        } else if(rightWrap.scrollTop == 0 && router.currentRoute.value.name == 'home'){
-          scrollAni.style.display = 'block';
+        if(currentHome.value == '/'){
+          let scrollAni = document.getElementsByClassName('scrollAni')[0]        
+          console.log(scrollRight.value.scrollTop)
+          
+          if(scrollRight.value.scrollTop > 1){
+            if(scrollcheck){               
+              scrollcheck = false;
+              scrollAni.style.display ='none';
+            }
+          } 
+          else if(scrollRight.value.scrollTop == 0) {
+            if(!scrollcheck){               
+              scrollcheck = true;
+              scrollAni.style.display ='block';
+            }
+          }
         }
+
       })     
     })
 
@@ -300,7 +295,6 @@ export default {
       onLogout,  
       currentHome,
       currentUser,
-      scrollAct
       //canvasBg
     }
   },

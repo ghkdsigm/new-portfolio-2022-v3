@@ -60,14 +60,14 @@
                 </thead>            
                 <tbody>
                     <tr 
-                        v-for="(item, i) in tweets"
-                        :key="i">
+                        v-for="item in tweets"
+                        :key="item.id">
                         <td class="text-third dark:text-fifth dark:hover:text-fifthHover py-5 border-b border-slate-500 dark:border-slate-600 text-center font-light lg:text-sm text-xs">{{ item.category }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs lg:px-2 px-1 leading-7 text-left">{{ item.board_body }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ item.username }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">{{ moment(item.created_at).format('YY. MM. DD.') }}</td>
                         <td class="text-black dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 dark:font-thin font-light lg:text-sm text-xs">
-                            <router-link :to="item.uid">
+                            <router-link :to="`/study/board/${item.id}`" :item="item" :currentUser="currentUser">
                                 자세히보기
                             </router-link> 
                         </td>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--스크롤 애니메이션 버튼-->
-    <div class="flex h-20 absolute bottom-0 scrollAni block lg:visible invisible">
+    <div class="flex h-20 absolute bottom-0 scrollAni lg:visible invisible" ref="scrollAni">
       <div class="flex">
         <!-- <div class='icon-scroll'></div> -->
         <svg class="arrows">
@@ -29,19 +29,33 @@
       </div>
     </div>
   </div>
-</template>
+</template>1
 
 <script>
 import HeadLineVue from '../components/HeadLine.vue'
 import Introduce from '../components/Introduce.vue'
 import Pictures from '../components/Pictures.vue'
 import Skills from '../components/Skills.vue'
+import { useRouter } from 'vue-router'
+import store from '../store'
+
+import { onMounted, ref } from 'vue'
 export default {
     components:{
         HeadLineVue,
         Introduce,
         Pictures,
         Skills
+    },
+    setup(){
+      const scrollAni = ref('')
+
+      onMounted(()=>{
+        //console.log(scrollAni.value)
+      })
+      return {
+        scrollAni
+      }
     }
 }
 </script>
