@@ -1,12 +1,11 @@
 <template>
     <div v-if="tweet">
         <BackStudy class="relative"></BackStudy>
-        <div class="m-auto z-10">        
+        <!-- <div class="m-auto z-10">        
             <div class="flex justify-between items-center mt-14 mb-10">
                 <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">BOARD CONTENT</h2>   
             </div>
 
-            <!--게시글 등록-->
             <table class="w-full text-white table-auto border-collapse table ">
                 <colgroup>
                     <col width="15%" />
@@ -14,14 +13,6 @@
                     <col width="15%" />
                     <col width="35%" />
                 </colgroup>
-                <!-- <thead>
-                    <tr>
-                        <th class="text-medium py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">Title</th>
-                        <th class="text-medium py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">Register</th>
-                        <th class="text-medium py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">Date</th>
-                        <th class="text-medium py-5 border-t-2 border-b-2 dark:border-slate-500 border-slate-400 font-bold dark:text-white text-gray-800">Detail</th>
-                    </tr>
-                </thead>             -->
                 <tbody>
                     <tr>
                         <th class="text-third dark:text-fifth dark:hover:text-fifthHover dark:bg-gray-800 py-5 border-b border-t border-slate-500 dark:border-slate-600 text-left pl-10 font-medium">CATEGORY</th>
@@ -37,16 +28,6 @@
                         <th class="text-third dark:text-fifth dark:hover:text-fifthHover dark:bg-gray-800 border-b border-slate-500 dark:border-slate-600 text-left pl-10 font-medium">CONTENT</th>
                         <td colspan="3" class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-base">{{ tweet.body }}</td>                        
                     </tr>
-                    <!-- <tr>
-                        <th class="text-third dark:text-fifth dark:hover:text-fifthHover dark:bg-gray-800 py-5 border-b border-slate-500 dark:border-slate-600 text-left pl-10 font-medium">11</th>
-                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-base">{{ tweet }}</td>
-                        <th class="text-third dark:text-fifth dark:hover:text-fifthHover dark:bg-gray-800 py-5 border-b border-slate-500 dark:border-slate-600 text-left pl-10 font-medium">13</th>
-                        <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-base">
-                            <router-link to="">
-                                More
-                            </router-link> 
-                        </td>
-                    </tr> -->
                     <tr>
                         <th class="text-third dark:text-fifth dark:hover:text-fifthHover dark:bg-gray-800 py-5 border-b border-slate-500 dark:border-slate-600 text-left pl-10 font-medium">HASHTAG</th>
                         <td colspan="3" class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-500 dark:border-slate-600 font-base">
@@ -59,6 +40,42 @@
                     </tr>
                 </tbody>
             </table>
+        </div> -->
+
+        <div class="m-auto lg:px-32 md:px-10 z-10">        
+            <div class="flex justify-between items-center mt-14 mb-4">
+                <h2 class="lg:text-7xl text-4xl block lg:font-extrabold font-bold dark:text-white text-black text-third text-left">{{ tweet.board_body }}</h2>   
+            </div>
+
+            <div class="lg:my-14 my-10">                
+                <div class="lg:flex block justify-between">
+                    <div class="flex items-center">
+                        <p class="dark:text-white text-black lg:text-xl text-lg font-medium">
+                            {{ tweet.username }}
+                        </p>
+                        <p class="mx-2 dark:text-white text-black">·</p>
+                        <p class="dark:text-gray-300 text-black lg:text-xl text-sm">{{ moment(tweet.created_at).format('YYYY년 MM월 DD일  HH시mm분') }}</p>
+                    </div>
+                    <div class="flex">
+                        <p class="dark:text-white text-black lg:text-xl text-lg font-medium">
+                            <span class="lg:hidden visible dark:text-white text-black">카테고리 : </span>
+                            {{ tweet.category }}
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:flex block mt-6">
+                    <ul class="flex flex-wrap">
+                        <li v-for="(item, index) in tweet.hashtag" :key="index">
+                            <span class="lg:flex inline-block lg:text-xl text-sm py-2 px-4 dark:bg-bgDark bg-gray-300 lg:mr-4 mr-2 lg:mb-0 mb-2 rounded-full dark:text-white text-black">
+                                {{'#' + item}}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-left dark:text-white text-black">
+                {{ tweet.body }}
+            </div>
         </div>
     </div>
 </template>
