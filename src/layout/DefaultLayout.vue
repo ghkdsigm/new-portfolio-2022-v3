@@ -250,7 +250,7 @@ export default {
         
         
         let scrollAni = document.getElementsByClassName('scrollAni')[0]        
-        console.log(scrollRight.value.scrollTop)
+        //console.log(scrollRight.value.scrollTop)
         
         if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
           if(scrollcheck){               
@@ -284,7 +284,7 @@ export default {
       let scrollcheck = true;
       rightWrap.addEventListener("scroll",function(){    
         let scrollAni = document.getElementsByClassName('scrollAni')[0]        
-        console.log(scrollRight.value.scrollTop)
+        //console.log(scrollRight.value.scrollTop)
         
         if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
           if(scrollcheck){               
