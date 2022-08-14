@@ -211,16 +211,43 @@ export default {
       // }   
     })
 
-    const onLogout = async () => {
-      if(confirm('로그아웃 하시겠습니다?')){
-        stateusers.value = true
-        store.commit('SET_USER', null)
-        //let stateuser = stateusers.value = true
-        //store.commit('toggleStateUser', stateuser)
-        await auth.signOut()
-        swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
-        await router.replace('/login')
-      }      
+    const onLogout = async (e) => {
+      e.preventDefault();
+      swal({
+        title: "로그아웃",
+        text: "정말 로그아웃 하시겠습니까?",
+        icon: "warning",
+        buttons: [
+          '아니요',
+          '네'
+        ],
+        dangerMode: true,
+      })
+      .then(function(isConfirm) {
+        if (isConfirm) {
+          swal({
+            title: '로그아웃!',
+            text: '성공적으로 로그아웃 되었습니다.',
+            icon: 'success'
+          }).then(function() {
+            stateusers.value = true;
+            auth.signOut()
+            store.commit('SET_USER', null)
+            router.replace('/login')
+          });
+        } else {
+          swal("취소", "로그아웃이 취소되었습니다.", "error");
+        }
+      })
+      // if(confirm('로그아웃 하시겠습니다?')){
+      //   stateusers.value = true
+      //   store.commit('SET_USER', null)
+      //   //let stateuser = stateusers.value = true
+      //   //store.commit('toggleStateUser', stateuser)
+      //   await auth.signOut()
+      //   swal("로그 아웃", "성공적으로 로그아웃 되었습니다.", "success");    
+      //   await router.replace('/login')
+      // }      
     }    
     
     onBeforeMount(()=>{

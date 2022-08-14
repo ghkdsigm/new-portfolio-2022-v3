@@ -45,7 +45,7 @@
                         </th>
                         <td class="text-gray-600 dark:text-gray-100 py-5 border-b border-slate-300 dark:border-slate-700 font-base">
                             <div class="w-full px-4">
-                                <textarea v-model="boardBody" rows="1" placeholder="제목을 입력해주세요." class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
+                                <textarea v-model="boardBody" rows="1" placeholder="제목을 입력해주세요." class=" w-full bg-transparent border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg" ref="bTitle"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -135,6 +135,7 @@ export default {
         const delhash = ref()
         const addedhashtag = ref([])
         const boardBody = ref('')
+        const bTitle = ref(null);
         const edittext = ref('asdfasdf')
         const currentUser = computed(() => store.state.user)
         const langList = ref([{text:'선택', lang: 'selected'}, {text:'js', lang: 'javascript'}, {text:'ts', lang: 'typescript'}, {text:'vue2', lang:'vue2'}, {text:'vue3', lang:'vue3'}, {text:'react', lang:'react'}, {text:'nodejs', lang:'nodejs'}, {text:'cs', lang:'computerscience'}, {text:'algorithm', lang:'algorithm'}, {text:'etc', lang:'etc'}])
@@ -145,16 +146,27 @@ export default {
             console.log(selectedcategory.value)
         }
         const save = async () => {
-            try {
-                await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value, addedhashtag.value)
-                //alert('게시글이 등록되었습니다!')        
-                swal("등록완료", "게시글이 등록되었습니다!", "success");    
-                selectedcategory.value = 'selected'
-                boardBody.value = ''
-                edittext.value = ''
-                router.replace("/study")
-            } catch (e) {
-                console.log('on add tweet error on homepage:', e)
+            if(boardBody.value !== ''){
+                try {
+                    await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value, addedhashtag.value)
+                    //alert('게시글이 등록되었습니다!')        
+                    swal("등록완료", "게시글이 등록되었습니다!", "success");    
+                    selectedcategory.value = 'selected'
+                    boardBody.value = ''
+                    edittext.value = ''
+                    router.replace("/study")
+                } catch (e) {
+                    console.log('on add tweet error on homepage:', e)
+                }
+            } else {
+                swal({
+                    title: '등록실패',
+                    text: '내용을 등록해주세요!',
+                    type: 'error',
+                    closeOnConfirm: false,                    
+                }).then(function(){
+                    bTitle.value.focus();    
+                })                                     
             }
         }
 
@@ -165,7 +177,7 @@ export default {
                 hashplus.value = ''
             } else {
                 //alert('해시태그를 입력해주세요.')
-                swal("Error", "해시태그를 입력해주세요.", "warning");
+                swal("에러발생", "해시태그를 입력해주세요.", "warning");
             }
         }
 
@@ -187,7 +199,8 @@ export default {
             hashplusaction,
             addedhashtag,
             delhash,
-            delhashaction
+            delhashaction,
+            bTitle
         }
     }
 }

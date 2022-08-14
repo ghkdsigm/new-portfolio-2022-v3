@@ -42,11 +42,11 @@ export default {
         const onRegister = async () => {
 
             if(!username.value){
-                return swal("Error",'닉네임을 입력해주세요', "warning")
+                return swal("가입 실패",'닉네임을 입력해주세요', "warning")
             } else if (!email.value){
-                return swal("Error",'이메일을 입력해주세요', "warning")
+                return swal("가입 실패",'이메일을 입력해주세요', "warning")
             } else if (!password.value){
-                return swal("Error",'패스워드를 입력해주세요', "warning")
+                return swal("가입 실패",'패스워드를 입력해주세요', "warning")
             }
 
             try{
@@ -71,16 +71,16 @@ export default {
             } catch(e){
                 switch (e.code) {
                 case 'auth/invalid-email':
-                    swal("Fail",'이메일을 바르게 입력해주세요',"error")
+                    swal("실패",'이메일을 바르게 입력해주세요',"error")
                     break
                 case 'auth/weak-password':
-                    swal("Fail",'비밀번호가 너무 쉬워요',"error")
+                    swal("실패",'비밀번호가 너무 쉬워요',"error")
                     break
                 case 'auth/email-already-in-use':
-                    swal("Fail",'이미 가입되어 있는 이메일 입니다.',"error")
+                    swal("실패",'이미 가입되어 있는 이메일 입니다.',"error")
                     break
                 default:
-                    swal("Fail",'회원가입 실패',"error")
+                    swal("실패",'회원가입 실패',"error")
                     break
                 }
             } finally {

@@ -47,10 +47,10 @@ export default {
 
             if (!email.value){
                 //return  alert('이메일을 입력해주세요')
-                return swal("Error", "이메일을 입력해주세요", "warning");
+                return swal("로그인 실패", "이메일을 입력해주세요", "warning");
             } else if (!password.value){
                 //return  alert('패스워드를 입력해주세요')
-                return swal("Error", "패스워드를 입력해주세요", "warning");
+                return swal("로그인 실패", "패스워드를 입력해주세요", "warning");
             }
 
            try{

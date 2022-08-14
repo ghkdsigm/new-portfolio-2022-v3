@@ -120,7 +120,7 @@ export default {
         })
 
         const needLogin = async () =>{
-            swal('Error!','로그인이 필요합니다.','warning')
+            swal('실패!','로그인이 필요합니다.','warning')
             await router.replace('/login')
         }
 
