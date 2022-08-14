@@ -232,7 +232,7 @@ export default {
       
       // window.addEventListener("load",function(){ 
       //   let scrollAni = document.getElementsByClassName('scrollAni')[0] 
-      //   scrollAni.style.display ='block';
+      //   scrollAni.style.display ='none';
       // })
 
       //스크롤 이벤트시 이벤트한번만 되는 전역변수
@@ -248,21 +248,21 @@ export default {
             scrollTopButton.value.classList.add("invisible");
         } 
         
-        if(currentHome.value == '/'){
-          let scrollAni = document.getElementsByClassName('scrollAni')[0]        
-          console.log(scrollRight.value.scrollTop)
-          
-          if(scrollRight.value.scrollTop > 1){
-            if(scrollcheck){               
-              scrollcheck = false;
-              scrollAni.style.display ='none';
-            }
-          } 
-          else if(scrollRight.value.scrollTop == 0) {
-            if(!scrollcheck){               
-              scrollcheck = true;
-              scrollAni.style.display ='block';
-            }
+        
+        let scrollAni = document.getElementsByClassName('scrollAni')[0]        
+        console.log(scrollRight.value.scrollTop)
+        
+        if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
+          if(scrollcheck){               
+            scrollcheck = false;
+            scrollAni.style.display ='none';
+            console.log('??')
+          }
+        } 
+        else if(scrollRight.value.scrollTop == 0 && currentHome.value == '/') {
+          if(!scrollcheck){               
+            scrollcheck = true;
+            scrollAni.style.display ='block';
           }
         }
 
@@ -280,6 +280,25 @@ export default {
             scrollTopButton.value.classList.add("invisible");
         }
       })
+
+      let scrollcheck = true;
+      rightWrap.addEventListener("scroll",function(){    
+        let scrollAni = document.getElementsByClassName('scrollAni')[0]        
+        console.log(scrollRight.value.scrollTop)
+        
+        if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
+          if(scrollcheck){               
+            scrollcheck = false;
+            scrollAni.style.display ='none';
+          }
+        } 
+        else if(scrollRight.value.scrollTop == 0 && currentHome.value == '/') {
+          if(!scrollcheck){               
+            scrollcheck = true;
+            scrollAni.style.display ='block';
+          }
+        }
+      })  
     })
 
     return {
@@ -295,7 +314,6 @@ export default {
       onLogout,  
       currentHome,
       currentUser,
-      //canvasBg
     }
   },
   methods:{

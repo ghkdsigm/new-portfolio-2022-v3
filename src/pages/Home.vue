@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-</template>1
+</template>
 
 <script>
 import HeadLineVue from '../components/HeadLine.vue'
@@ -47,16 +47,6 @@ export default {
         Pictures,
         Skills
     },
-    setup(){
-      const scrollAni = ref('')
-
-      onMounted(()=>{
-        //console.log(scrollAni.value)
-      })
-      return {
-        scrollAni
-      }
-    }
 }
 </script>
 
