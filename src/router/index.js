@@ -94,20 +94,26 @@ const router = createRouter({
         //페이지 이동시 스크롤탑이동
         if(router.currentRoute.value.name !== 'worksDetailNew'){
             let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
-            rightWrap.scrollTop = 0
-        }      
+            return rightWrap.scrollTop = 0
+        }  
 
-        let canvasBg = document.querySelector('.canvasBG')
-        if(to.path !== '/'){            
-            canvasBg.style.display = 'none'
-        } else if(to.path == '/') {
-            canvasBg.style.display = 'block'
-        }
+        //let canvasBg = document.querySelector('.canvasBG')
+        
     },
 })
 
 router.beforeEach((to, from, next) => {
     store.commit('startSpinner');    
+    let canvasBg = document.getElementsByClassName('canvasBG')[0] 
+
+    // if(to.path == '/'){                       
+    //     canvasBg.style.display = 'block'
+    // } else if (to.path !== '/'){         
+    //     canvasBg.style.display = 'none'
+    // }  
+    //console.log(to.path)
+    //console.log(from.path)
+    
     next()
     // setTimeout(() => {
     //     next();
@@ -115,6 +121,12 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach((to, from) => {
+    // if(from.path == '/study/board/:id'){                       
+    //     //canvasBg.style.display = 'block'
+    //     console.log(1`21123`)
+    // } 
+    //console.log(to.path)
+    //console.log(router.currentRoute)
     store.commit('endSpinner');
 })
 

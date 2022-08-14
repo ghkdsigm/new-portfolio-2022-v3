@@ -36,17 +36,63 @@ import HeadLineVue from '../components/HeadLine.vue'
 import Introduce from '../components/Introduce.vue'
 import Pictures from '../components/Pictures.vue'
 import Skills from '../components/Skills.vue'
+import router from '../router'
 import { useRouter } from 'vue-router'
 import store from '../store'
 
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 export default {
+    props: ['scrollRight'],
     components:{
         HeadLineVue,
         Introduce,
         Pictures,
         Skills
-    },
+    },   
+    // setup(props, context){      
+    //   const scrollAni = ref()
+    //   const currentHome = computed(() => {
+    //     return router.currentRoute.value.path
+    //   })
+      
+    //   onMounted(()=>{
+    //     if(router.currentRoute._rawValue.name === 'home'){
+    //       if(props.scrollRight.scrollTop !== 0) {
+    //         scrollAni.value.style.display = 'none'
+    //       }
+    //       if(document.scrollingElement.scrollTop !== 0){
+    //         scrollAni.value.style.display = 'none'
+    //       }
+    //     } else {
+    //       return
+    //     }
+
+
+    //     // let scrollcheck = true;
+    //     // if(currentHome.value === '/'){
+    //     //   console.log(props.scrollRight)
+    //     //   props.scrollRight.addEventListener("scroll", function(){
+    //     //     if(props.scrollRight.scrollTop == 0) {
+    //     //       if(!scrollcheck){               
+    //     //         scrollcheck = true;
+    //     //         scrollAni.value.classList.add('aa')
+    //     //       }
+    //     //     }
+    //     //     else if(props.scrollRight.scrollTop > 1){
+    //     //       if(scrollcheck){               
+    //     //         scrollcheck = false;
+    //     //         scrollAni.value.classList.remove('aa')
+    //     //       }
+    //     //     }
+    //     //   })
+    //     // }
+
+    //   })
+    //   return {
+    //     scrollAni,
+    //     currentHome        
+    //   } 
+    // }
 }
 </script>
 
@@ -148,4 +194,5 @@ export default {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+
 </style>

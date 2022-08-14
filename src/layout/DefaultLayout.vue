@@ -100,7 +100,7 @@
     <div class="rightWrap lg:w-5/6 w-full flex-1 min-h-full scroll-smooth overflow-y-auto lg:px-16 px-6 items-center text-center" ref="scrollRight">      
       <router-view v-slot="{ Component }">
         <transition name="route" mode="out-in">
-          <component :is="Component"></component>
+          <component :is="Component" :class="router.currentRoute.value.name == 'home' ? 'homeWatch' : 'subWatch'" :scrollRight="scrollRight"></component>
         </transition>
       </router-view>
       <Loading  :loading="$store.state.LoadingStatus"></Loading>
@@ -138,11 +138,12 @@ export default {
     Particle
   },
   setup(){    
+    let scrollcheck = ref(false);
     let stateusers = ref(false)
     //let canvasBg = ref(false)
     const routes = ref([])
     //스크롤영역
-    let scrollRight = ref()
+    let scrollRight = ref(0)
     //스크롤버튼
     let scrollTopButton = ref() 
     //스크롤버튼이벤트
@@ -163,7 +164,7 @@ export default {
 
     const currentHome = computed(() => {
       return router.currentRoute.value.path
-    })
+    })   
 
     watchEffect(() => {
       // pretend you have a getData getter in store
@@ -174,7 +175,22 @@ export default {
       } else {
         let stateuser = stateusers.value = false
         store.dispatch('toggleStateUser', stateuser)
+      }     
+
+      //메인 다운 애로우 스크롤 수정
+      if(scrollRight.value.scrollTop > 1 && currentHome.value == '/'){
+        if(!scrollcheck.value){               
+          scrollcheck.value = true;
+        }
+      } 
+      else if(scrollRight.value.scrollTop === 0 && currentHome.value == '/') {
+        if(scrollcheck.value){               
+          scrollcheck.value = false;
+          scrollRight.value.scrollTop = 0
+        }
       }
+      
+
       //console.log(currentHome.value)     
 
       //스크롤영역 좌표 - 홈 downscroll 버튼 
@@ -214,7 +230,8 @@ export default {
 
     onMounted(()=>{            
       // let scrollAni22 = document.getElementsByClassName('scrollAni')[0]
-      // console.log(scrollAni22)
+      
+
       document.documentElement.style.background = '#1b1d20';
       let set = store.state.darkmode;
       if(set == true){
@@ -229,17 +246,17 @@ export default {
       //스크롤영역 좌표  
       let rightWrap = document.querySelector('.rightWrap')          
       
-      
+
       // window.addEventListener("load",function(){ 
       //   let scrollAni = document.getElementsByClassName('scrollAni')[0] 
       //   scrollAni.style.display ='none';
       // })
 
       //스크롤 이벤트시 이벤트한번만 되는 전역변수
-      let scrollcheck = true;
+      //let scrollcheck = true;
 
-      rightWrap.addEventListener("scroll",function(){
-        
+      scrollRight.value.addEventListener("scroll", function(){
+        //console.log(scrollRight.value.scrollTop)
         scrollTopButton.value.style.display = 'block';
         if (scrollRight.value.scrollTop > 2000) {
             scrollTopButton.value.classList.remove("invisible");            
@@ -252,54 +269,27 @@ export default {
         let scrollAni = document.getElementsByClassName('scrollAni')[0]        
         //console.log(scrollRight.value.scrollTop)
         
-        if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
-          if(scrollcheck){               
-            scrollcheck = false;
+        if(scrollRight.value.scrollTop > 1 && currentHome.value == '/'){
+          if(!scrollcheck.value){               
+            scrollcheck.value = true;
             scrollAni.style.display ='none';
-            console.log('??')
           }
         } 
-        else if(scrollRight.value.scrollTop == 0 && currentHome.value == '/') {
-          if(!scrollcheck){               
-            scrollcheck = true;
+        else if(scrollRight.value.scrollTop === 0 && currentHome.value == '/') {
+          if(scrollcheck.value){               
+            scrollcheck.value = false;
             scrollAni.style.display ='block';
+            scrollRight.value.scrollTop = 0
           }
+        } else if(currentHome.value == '/') {
+            scrollAni.style.display ='none';
+            scrollcheck.value = true;
+            scrollRight.value.scrollTop = 0
         }
 
       })     
     })
-
-    onBeforeUnmount(()=>{
-      //스크롤영역 좌표      
-      let rightWrap = document.querySelector('.rightWrap')  
-      rightWrap.removeEventListener("scroll",function(){
-        if (scrollRight.value.scrollTop > 2000) {
-            scrollTopButton.value.classList.remove("invisible");
-        }       
-        else {
-            scrollTopButton.value.classList.add("invisible");
-        }
-      })
-
-      let scrollcheck = true;
-      rightWrap.addEventListener("scroll",function(){    
-        let scrollAni = document.getElementsByClassName('scrollAni')[0]        
-        //console.log(scrollRight.value.scrollTop)
-        
-        if(scrollRight.value.scrollTop > 10 && currentHome.value == '/'){
-          if(scrollcheck){               
-            scrollcheck = false;
-            scrollAni.style.display ='none';
-          }
-        } 
-        else if(scrollRight.value.scrollTop == 0 && currentHome.value == '/') {
-          if(!scrollcheck){               
-            scrollcheck = true;
-            scrollAni.style.display ='block';
-          }
-        }
-      })  
-    })
+    
 
     return {
       routes,
@@ -314,6 +304,7 @@ export default {
       onLogout,  
       currentHome,
       currentUser,
+      scrollcheck,
     }
   },
   methods:{
@@ -361,4 +352,5 @@ export default {
 .route-leave-active{
   transition: all 0.1s ease-in;
 }
+
 </style>
