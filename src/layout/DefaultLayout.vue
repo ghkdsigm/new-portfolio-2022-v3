@@ -108,7 +108,7 @@
       <div
           ref="scrollTopButton"
           @click="scrollTopbt"
-          class="invisible fixed bottom-0 right-0 flex justify-end pb-8 pr-8 transition duration-150 ease-out"
+          class="invisible fixed bottom-0 right-0 flex justify-end pb-8 pr-8 transition duration-150 ease-out scrollTopbt"
       > 
           <div
               class="dark:bg-zinc-900 border dark:border-zinc-700 dark:hover:border-primary border-zinc-400 hover:border-third bg-zinc-200 dark:text-gray-400 text-gray-600 dark:hover:text-gray-800 hover:text-white dark:hover:bg-primary hover:bg-third transition xl:w-20 xl:h-20 md:w-16 md:h-16 rounded-full flex items-center justify-center font-medium"
@@ -380,4 +380,17 @@ export default {
   transition: all 0.1s ease-in;
 }
 
+/* @media (max-width: 1024px) {
+  .scrollTopbt {    
+    width: 100%;
+    visibility: visible;
+    padding: 0 15px 10px;
+    margin: 0 0 30px 0;
+    position: relative;
+  }
+  .scrollTopbt > div {
+    width:100%;
+    padding:10px 0;
+  }
+} */
 </style>
