@@ -10,13 +10,13 @@
         <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">기획 및 문서</a>
       </div> -->
       <!--project01-->
-      <div class="flex justify-center my-14">
+      <div class="flex justify-center mt-12 mb-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
             <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">01</h2>
           </div>
           <div class="flex-2">
-            <img src="http://zezihi.com/assets/img/pro1.jpg" alt="">
+            <img src="../assets/images/worksThumb/pro1.jpg" alt="">
             <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
             <div class="lg:flex block items-center justify-between">
               <div>
@@ -31,13 +31,13 @@
         </div>
       </div>
       <!--project02-->
-      <div class="flex justify-center my-14">
+      <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
             <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">02</h2>
           </div>
           <div class="flex-2">
-            <img src="http://zezihi.com/assets/img/pro2.jpg" alt="">
+            <img src="../assets/images/worksThumb/pro2.jpg" alt="">
             <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
             <div class="lg:flex block items-center justify-between">
               <div>
@@ -52,13 +52,13 @@
         </div>
       </div>
       <!--project03-->
-      <div class="flex justify-center my-14">
+      <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
             <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">03</h2>
           </div>
           <div class="flex-2">
-            <img src="http://zezihi.com/assets/img/pro3.jpg" alt="">
+            <img src="../assets/images/worksThumb/pro4.jpg" alt="">
             <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
             <div class="lg:flex block items-center justify-between">
               <div>
@@ -73,13 +73,13 @@
         </div>
       </div>
       <!--project04-->
-      <div class="flex justify-center my-14">
+      <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
             <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">04</h2>
           </div>
           <div class="flex-2">
-            <img src="http://zezihi.com/assets/img/pro4.jpg" alt="">
+            <img src="../assets/images/worksThumb/pro3.jpg" alt="">
             <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
             <div class="lg:flex block items-center justify-between">
               <div>
@@ -94,13 +94,13 @@
         </div>
       </div>
       <!--project05-->
-      <div class="flex justify-center my-14">
+      <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
             <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">05</h2>
           </div>
           <div class="flex-2">
-            <img src="http://zezihi.com/assets/img/pro5.jpg" alt="">
+            <img src="../assets/images/worksThumb/pro5.jpg" alt="">
             <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
             <div class="lg:flex block items-center justify-between">
               <div>
