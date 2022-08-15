@@ -46,7 +46,7 @@
 
         <div class="m-auto lg:px-32 md:px-10 z-10">        
             <div class="flex justify-between items-center mt-14 mb-4">
-                <h2 class="lg:text-7xl text-4xl block lg:font-extrabold font-bold dark:text-white text-black text-third text-left">{{ tweet.board_body }}</h2>   
+                <h2 class="lg:text-7xl text-4xl block lg:font-extrabold font-bold dark:text-white text-black text-left">{{ tweet.board_body }}</h2>   
             </div>
 
             <div class="lg:my-14 my-10">                
@@ -61,14 +61,14 @@
                     <div class="flex">
                         <p class="dark:text-white text-black lg:text-xl text-lg font-medium">
                             <span class="lg:hidden visible dark:text-white text-black">카테고리 : </span>
-                            {{ tweet.category }}
+                            {{ tweet.category.toUpperCase() }}
                         </p>
                     </div>
                 </div>
                 <div class="lg:flex block mt-6">
                     <ul class="flex flex-wrap">
                         <li v-for="(item, index) in tweet.hashtag" :key="index">
-                            <span class="lg:flex inline-block lg:text-xl text-sm py-2 px-4 dark:bg-bgDark bg-gray-300 lg:mr-4 mr-2 lg:mb-0 mb-2 rounded-full dark:text-white text-black">
+                            <span class="lg:flex inline-block lg:text-lg text-sm py-2 px-4 dark:bg-bgDark bg-gray-300 lg:mr-4 mr-2 lg:mb-0 mb-2 rounded-full dark:text-white text-black">
                                 {{'#' + item}}
                             </span>
                         </li>

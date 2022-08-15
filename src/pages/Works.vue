@@ -275,10 +275,12 @@ export default {
     onMounted(()=>{
       // console.log(data)
       //console.log(props.scrollRight)
-      console.log(currentHome.value)
+      console.log(props.scrollRight)
       
       document.addEventListener('scroll', scrollFunc);
-      props.scrollRight.addEventListener("scroll", scrollFuncPc)
+      if(props.scrollRight && props.scrollRight !== 0){
+        props.scrollRight.addEventListener("scroll", scrollFuncPc)
+      }      
 
       // if(currentHome.value === '/works' && scrollTap.value){        
       //   // props.scrollRight.addEventListener("scroll", function(){
@@ -315,7 +317,9 @@ export default {
     })
     onBeforeUnmount(()=>{
       document.removeEventListener('scroll', scrollFunc);
-      props.scrollRight.addEventListener("scroll", scrollFuncPc)
+      if(props.scrollRight && props.scrollRight !== 0){ 
+        props.scrollRight.removeEventListener("scroll", scrollFuncPc)
+      }
     })
 
     return {

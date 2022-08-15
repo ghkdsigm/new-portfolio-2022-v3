@@ -146,7 +146,7 @@ export default {
             console.log(selectedcategory.value)
         }
         const save = async () => {
-            if(boardBody.value !== ''){
+            if(boardBody.value !== '' && selectedcategory.value !== 'selected'){
                 try {
                     await addTweet(selectedcategory.value, boardBody.value, edittext.value, currentUser.value, addedhashtag.value)
                     //alert('게시글이 등록되었습니다!')        
@@ -160,8 +160,8 @@ export default {
                 }
             } else {
                 swal({
-                    title: '등록실패',
-                    text: '내용을 등록해주세요!',
+                    title: '글쓰기 실패',
+                    text: '카테고리 및 타이틀을 입력해주세요!',
                     type: 'error',
                     closeOnConfirm: false,                    
                 }).then(function(){
