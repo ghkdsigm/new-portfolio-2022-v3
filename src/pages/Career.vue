@@ -10,7 +10,7 @@
           <img 
             src="@/assets/images/earth.gif"
             alt="earth gif" 
-            class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto"
+            class="mix-blend-screen lg:block xl:m-0 lg:mx-auto mx-auto"
           />
           <!-- <img 
             src="@/assets/images/earth.gif"
