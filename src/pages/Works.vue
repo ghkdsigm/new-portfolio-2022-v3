@@ -4,12 +4,12 @@
     <div class="relative mt-4 text-left">
       <!-- <router-link to="/works/work01">zz</router-link>
       <router-link to="/works/work02">xx</router-link> -->
-      <div class="lg:my-20 my-12 text-center">
-        <a @click="scrollToAnchorPoint('workCategory01')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">신규구축 및 운영</a> 
-        <a @click="scrollToAnchorPoint('workCategory02')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">관리 및 유지보수</a> 
-        <a @click="scrollToAnchorPoint('workCategory03')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">프론트엔드</a> 
-        <a @click="scrollToAnchorPoint('workCategory04')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">디자인</a>
-        <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-0 lg:my-0 my-4 lg:text-xl text-base lg:w-fit w-5/12">기획 및 문서</a>
+      <div class="lg:my-20 my-12 text-center" ref="scrollTap">
+        <a @click="scrollToAnchorPoint('workCategory01')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">신규구축 및 운영</a> 
+        <a @click="scrollToAnchorPoint('workCategory02')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">관리 및 유지보수</a> 
+        <a @click="scrollToAnchorPoint('workCategory03')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">프론트엔드</a> 
+        <a @click="scrollToAnchorPoint('workCategory04')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">디자인</a>
+        <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">기획 및 문서</a>
       </div>
       <div ref="workCategory01" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">신규구축 및 운영</h2>
@@ -149,9 +149,10 @@ import BackHome from '@/components/common/BackHome.vue'
 import data from '@/data'
 
 // import Swiper core and required modules
-import { onMounted } from 'vue'
+import { onMounted, computed, ref, watchEffect, onBeforeUnmount } from 'vue'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import router from '../router'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -161,6 +162,7 @@ import 'swiper/css/scrollbar';
 
 
 export default {
+  props: ['scrollRight'],
   components:{
     BackHome,
     Swiper,
@@ -208,19 +210,105 @@ export default {
       },
     }
   },
-  setup() {
+  setup(props, context) {
+    const scrollTap = ref(0)
+    let scrollcheckwork = ref(true)
     const onSwiper = (swiper) => {
       console.log(swiper);
     };
     const onSlideChange = () => {
       console.log('slide change');
     };
+    const currentHome = computed(() => {
+      return router.currentRoute.value.path
+    })
+    const scrollFunc = () => {      
+      window.addEventListener("scroll", function(){
+        if(window.scrollY == 0 && currentHome.value === '/works') {
+          if(!scrollcheckwork.value){               
+            scrollcheckwork.value = true;
+            return scrollTap.value.classList.remove('scrollArea')
+          }
+        }
+        else if(window.scrollY > 1 && currentHome.value === '/works'){
+          if(scrollcheckwork.value){               
+            scrollcheckwork.value = false;
+            return scrollTap.value.classList.add('scrollArea')
+          }
+        }
+      })
+    }
+    watchEffect(()=>{
+      // if(currentHome.value === '/works' && scrollTap.value){  
+      //   window.addEventListener("scroll", function(){
+      //     if(window.scrollY == 0) {
+      //       if(!scrollcheckwork.value){               
+      //         scrollcheckwork.value = true;
+      //         scrollTap.value.classList.remove('scrollArea')
+      //       }
+      //     }
+      //     else if(window.scrollY > 1){
+      //       if(scrollcheckwork.value){               
+      //         scrollcheckwork.value = false;
+      //         scrollTap.value.classList.add('scrollArea')
+      //       }
+      //     }
+      //   })
+      // } else {
+      //   return
+      // }
+    })
     onMounted(()=>{
       // console.log(data)
+      //console.log(props.scrollRight)
+      console.log(currentHome.value)
+      
+      document.addEventListener('scroll', scrollFunc);
+
+      // if(currentHome.value === '/works' && scrollTap.value){        
+      //   // props.scrollRight.addEventListener("scroll", function(){
+      //   //   if(props.scrollRight.scrollTop == 0) {
+      //   //     if(!scrollcheck.value){               
+      //   //       scrollcheck.value = true;
+      //   //       scrollTap.value.classList.remove('scrollArea')
+      //   //     }
+      //   //   }
+      //   //   else if(props.scrollRight.scrollTop > 1){
+      //   //     if(scrollcheck.value){               
+      //   //       scrollcheck.value = false;
+      //   //       scrollTap.value.classList.add('scrollArea')
+      //   //     }
+      //   //   }
+      //   // })
+      //   window.addEventListener("scroll", function(){
+      //     if(window.scrollY == 0) {
+      //       if(!scrollcheckwork.value){               
+      //         scrollcheckwork.value = true;
+      //         return scrollTap.value.classList.remove('scrollArea')
+      //       }
+      //     }
+      //     else if(window.scrollY > 1){
+      //       if(scrollcheckwork.value){               
+      //         scrollcheckwork.value = false;
+      //         return scrollTap.value.classList.add('scrollArea')
+      //       }
+      //     }
+      //   })
+      // } else {
+      //   return
+      // }
     })
+    onBeforeUnmount(()=>{
+      document.removeEventListener('scroll', scrollFunc);
+    })
+
     return {
       onSwiper,
       onSlideChange,
+      currentHome,
+      scrollTap,
+      scrollcheckwork,
+      scrollFunc,
       modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
@@ -297,4 +385,54 @@ export default {
 .dark .worksUl li:hover {
   box-shadow: 0 10px 20px -15px #000000d1;
 }
+.scrollArea {    
+  position: sticky;
+  z-index: 9990;
+  margin: 0 auto;
+  transition: all 1s ease;
+  top: 10%;
+}
+
+.dark .scrollArea a {
+  background-color:rgb(255,179,0);
+  color:#000;
+  border-radius: 50px;
+  padding:8px 16px;  
+}
+.dark .scrollArea a:hover {
+  background-color:rgb(255, 200, 70);
+}
+
+.scrollArea a {
+  background-color:rgb(17,33,107);
+  color:#fff;
+  border-radius: 50px;
+  padding:8px 16px;
+  font-size:1.5vh;
+  box-shadow: 2px 2px 10px 0px #0000004f;
+  font-weight:400;
+}
+.scrollArea a:hover {
+  background-color:rgb(45, 69, 173);
+}
+
+/* @screen sm {
+  .scrollArea {
+    position: fixed;
+    top: 2%;
+  }
+}  */
+
+@media (max-width: 1024px) {
+  .scrollArea {
+    position: fixed;
+    top: 4%;
+  }
+  .dark .scrollArea a {
+    background-color: rgb(255 200 70 / 85%);
+  }
+  .scrollArea a {
+    background-color: rgb(17 33 107 / 87%);
+  }
+} 
 </style>
