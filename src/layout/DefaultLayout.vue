@@ -125,7 +125,7 @@
 </template>
 
 <script>
-import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount, watchEffect  } from 'vue'
+import { ref,onBeforeMount,onMounted, computed, onBeforeUnmount, watchEffect, onUpdated  } from 'vue'
 import { useStore, mapGetters } from 'vuex'
 import router from '../router'
 import { auth } from '../firebase'
@@ -254,6 +254,11 @@ export default {
       //routes.value = router.options.routes
       routes.value = router.options.routes.filter((route) => route.meta.isMenu == true)
     });
+
+    onUpdated(()=>{
+      //console.log(currentHome.value)
+       
+    })
 
     onMounted(()=>{            
       // let scrollAni22 = document.getElementsByClassName('scrollAni')[0]

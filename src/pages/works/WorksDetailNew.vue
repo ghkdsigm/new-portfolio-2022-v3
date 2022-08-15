@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import BackWorks from '@/components/common/BackWorks.vue'
+import BackWorks from '../../components/common/BackWorks.vue'
 //import data from '@/data'
 export default {
   components:{

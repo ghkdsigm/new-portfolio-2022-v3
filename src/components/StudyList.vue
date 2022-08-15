@@ -111,7 +111,7 @@ export default {
             // pretend you have a getData getter in store
             //const store = useStore()
             const datass = await store.getters.stateuser;
-            console.log(datass)
+            //console.log(datass)
             if(datass) {
                 stateusers.value = true
             } else {

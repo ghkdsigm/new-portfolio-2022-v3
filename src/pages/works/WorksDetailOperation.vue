@@ -18,21 +18,39 @@
 </template>
 
 <script>
-import BackWorks from '@/components/common/BackWorks.vue'
+import BackWorks from '../../components/common/BackWorks.vue'
+import { useRoute } from 'vue-router'
+import store from '../../store'
+import { onMounted } from 'vue';
 //import data from '@/data'
 export default {
   components:{
     BackWorks
   },
   name:'worksDetail',
-  data(){
-    const index = this.$route.params.contentId;
-    return{
-      index:index,
-      //data:data.Content[index],
-      data:this.$store.state.opeartiondata[index],
+  // data(){
+  //   const index = this.$route.params.contentId;
+  //   return{
+  //     index:index,
+  //     //data:data.Content[index],
+  //     data:this.$store.state.opeartiondata[index],
+  //   }
+  // },  
+  setup(){
+    const route = useRoute()
+    const index = route.params.contentId;
+    const data = store.state.opeartiondata[index]
+
+    onMounted(() => {
+      
+    })
+
+    return {
+      route,
+      data,
+      index
     }
-  },  
+  },
   created() {
     this.$store.dispatch("FETCH_OPERATION");
     return

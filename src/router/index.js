@@ -92,13 +92,18 @@ const router = createRouter({
         //let rightWrap = document.querySelector('.rightWrap')        
         
         //페이지 이동시 스크롤탑이동
-        if(router.currentRoute.value.name !== 'worksDetailNew'){
+        // if(router.currentRoute.value.name !== 'worksDetailNew' || router.currentRoute.value.name !== 'worksDetailOperation' || router.currentRoute.value.name !== 'worksDetailFront'){
+        //     let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
+        //     return rightWrap.scrollTop = 0
+        // }  
+        //console.log(to.name)
+        if(to.name !== 'worksDetailNew' && to.name !== 'worksDetailOperation' && to.name !== 'worksDetailFront' && to.name !== 'studyDetailView'){
             let rightWrap = document.querySelector('.rightWrap') || document.querySelector('.rightWrap2')     
             return rightWrap.scrollTop = 0
-        }  
+        } 
+        
 
         //let canvasBg = document.querySelector('.canvasBG')
-        
     },
 })
 

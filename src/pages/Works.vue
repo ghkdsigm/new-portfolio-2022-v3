@@ -149,7 +149,7 @@ import BackHome from '@/components/common/BackHome.vue'
 import data from '@/data'
 
 // import Swiper core and required modules
-import { onMounted, computed, ref, watchEffect, onBeforeUnmount } from 'vue'
+import { onMounted, computed, ref, watchEffect, onBeforeUnmount, onUpdated } from 'vue'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import router from '../router'
@@ -162,7 +162,7 @@ import 'swiper/css/scrollbar';
 
 
 export default {
-  props: ['scrollRight'],
+  props: ['scrollRight','scrollRight2'],
   components:{
     BackHome,
     Swiper,
@@ -222,6 +222,9 @@ export default {
     const currentHome = computed(() => {
       return router.currentRoute.value.path
     })
+    const currentRight = computed(() => {
+      return props.scrollRight
+    })
     const scrollFunc = () => {      
       window.addEventListener("scroll", function(){
         if(window.scrollY == 0 && currentHome.value === '/works') {
@@ -271,16 +274,20 @@ export default {
       // } else {
       //   return
       // }
+      
+    })
+    onUpdated(()=>{
+      props.scrollRight.addEventListener("scroll", scrollFuncPc)
     })
     onMounted(()=>{
       // console.log(data)
       //console.log(props.scrollRight)
-      console.log(props.scrollRight)
       
+      //console.log(currentRight.value)
       document.addEventListener('scroll', scrollFunc);
-      if(props.scrollRight && props.scrollRight !== 0){
-        props.scrollRight.addEventListener("scroll", scrollFuncPc)
-      }      
+      // if(props.scrollRight || props.scrollRight !== 0){
+      //   props.scrollRight.addEventListener("scroll", scrollFuncPc)
+      // }      
 
       // if(currentHome.value === '/works' && scrollTap.value){        
       //   // props.scrollRight.addEventListener("scroll", function(){
@@ -317,9 +324,9 @@ export default {
     })
     onBeforeUnmount(()=>{
       document.removeEventListener('scroll', scrollFunc);
-      if(props.scrollRight && props.scrollRight !== 0){ 
-        props.scrollRight.removeEventListener("scroll", scrollFuncPc)
-      }
+      // if(props.scrollRight && props.scrollRight !== 0){ 
+      //   props.scrollRight.removeEventListener("scroll", scrollFuncPc)
+      // }
     })
 
     return {
@@ -330,6 +337,7 @@ export default {
       scrollcheckwork,
       scrollFunc,
       scrollFuncPc,
+      currentRight,
       modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
