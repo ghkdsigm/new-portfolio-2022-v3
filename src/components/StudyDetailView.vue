@@ -1,6 +1,8 @@
 <template>
     <div v-if="tweet">
-        <BackStudy class="relative"></BackStudy>
+        <div class="flex justify-between lg:mt-0 mt-10">
+            <BackStudy class="relative"></BackStudy>
+        </div>
         <!-- <div class="m-auto z-10">        
             <div class="flex justify-between items-center mt-14 mb-10">
                 <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">BOARD CONTENT</h2>   
