@@ -238,6 +238,20 @@ export default {
         }
       })
     }
+    const scrollFuncPc = () => {            
+      if(props.scrollRight.scrollTop == 0 && currentHome.value === '/works') {
+        if(!scrollcheckwork.value){               
+          scrollcheckwork.value = true;
+          scrollTap.value.classList.remove('scrollArea')
+        }
+      }
+      else if(props.scrollRight.scrollTop > 1 && currentHome.value === '/works'){
+        if(scrollcheckwork.value){               
+          scrollcheckwork.value = false;
+          scrollTap.value.classList.add('scrollArea')
+        }
+      }
+    }
     watchEffect(()=>{
       // if(currentHome.value === '/works' && scrollTap.value){  
       //   window.addEventListener("scroll", function(){
@@ -264,6 +278,7 @@ export default {
       console.log(currentHome.value)
       
       document.addEventListener('scroll', scrollFunc);
+      props.scrollRight.addEventListener("scroll", scrollFuncPc)
 
       // if(currentHome.value === '/works' && scrollTap.value){        
       //   // props.scrollRight.addEventListener("scroll", function(){
@@ -300,6 +315,7 @@ export default {
     })
     onBeforeUnmount(()=>{
       document.removeEventListener('scroll', scrollFunc);
+      props.scrollRight.addEventListener("scroll", scrollFuncPc)
     })
 
     return {
@@ -309,6 +325,7 @@ export default {
       scrollTap,
       scrollcheckwork,
       scrollFunc,
+      scrollFuncPc,
       modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
@@ -394,7 +411,7 @@ export default {
 }
 
 .dark .scrollArea a {
-  background-color:rgb(255,179,0);
+  background-color: rgb(255 200 70 / 85%);
   color:#000;
   border-radius: 50px;
   padding:8px 16px;  
@@ -404,7 +421,7 @@ export default {
 }
 
 .scrollArea a {
-  background-color:rgb(17,33,107);
+  background-color: rgb(17 33 107 / 87%);
   color:#fff;
   border-radius: 50px;
   padding:8px 16px;
@@ -414,6 +431,7 @@ export default {
 }
 .scrollArea a:hover {
   background-color:rgb(45, 69, 173);
+  font-weight:600;
 }
 
 /* @screen sm {
