@@ -6,11 +6,11 @@
     </div>
     <div class="relative lg:mt-20 mt-4 text-left">
       <div class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-20">
-        <div class="xl:flex items-center lg:block block dark:bg-blend-screen bg-blend-normal">
+        <div class="xl:flex items-center lg:block block">
           <img 
             src="@/assets/images/earth.gif"
             alt="earth gif" 
-            class="dark:mix-blend-screen mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto"
+            class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto"
           />
           <!-- <img 
             src="@/assets/images/earth.gif"
