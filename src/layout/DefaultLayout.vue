@@ -139,6 +139,7 @@ export default {
   },
   setup(){    
     let scrollcheck = ref(false);
+    let canvascheck = ref(false);
     let stateusers = ref(false)
     //let canvasBg = ref(false)
     const routes = ref([])
@@ -188,7 +189,7 @@ export default {
           scrollcheck.value = false;
           scrollRight.value.scrollTop = 0
         }
-      }
+      }      
       
 
       //console.log(currentHome.value)     
@@ -256,8 +257,27 @@ export default {
     });
 
     onUpdated(()=>{
-      //console.log(currentHome.value)
-       
+      console.log(currentHome.value)
+      // let canvasBG = document.getElementsByClassName('canvasWrap')[0]
+      // if(currentHome.value == '/'){
+      //   canvasBG.style.opacity = '1'
+      // } else {
+      //   canvasBG.style.opacity = '0'
+      // }
+
+      let canvasBG = document.getElementsByClassName('canvasWrap')[0]
+      if(currentHome.value == '/' && canvasBG){
+        if(!canvascheck.value){
+          canvascheck.value = true;
+          canvasBG.style.opacity = '1'
+        }
+      } 
+      else if(currentHome.value !== '/' && canvasBG){
+        if(canvascheck.value){
+          canvascheck.value = false;
+          canvasBG.style.opacity = '0'
+        }
+      }
     })
 
     onMounted(()=>{            
@@ -337,6 +357,7 @@ export default {
       currentHome,
       currentUser,
       scrollcheck,
+      canvascheck
     }
   },
   methods:{

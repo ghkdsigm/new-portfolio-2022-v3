@@ -85,8 +85,8 @@ a, button:hover {
     cursor: none;
   }
 
- .canvasBG {display:none;}
- .homeWatch ~ .canvasBG {display:block;}
+ /* .canvasBG {display:none;}
+ .homeWatch ~ .canvasBG {display:block;} */
 
   .leading-3	{line-height: .75rem !important;} /* 12px */
   .leading-4	{line-height: 1rem !important;} /* 16px */
