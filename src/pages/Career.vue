@@ -123,7 +123,7 @@
             </li>
           </ul>
           <div class="mt-10">
-            <button type="button" class="px-8 py-2 border font-thin dark:border-gray-600 border-gray-300 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third lg:w-fit w-full lg:text-xl text-base">More Projects</button>
+            <button type="button" @click="clickToWorks" class="px-8 py-2 border font-thin dark:border-gray-600 border-gray-300 rounded-full dark:hover:border-primary hover:border-third text-gray-400 dark:hover:text-primary hover:text-third lg:w-fit w-full lg:text-xl text-base">More Projects</button>
           </div>
         </div>        
       </div>
@@ -134,11 +134,22 @@
 <script>
 import BackHome from '../components/common/BackHome.vue'
 import { ref,onBeforeMount,onMounted, computed } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
   components:{
     BackHome
   },
+  setup(){
+    const router = useRouter()
+    const clickToWorks = () => {
+      router.replace("/works")
+    }
+    return{
+      clickToWorks,
+      router
+    }
+  }
   // data() {
   //   return {
   //     isImageLoaded: false
