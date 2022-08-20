@@ -9,7 +9,7 @@
       <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
       <g><path d="M976.5,458.2H170l206-198.3c5.3-5.3,5.3-13.8,0-19.1l-41.4-41.4c-5.3-5.3-13.8-5.3-19.1,0L56.2,449c-0.3,0.3-0.6,0.5-0.9,0.8l-1.4,1.4l-40,38.5c-2.8,2.8-4.1,6.6-3.9,10.3c-0.2,3.7,1.1,7.5,3.9,10.3L54,548.9l1.3,1.3c0.3,0.3,0.5,0.5,0.8,0.7l259.3,249.6c5.3,5.3,13.8,5.3,19.1,0l41.4-41.4c5.3-5.3,5.3-13.8,0-19.1l-204-196.4h804.6c7.5,0,13.5-6,13.5-13.5v-58.5C990,464.2,984,458.2,976.5,458.2z"/></g>
       </svg>
-      <span class="dark:text-white dark:hover:text-slate-300 text-blue-900 hover:text-blue-700 font-bold text-xl">Home</span>
+      <span class="dark:text-white dark:hover:text-slate-300 text-blue-900 hover:text-blue-700 font-bold lg:text-xl text-base">Home</span>
     </router-link>
   </div>
 </template>
