@@ -46,7 +46,7 @@
 
         <div class="m-auto lg:px-32 md:px-10 z-10">        
             <div class="flex justify-between items-center mt-14 mb-4">
-                <h2 class="lg:text-7xl text-4xl block lg:font-extrabold font-bold dark:text-white text-black text-left">{{ tweet.board_body }}</h2>   
+                <h2 class="lg:text-7xl text-3xl block lg:font-extrabold font-bold dark:text-white text-black text-left">{{ tweet.board_body }}</h2>   
             </div>
 
             <div class="lg:my-14 my-10">                

@@ -40,7 +40,8 @@
                 </tr>
             </tbody>
         </table> -->
-        <div class="overflow-x-auto mb-32">
+        <!--pc모드-->
+        <div class="lg:block hidden overflow-x-auto mb-32">
             <table class="w-full lg:min-w-full min-w-max text-white table-auto border-collapse table">
                 <colgroup>
                     <col width="15%" />
@@ -74,6 +75,37 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <!--mobile모드-->
+        <div class="lg:hidden block overflow-x-auto mb-32">
+            <p class="dark:text-white lg:text-medium text-sm text-left pb-4">TOTAL : <span class="pl-1 dark:text-fifth dark:hover:text-fifthHover font-bold lg:text-medium text-sm">{{tweets.length}}</span></p>
+            <div>
+                <div v-for="item in tweets" :key="item.id">
+                    <div class="text-left dark:text-white text-black py-10 border-t dark:border-gray-600 border-gray-300">
+                        <p class="lg:mb-0 mb-2 text-third dark:text-fifth dark:hover:text-fifthHover font-light lg:text-sm text-sm">{{ item.category }}</p>
+                        <router-link :to="`/study/board/${item.id}`" :item="item" :currentUser="currentUser" class="block lg:pb-0 pb-4 hover:underline dark:hover:text-primary hover:text-third">
+                            <h2 class="text-lg">{{ item.board_body }}</h2>
+                            <p class="text-lg font-thin">{{ item.body }}</p>
+                        </router-link>
+                        <div>
+                            <ul class="flex flex-wrap">
+                                <li v-for="(hash, i) in item.hashtag" :key="i">
+                                    <span class="lg:flex inline-block lg:text-lg text-sm py-1 px-3 dark:bg-bgDark bg-gray-300 lg:mr-4 mr-2 lg:mb-0 mb-2 rounded-full dark:text-white text-black">
+                                        {{'#' + hash}}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex">
+                            <span class="dark:text-gray-400 text-gray-400 lg:text-lg text-sm font-extralight">
+                                {{ item.username }}
+                            </span>
+                            <span class="dark:text-gray-400 text-gray-400 mx-1">·</span>
+                            <span class="font-extralight lg:text-sm text-sm dark:text-gray-400 text-gray-400">{{ moment(item.created_at).format('YY. MM. DD.') }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </template>
