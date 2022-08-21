@@ -11,7 +11,7 @@
         <img :src="data.innerImage" class="mx-auto block" alt="" />
       </div>
       <!-- <rounter-link :to="data.url">ss</rounter-link> -->
-      <div class="mt-20 mb-40 dark:text-white text-black text-left">
+      <div class="lg:mt-20 mt-6 mb-40 dark:text-white text-black text-left">
         <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">프로젝트 참여도 : </span> <span class="lg:text-lg text-base">{{data.party}}</span></div>
         <div class="lg:flex block py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">상세 참여도 : </span> 
           <ul>
