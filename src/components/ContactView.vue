@@ -19,7 +19,7 @@
       </div>
       <div class="formGroup py-4 flex lg:flex-row flex-col">
         <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Message</label>
-        <textarea name="message" ref="message" rows="8" placeholder="문의하실 내용을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
+        <textarea name="message" ref="message" rows="12" placeholder="문의하실 내용을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
       </div>
       <div class="flex lg:justify-end justify-center lg:mb-0 mb-6 mt-4">
         <input type="submit" value="Send" class="button text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium rounded-md" />
@@ -99,21 +99,21 @@ export default {
           )
           .then(
             result => {
-              alert(
-                "메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)",
-                result.text,
+              swal(
+                "문의완료!", "메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)", "success"
+                //result.text,
               );
               this.$refs.form.reset();
             },
             error => {
-              alert(
-                "전송에 실패하였습니다 확인 후 다시 시도해주세요",
-                error.text,
+              swal(
+                "전송실패","전송에 실패하였습니다 확인 후 다시 시도해주세요", "error"
+                //error.text,
               );
             },
           );
       } else {
-        alert("내용을 입력후 메일을 보내주세요");
+        swal("Fail", "내용을 입력후 메일을 보내주세요", "error");
       }
     },
   },
