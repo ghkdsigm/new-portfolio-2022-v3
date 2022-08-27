@@ -7,11 +7,13 @@
     <div class="relative lg:mt-20 mt-4 text-left">
       <div class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-20">
         <div class="xl:flex items-center lg:block block">
-          <img 
-            src="@/assets/images/earth.gif"
-            alt="earth gif" 
-            class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto"
-          />
+          <div class="earthWrap">
+            <img 
+              src="@/assets/images/earth.gif"
+              alt="earth gif" 
+              class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto earth"
+            />
+          </div>
           <!-- <img 
             src="@/assets/images/earth.gif"
             alt="earth gif" 
@@ -193,6 +195,19 @@ export default {
 }
 </script>
 
-<style>
-/* .ss {mix-blend-mode: exclusion !important;} */
+<style scoped>
+@media (max-width: 1024px) {
+  .dark .earthWrap{
+    background:rgb(30, 32, 34);    
+    z-index: -5;
+  }
+  .earthWrap{
+    background:rgb(246, 246, 246);
+    z-index: -5;
+  }
+}
+.earth {
+  -webkit-filter: grayscale(100%) blur(0) contrast(100%);
+  filter: grayscale(100%) blur(0) contrast(100%);
+}
 </style>

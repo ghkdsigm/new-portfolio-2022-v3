@@ -48,7 +48,7 @@ export default {
     -webkit-text-stroke: 1px #11216b;
     text-stroke: 1px #11216b;
   }
-  .white_navLink:hover {color:#20317d;}
+  .white_navLink:hover {color:#11216b;}
   /* .linkWrap:hover .navLink {
     color: #fff;
   } */
