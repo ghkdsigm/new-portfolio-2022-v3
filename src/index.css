@@ -95,6 +95,14 @@ a, button:hover {
     color:#fff
   }
 
+  .dark .swal-icon--success__hide-corners {
+    background-color:#252b31;
+  }
+
+  .dark .swal-icon--success:after, .dark .swal-icon--success:before {
+    background-color:#252b31;
+  }
+
  /* .canvasBG {display:none;}
  .homeWatch ~ .canvasBG {display:block;} */
 
