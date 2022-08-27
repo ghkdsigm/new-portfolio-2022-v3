@@ -32,7 +32,7 @@
           </h4>
         </div>
         <div class="career mb-10">
-          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third mb-4">History</h5>
+          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1">History</h5>
           <ul>
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base"><b class="font-base">(現) HYPERNEST</b> 개발팀 기획 & 프론트 개발 총괄</span>
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="career mb-22">
-          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third mb-4">Representive Projects</h5>
+          <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1">Representive Projects</h5>
           <ul>
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base dark:font-thin"><b class="font-base dark:font-base lg:inline-block block">[HYPERNEST]</b> GXG.Style NFT 거래소 신규 구축 및 운영</span>
