@@ -85,6 +85,16 @@ a, button:hover {
     cursor: none;
   }
 
+  .dark .swal-modal {
+    background-color:#252b31;
+  }
+  .dark .swal-title {
+    color:#fff
+  }
+  .dark .swal-text {
+    color:#fff
+  }
+
  /* .canvasBG {display:none;}
  .homeWatch ~ .canvasBG {display:block;} */
 
