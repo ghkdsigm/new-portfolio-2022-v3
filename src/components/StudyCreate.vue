@@ -182,8 +182,9 @@ export default {
         }
 
         const delhashaction = (el) => {
+            //el.target.parentNode.parentNode.remove();
+            console.log(el.target.parentNode.parentNode)
             const eltext = el.target.previousSibling.textContent.substr(1)
-            //addedhashtag.value.map((e, v)=> e.includes(eltext) ? e : [...e, v], [])
 
             // addedhashtag.value.map((e, i)=> {
             //     if(e[i] == eltext){
@@ -196,10 +197,9 @@ export default {
                 if (addedhashtag.value[i] === eltext) { 
                     addedhashtag.value.splice(i, 1); 
                     i--; 
+                }
             }
-            }
-            el.target.parentNode.parentNode.remove();
-            return
+            return             
         }
 
         onMounted( () => {            
