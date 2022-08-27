@@ -91,7 +91,7 @@
                                     <ul class="flex">
                                         <li ref="delhash" class="flex pr-2" v-for="(item, index) in addedhashtag" :key="index">
                                             <span class="px-4 py-2 border dark:border-gray-600 border-gray-400  rounded-full flex-row items-center">
-                                                {{'#' + item}}
+                                                <span>{{'#' + item}}</span>
                                                 <span @click="delhashaction" class="ml-2 px-2 dark:hover:text-black hover:text-white dark:hover:bg-primary hover:bg-third text-center rounded-full flex-row items-center font-thin">X</span>
                                             </span>
                                         </li>
@@ -182,7 +182,24 @@ export default {
         }
 
         const delhashaction = (el) => {
-            return el.target.parentNode.parentNode.remove();
+            const eltext = el.target.previousSibling.textContent.substr(1)
+            //addedhashtag.value.map((e, v)=> e.includes(eltext) ? e : [...e, v], [])
+
+            // addedhashtag.value.map((e, i)=> {
+            //     if(e[i] == eltext){
+            //         e.splice(i, 1); 
+            //         i--;
+            //     }
+            // })       
+            
+            for(var i = 0; i < addedhashtag.value.length; i++){ 
+                if (addedhashtag.value[i] === eltext) { 
+                    addedhashtag.value.splice(i, 1); 
+                    i--; 
+            }
+            }
+            el.target.parentNode.parentNode.remove();
+            return
         }
 
         onMounted( () => {            
@@ -200,7 +217,7 @@ export default {
             addedhashtag,
             delhash,
             delhashaction,
-            bTitle
+            bTitle,
         }
     }
 }
