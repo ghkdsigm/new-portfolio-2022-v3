@@ -6,7 +6,7 @@
     <div class="my-14 lg:grid block grid-cols-5 justify-items-center">
       <!--기본정보(사진)-->
       <div class="col-span-2">
-        <img src="https://mottohportfolio.shop/img/face.b9534ca1.png" class="lg:m-0 mx-auto" alt="황승현의 이미지" />
+        <img src="@/assets/images/face.png" class="lg:m-0 mx-auto" alt="황승현의 이미지" />
         <!--기본정보-->
         
       </div>

@@ -14,7 +14,7 @@
     <!-- With 박문성 해설위원 -->
     <div class="flex items-center h-80 overflow-hidden"><img src="@/assets/images/66.jpg" class="object-cover object-center h-full w-full" alt=""></div>
     <!-- 유벤투스 vs 팀k리그 친선경기 -->
-    <div class="flex items-center h-80 overflow-hidden"><img src="@/assets/images/88.png" class="object-cover object-center h-full w-full" alt=""></div>
+    <div class="flex items-center h-80 overflow-hidden"><img src="@/assets/images/88.jpg" class="object-cover object-center h-full w-full" alt=""></div>
     <!-- WITH UNBIZ -->    
   </div> 
 </template>
