@@ -78,12 +78,15 @@ const router = createRouter({
         { path: '/studycreate', name: 'studycreate', component: StudyCreate, title: 'STUDYCREATE', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/study/board/:id', name: 'studyDetailView', component: StudyDetailView, title: 'STUDYDETAILVIEW', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
         
+        // {
+        //     path: '/:notFound(.*)',
+        //     name: 'notfound',
+        //     component: NotFound,
+        //     title: 'NOTFOUND',
+        //     meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
+        // },
         {
-            path: '/:notFound(.*)',
-            name: 'notfound',
-            component: NotFound,
-            title: 'NOTFOUND',
-            meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: false } 
+            path: "/:pathMatch(.*)*",  name: "notFound", component: NotFound,  meta: { isMenu: false } ,
         },
         //{ path: '/scroll', name: 'scroll', component: Scroll, title: 'SCROLL', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
     ],   
