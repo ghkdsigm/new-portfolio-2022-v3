@@ -4,8 +4,12 @@
         <div class="lg:flex block justify-between items-center mt-14 mb-10">
             <p class="lg:flex hidden dark:text-white lg:text-medium text-sm">TOTAL : <span class="pl-1 dark:text-fifth dark:hover:text-fifthHover font-bold lg:text-medium text-sm">{{tweets.length}}</span></p>
             <input type="text" placeholder="CATEGORY를 입력하세요" v-model="search" class="bg-transparent border dark:border-gray-400 border-gray-500 hover:border-third dark:hover:border-primary py-2 px-6 rounded-full dark:text-white">
-            <button v-if="stateusers" class="lg:w-auto w-full lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:text-gray-500 dark:border-gray-600 text-gray-400 border-gray-300 rounded-lg" @click="needLogin">글쓰기</button>
-            <router-link to="/studycreate" v-else class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">글쓰기</router-link>
+            <div class="lg:flex block">
+                <button v-if="stateusers" class="hidden" @click="needLogin">뉴스보기</button>
+                <router-link to="/news" v-else class="lg:mr-3 lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">뉴스보기</router-link>
+                <button v-if="stateusers" class="lg:w-auto w-full lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:text-gray-500 dark:border-gray-600 text-gray-400 border-gray-300 rounded-lg" @click="needLogin">글쓰기</button>
+                <router-link to="/studycreate" v-else class="lg:flex block lg:mt-0 mt-6 px-6 py-2 border dark:border-white border-gray-500 hover:border-transparent hover:bg-third hover:text-white dark:hover:border-transparent dark:hover:bg-primary dark:text-white dark:hover:text-black rounded-lg">글쓰기</router-link>
+            </div>
         </div>
         <!-- <table class="w-full text-white table-auto border-collapse table">
             <colgroup>

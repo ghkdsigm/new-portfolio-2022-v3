@@ -4,6 +4,7 @@ import Home from '../pages/Home.vue'
 import Works from '../pages/Works.vue'
 import WorkIntro from '../pages/WorkIntro.vue'
 import Career from '../pages/Career.vue'
+import News from '../pages/News.vue'
 import Info from '../pages/Info.vue'
 import Contact from '../pages/Contact.vue'
 import Study from '../pages/Study.vue'
@@ -77,6 +78,7 @@ const router = createRouter({
         { path: '/register', name: 'register', component: Register, title: 'REGISTER', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/studycreate', name: 'studycreate', component: StudyCreate, title: 'STUDYCREATE', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         { path: '/study/board/:id', name: 'studyDetailView', component: StudyDetailView, title: 'STUDYDETAILVIEW', meta: { isMenu: false, layout: 'SubLayout', requireAuth: true } },
+        { path: '/news', name: 'news', component: News, title: 'NEWS', icon: 'far fa-bell fa-fw text-2xl', meta: { isMenu: false, layout: 'DefaultLayout', requireAuth: true } },
         
         // {
         //     path: '/:notFound(.*)',
