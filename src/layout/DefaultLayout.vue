@@ -257,7 +257,7 @@ export default {
     });
 
     onUpdated(()=>{
-      console.log(currentHome.value)
+      //console.log(currentHome.value)
       // let canvasBG = document.getElementsByClassName('canvasWrap')[0]
       // if(currentHome.value == '/'){
       //   canvasBG.style.opacity = '1'
