@@ -237,7 +237,10 @@ export default {
 .dark .careerTitle:after {
   color: #bababa;
 }
-
+@media (min-width: 1280px) and (max-width: 1340px) {
+  .earthWrap {width:40%;}
+  .careerTitle {font-size: 1.3rem;  line-height: 2rem;}
+}
 @media (max-width: 1024px){
   .careerTitle:before{
     display:none;
@@ -245,5 +248,7 @@ export default {
   .careerTitle:after{
     display:none;
   }
+  .earthWrap {width:100%;}
 }
+
 </style>
