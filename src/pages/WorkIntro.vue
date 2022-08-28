@@ -23,9 +23,9 @@
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">신규 구축 및 운영</h3>
                 <p class="dark:text-white text-black">HTML5 시멘틱태그를 이용한 반응형 웹사이트입니다.</p>
               </div>
-              <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
+              <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -44,9 +44,9 @@
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">관리 및 유지보수</h3>
                 <p class="dark:text-white text-black">HTML5 시멘틱태그를 이용한 반응형 웹사이트입니다.</p>
               </div>
-              <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
+              <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -65,9 +65,9 @@
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">프론트엔드</h3>
                 <p class="dark:text-white text-black">HTML5 시멘틱태그를 이용한 반응형 웹사이트입니다.</p>
               </div>
-              <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
+              <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -86,9 +86,9 @@
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">디자인</h3>
                 <p class="dark:text-white text-black">HTML5 시멘틱태그를 이용한 반응형 웹사이트입니다.</p>
               </div>
-              <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
+              <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -107,16 +107,16 @@
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">기획 및 문서</h3>
                 <p class="dark:text-white text-black">HTML5 시멘틱태그를 이용한 반응형 웹사이트입니다.</p>
               </div>
-              <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
+              <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
       </div>
       
       <div class="flex items-center h-[100vh]">
-        <router-link to="/works" class="flex justify-center dark:text-white text-black border dark:border-gray-400 border-gray-600 w-fit m-auto px-4 py-2 rounded-full dark:hover:text-primary hover:text-third dark:hover:border-primary hover:border-third">ALL WORKS VIEW</router-link>
+        <router-link to="/works" class="flex lg:text-2xl text-xl justify-center dark:text-white text-black border dark:border-gray-400 border-gray-600 w-fit m-auto px-8 py-3 rounded-sm dark:hover:text-black dark:hover:bg-primary hover:text-white hover:bg-third dark:hover:border-primary hover:border-third linkAll">ALL WORKS</router-link>
       </div>
       
     </div>
@@ -172,4 +172,5 @@ export default {
 
 <style scoped>
 .workTitle {font-family: "Squada One", cursive;}
+.linkAll  {font-family: "Squada One", cursive;}
 </style>
