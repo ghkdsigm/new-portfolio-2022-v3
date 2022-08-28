@@ -2,7 +2,7 @@
   <div class="dark:text-primary text-third">
     <div class="flex justify-between">
       <BackHome class="relative"></BackHome>
-      <a href="#" class="lg:mt-12 mt-0 dark:hover:bg-amber-400 relative lg:text-lg text-xs border py-2 px-4 rounded-full dark:border-gray-100 dark:hover:border-transparent border-third text-third dark:hover:text-black dark:text-gray-100 font-bold hover:bg-third hover:text-white">Career-Description.pdf</a>
+      <a href="#" class="lg:mt-12 mt-0 dark:hover:bg-amber-400 relative xl:text-lg lg:text-base text-xs border py-2 px-4 rounded-full dark:border-gray-100 dark:hover:border-transparent border-third text-third dark:hover:text-black dark:text-gray-100 font-bold hover:bg-third hover:text-white">Career-Description.pdf</a>
     </div>
     <div class="relative lg:mt-20 mt-4 text-left">
       <div class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-20">
@@ -26,9 +26,9 @@
           <!--기본정보(이력)-->
           <h4 class="xl:text-2xl lg:text-xl md:text-lg text-base mb-10 font-light xl:leading-10 lg:leading-10 md:leading-8 sm:leading-7 careerTitle">
             수많은 대국민 서비스 프로젝트에서 <br/>다양한 역할로서의 업무 수행을 통해<br/>
-            <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">성공적인 결과</b>를 이끌어낸 경험과 결과는<br /> 
-            누구도 쉽게 겪어보지못할 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">소중한 경험</b>이라 생각하며,<br/>
-            그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">배움</b>을 <br/>또 다른 프로젝트에서 새롭게 <b class="lg:text-2xl text-lg lg:font-extrabold font-bold">담아내고자</b> 합니다.
+            <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">성공적인 결과</b>를 이끌어낸 경험과 결과는<br /> 
+            누구도 쉽게 겪어보지못할 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">소중한 경험</b>이라 생각하며,<br/>
+            그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">배움</b>을 <br/>또 다른 프로젝트에서 새롭게 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">담아내고자</b> 합니다.
           </h4>
         </div>
         <div class="career mb-10">
