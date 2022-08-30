@@ -18,11 +18,11 @@
         </div>
         <!--comments-->
         <ul class="mytools mb-40 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
-          <li v-for="(item,index) in comments" :key="index" class="lg:py-4 py-2">
+          <li v-for="(item,index) in comments" :key="index" class="lg:py-4 py-4 dark:bg-fourth-dark bg-fourth hover:bg-gray-300 rounded-lg lg:px-4 px-4 pinched relative dark:hover:bg-gray-800">
             <div class="">
-              <p class="border-b dark:border-white border-gray-500 mb-2 pb-2 font-medium text-lg">{{item.body}}</p>
+              <p class="border-b border-dotted dark:border-gray-600 border-gray-400 mb-2 pb-2 font-medium lg:text-lg text-sm">{{item.body}}</p>
               <div class="flex justify-between">
-                <span class="font-light text-base">{{item.title}}</span><span class="font-light text-base">{{ moment(item.created_at).format('YY. MM. DD.') }}</span>
+                <span class="font-light lg:text-lg text-sm">{{item.title}}</span><span class="font-light lg:text-lg text-sm">{{ moment(item.created_at).format('YY. MM. DD.') }}</span>
               </div>
             </div>
           </li>   
@@ -110,28 +110,35 @@ export default {
 
 
 <style scoped>
-.ballon {
-    display: none;
-    position: absolute;
-    width: 205px;
-    height: 40px;
-    left: 448px;
-    bottom: 62px;
-    background: #484848;
-    color: white;
-    border-radius: 5px;
-    padding: 12px 12.8px;
+.pinched {
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.dark .pinched:before {
+  border-bottom:10px solid #161819;
 }
 
-
-.ballon:after {
-    border-top: 10px solid #484848;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 0px solid transparent;
+.dark .pinched:hover:before {
+  border-bottom:10px solid #1F2937;
+}
+.pinched:before {
     content: "";
     position: absolute;
-    top: 40px;
-    left: 160px;
+    z-index: -1;
+    top: -10px;
+    left: 50%;
+    width: 0px;height: 0px;
+    border-top:10px solid none;
+    border-bottom:10px solid #EBEBEB;
+    border-right: 10px solid transparent;
+    border-left: 10px solid  transparent;
+}
+
+.pinched:hover:before {
+  border-bottom:10px solid #D1D5DB;
+}
+
+.pinched:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px -15px #000000d1;
 }
 </style>
