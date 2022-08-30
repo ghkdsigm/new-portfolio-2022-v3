@@ -6,7 +6,7 @@
       </h4>
       <div class="career mb-40">
         <div class="flex mb-10">
-          <div class="flex lg:w-3/5 w-4/5">
+          <div class="flex lg:w-3/5 md:w-4/5 w-5/6">
             <div class="w-2/6 pr-4">
               <input placeholder="Name" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cTitle" />
             </div>
@@ -14,7 +14,7 @@
                 <input placeholder="Comment" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cBody" @keyup.enter="saveComment"/>
             </div>
           </div>
-          <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">ADD COMMENT</button>
+          <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">ADD <span class="lg:inline-block md:inline-block hidden">COMMENT</span></button>
         </div>
         <!--comments-->
         <ul class="mytools lg:pb-40 pb-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
