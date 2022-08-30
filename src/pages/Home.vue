@@ -29,6 +29,9 @@
         <img class="align-top" src="@/assets/images/worksImg.jpg" alt="design image" />
       </div>
     </div>
+    <div class="my-20">
+      <Comment></Comment>
+    </div>
   </div>
 </template>
 
@@ -40,16 +43,18 @@ import Skills from '../components/Skills.vue'
 import router from '../router'
 import { useRouter } from 'vue-router'
 import store from '../store'
+import Comment from '../components/Comment.vue'
 
 import { onMounted, ref, computed } from 'vue'
 export default {
     props: ['scrollRight'],
     components:{
-        HeadLineVue,
-        Introduce,
-        Pictures,
-        Skills
-    },   
+    HeadLineVue,
+    Introduce,
+    Pictures,
+    Skills,
+    Comment
+},   
     // setup(props, context){      
     //   const scrollAni = ref()
     //   const currentHome = computed(() => {

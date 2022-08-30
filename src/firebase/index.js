@@ -18,3 +18,4 @@ export const storage = firebase.storage()
 
 export const USER_COLEECTION = db.collection('users')
 export const BOARD_COLEECTION = db.collection('board')
+export const COMMENT_COLEECTION = db.collection('comment')
