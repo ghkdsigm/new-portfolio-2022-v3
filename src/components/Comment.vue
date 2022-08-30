@@ -6,7 +6,7 @@
       </h4>
       <div class="career mb-6">
         <div class="flex mb-10">
-          <div class="flex w-3/5">
+          <div class="flex lg:w-3/5 w-4/5">
             <div class="w-2/6 pr-4">
               <input placeholder="Name" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 pl-3 rounded-md" v-model="cTitle" />
             </div>
@@ -17,7 +17,7 @@
           <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">REGISTER</button>
         </div>
         <!--comments-->
-        <ul class="mytools mb-40 grid grid-cols-3 gap-10">         
+        <ul class="mytools mb-40 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
           <li v-for="(item,index) in comments" :key="index" class="lg:py-4 py-2">
             <div class="">
               <p class="border-b dark:border-white border-gray-500 mb-2 pb-2 font-medium text-lg">{{item.body}}</p>
