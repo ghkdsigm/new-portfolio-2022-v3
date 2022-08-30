@@ -4,20 +4,20 @@
         <b class="lg:text-4xl text-2xl block font-extrabold mb-2">COMMENTS</b> 
         간단한 코멘트를 남겨주세요 :)<br />    
       </h4>
-      <div class="career mb-6">
+      <div class="career mb-40">
         <div class="flex mb-10">
           <div class="flex lg:w-3/5 w-4/5">
             <div class="w-2/6 pr-4">
-              <input placeholder="Name" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 pl-3 rounded-md" v-model="cTitle" />
+              <input placeholder="Name" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cTitle" />
             </div>
             <div class="w-4/6 pr-4">
-                <input placeholder="Comment" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 pl-3 rounded-md" v-model="cBody" @keyup.enter="saveComment"/>
+                <input placeholder="Comment" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cBody" @keyup.enter="saveComment"/>
             </div>
           </div>
           <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">ADD COMMENT</button>
         </div>
         <!--comments-->
-        <ul class="mytools mb-40 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
+        <ul class="mytools lg:pb-40 pb-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
           <li v-for="(item,index) in comments" :key="index" class="lg:py-4 py-4 dark:bg-fourth-dark bg-fourth hover:bg-gray-300 rounded-lg lg:px-4 px-4 pinched relative dark:hover:bg-gray-800 items-center">
             <div class="flex items-center justify-center h-full flex-col">
               <p class="w-full break-all border-b border-dotted dark:border-gray-600 border-gray-400 mb-2 pb-2 font-medium lg:text-lg text-sm">{{item.body}}</p>
