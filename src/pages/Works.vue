@@ -423,7 +423,7 @@ export default {
 }
 
 .dark .scrollArea a {
-  background-color: rgb(255 200 70 / 85%);
+  background-color: rgb(255 200 70 / 50%);
   color:#000;
   border-radius: 50px;
   padding:8px 16px;  
@@ -433,7 +433,7 @@ export default {
 }
 
 .scrollArea a {
-  background-color: rgb(17 33 107 / 87%);
+  background-color: rgb(17 33 107 / 50%);
   color:#fff;
   border-radius: 50px;
   padding:8px 16px;
