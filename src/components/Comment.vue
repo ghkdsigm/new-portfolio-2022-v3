@@ -8,10 +8,10 @@
         <div class="flex mb-10">
           <div class="flex lg:w-3/5 md:w-4/5 w-5/6">
             <div class="w-2/6 pr-4">
-              <input placeholder="Name" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cTitle" />
+              <input placeholder="Name" class="w-full bg-transparent border border-gray-400 dark:border-gray-500 py-3 px-3 rounded-md" v-model="cTitle" />
             </div>
             <div class="w-4/6 pr-4">
-                <input placeholder="Comment" class="w-full bg-transparent border border-gray-500 dark:border-gray-200 py-3 px-3 rounded-md" v-model="cBody" @keyup.enter="saveComment"/>
+                <input placeholder="Comment" class="w-full bg-transparent border border-gray-400 dark:border-gray-500 py-3 px-3 rounded-md" v-model="cBody" @keyup.enter="saveComment"/>
             </div>
           </div>
           <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">ADD <span class="lg:inline-block md:inline-block hidden">COMMENT</span></button>
