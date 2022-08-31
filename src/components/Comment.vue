@@ -17,7 +17,7 @@
           <button type="button" class="dark:bg-primary dark:text-black bg-third text-white dark:border-gray-500 py-3 px-3 rounded-md font-medium text-sm" @click.prevent="saveComment">ADD <span class="lg:inline-block md:inline-block hidden">COMMENT</span></button>
         </div>
         <!--comments-->
-        <ul class="mytools lg:pb-40 pb-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">         
+        <ul class="mytools lg:pb-40 pb-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5">         
           <li v-for="(item,index) in comments" :key="index" class="lg:py-4 py-4 dark:bg-fourth-dark bg-fourth hover:bg-gray-300 rounded-lg lg:px-4 px-4 pinched relative dark:hover:bg-gray-800 items-center">
             <div class="flex items-center justify-center h-full flex-col">
               <p class="w-full break-all border-b border-dotted dark:border-gray-600 border-gray-400 mb-2 pb-2 font-medium lg:text-lg text-sm">{{item.body}}</p>

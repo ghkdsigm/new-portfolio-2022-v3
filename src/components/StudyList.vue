@@ -85,13 +85,13 @@
             <p class="dark:text-white lg:text-medium text-sm text-left pb-4">TOTAL : <span class="pl-1 dark:text-fifth dark:hover:text-fifthHover font-bold lg:text-medium text-sm">{{tweets.length}}</span></p>
             <div>
                 <div v-for="item in tweets" :key="item.id">
-                    <div class="text-left dark:text-white text-black py-10 border-t dark:border-gray-600 border-gray-300">
+                    <div class="text-left dark:text-white text-black lg:py-10 py-4 border-t dark:border-gray-600 border-gray-300">
                         <p class="lg:mb-0 mb-2 text-third dark:text-fifth dark:hover:text-fifthHover font-light lg:text-sm text-sm">{{ item.category }}</p>
                         <router-link :to="`/study/board/${item.id}`" :item="item" :currentUser="currentUser" class="block pb-4 pt-1 hover:underline dark:hover:text-primary hover:text-third">
                             <h2 class="text-lg">{{ item.board_body }}</h2>
                             <p class="text-lg font-thin">{{ item.body }}</p>
                         </router-link>
-                        <div>
+                        <div class="lg:pb-0 pb-3">
                             <ul class="flex flex-wrap">
                                 <li v-for="(hash, i) in item.hashtag" :key="i">
                                     <span class="lg:flex inline-block lg:text-lg text-sm py-1 px-3 dark:bg-bgDark bg-gray-300 lg:mr-4 mr-2 lg:mb-0 mb-2 rounded-full dark:text-white text-black">
