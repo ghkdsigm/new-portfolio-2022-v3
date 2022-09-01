@@ -455,4 +455,7 @@ export default {
 } */
 .logo-wrap {transition: all 1s ease; transform-style: preserve-3d;}
 .logo-wrap:hover {transform: rotateY(-180deg);}
+@media (max-width: 1024px) {
+  .logo-wrap:hover {transform: rotateY(0);}
+}
 </style>
