@@ -31,7 +31,7 @@
             그 순간들을 겪으며 얻은 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">생각</b>과 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">배움</b>을 <br/>또 다른 프로젝트에서 새롭게 <b class="lg:text-2xl text-lg lg:font-semibold font-semibold">담아내고자</b> 합니다.
           </h4>
         </div>
-        <div class="career mb-10">
+        <!-- <div class="career mb-10">
           <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1">History</h5>
           <ul>
             <li class="py-1 lg:text-lg text-base">
@@ -43,7 +43,7 @@
               <span class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600">2016.12. - 21.11</span>              
             </li>      
           </ul>
-        </div>
+        </div> -->
         <div class="career mb-22">
           <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1">Representive Projects</h5>
           <ul>
