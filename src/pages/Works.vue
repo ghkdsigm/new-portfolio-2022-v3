@@ -9,7 +9,7 @@
         <a @click="scrollToAnchorPoint('workCategory02')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">관리 및 유지보수</a> 
         <a @click="scrollToAnchorPoint('workCategory03')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">프론트엔드</a> 
         <a @click="scrollToAnchorPoint('workCategory04')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">디자인</a>
-        <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">기획 및 문서</a>
+        <!-- <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">기획 및 문서</a> -->
       </div>
       <div ref="workCategory01" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">신규구축 및 운영</h2>
@@ -163,12 +163,12 @@
           </carousel>
         </div>
       </div>
-      <div ref="workCategory05" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <!-- <div ref="workCategory05" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">기획 및 제안</h2>
         <div class="my-4">
           
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
