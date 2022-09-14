@@ -138,10 +138,22 @@
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
         <div class="my-4">
           <Carousel :wrapAround="true" :settings='settings' :breakpoints='breakpoints'>
-            <slide v-for="(slide, index) in design.Content" :key="index">
-              <div class="carousel_item">
-                <img :src="slide.content_url" alt="">
-              </div>
+            <slide v-for="(slide, index) in design.Content" :key="index">              
+              <div class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full">
+                <div class="imgZbg">
+                  <div class="carousel_item">
+                    <img :src="slide.content_url" alt="">
+                  </div>
+                </div>
+                <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
+                  <div class="py-3">
+                    <h3 class="font-bold py-1 text-xl">{{slide.title}}</h3>
+                    <h3 class="py-1 text-xl dark:text-primary text-third">{{slide.context}}</h3>
+                    <p class="dark:text-gray-300 text-gray-900 text-base ">참여도 : {{slide.party}}</p>
+                    <p class="dark:text-gray-300 text-gray-900 text-base">{{slide.created_at}}</p>
+                  </div>
+                </div>
+              </div>  
             </slide>
 
             <template #addons>
@@ -200,10 +212,10 @@ export default {
       },
       // 1024 and up
       1024: {
-        itemsToShow: 3,
+        itemsToShow: 2,
         snapAlign: 'start',
       },
-      1024: {
+      1400: {
         itemsToShow: 2,
         snapAlign: 'center',
       },
@@ -375,18 +387,7 @@ export default {
   }
 }  */
 
-@media (max-width: 1024px) {
-  .scrollArea {
-    position: fixed;
-    top: 4%;
-  }
-  .dark .scrollArea a {
-    background-color: rgb(255 200 70 / 85%);
-  }
-  .scrollArea a {
-    background-color: rgb(17 33 107 / 87%);
-  }
-} 
+
 
 .carousel__slide {
   scroll-snap-stop: auto;
@@ -399,12 +400,16 @@ export default {
     padding:10px;    
     /* height: fit-content; */
 }
-
+.carousel_item {
+  max-height:400px;
+  overflow-y: scroll;
+  border-radius: 1rem;
+}
 .carousel__slide > .carousel_item {
   transform: scale(1);
   opacity: 0.5;
   transition: 0.5s;
-  min-height: 100%;
+  /* min-height: 100%; */
   width: 100%;
   font-size: 20px;
   border-radius: 8px;
@@ -425,6 +430,7 @@ export default {
 .carousel__slide > .carousel_item img {
   /* transform: scale(1.1); */
   max-height: 300px;
+  height: 100%;
 }
 .carousel__slide--active > .carousel_item img  {
   max-height: 600px;
@@ -458,4 +464,23 @@ export default {
     border: 0;
     cursor: pointer;
 }
+
+@media (max-width: 1400px) {
+  .carousel_item {
+    height:250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .scrollArea {
+    position: fixed;
+    top: 4%;
+  }
+  .dark .scrollArea a {
+    background-color: rgb(255 200 70 / 85%);
+  }
+  .scrollArea a {
+    background-color: rgb(17 33 107 / 87%);
+  }
+} 
 </style>
