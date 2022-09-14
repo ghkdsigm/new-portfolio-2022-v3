@@ -120,7 +120,7 @@
           </ul>
         </div>
       </div>
-      <!-- <div ref="workCategory04" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
+      <div ref="workCategory04" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
         <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
         <div class="my-4">
           <ul class="worksUl grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
@@ -132,23 +132,6 @@
               </div>
             </li>
           </ul>
-        </div>
-      </div> -->
-      <div ref="workCategory04" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
-        <h2 class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third">디자인</h2>
-        <div class="my-4">
-          <Carousel :wrapAround="true" :settings='settings' :breakpoints='breakpoints'>
-            <slide v-for="(slide, index) in design.Content" :key="index">
-              <div class="carousel_item">
-                <img :src="slide.content_url" alt="">
-              </div>
-            </slide>
-
-            <template #addons>
-              <navigation />
-              <pagination />
-            </template>
-          </carousel>
         </div>
       </div>
       <div ref="workCategory05" class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52">
@@ -163,59 +146,76 @@
 
 <script>
 import BackHome from '@/components/common/BackHome.vue'
-import apidata from '@/data'
+import data from '@/data'
 
+// import Swiper core and required modules
 import { onMounted, computed, ref, watchEffect, onBeforeUnmount, onUpdated } from 'vue'
-
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import router from '../router'
 
-
-//carousel
-import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 export default {
   props: ['scrollRight','scrollRight2'],
   components:{
     BackHome,
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
+    Swiper,
+    SwiperSlide,
   },
-  data: () => ({
-    // carousel settings
-    settings: {
-      itemsToShow: 1,
-      snapAlign: 'center',
-    },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
-    breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 1.5,
-        snapAlign: 'center',
+  data(){
+    return {
+      datas: data,
+      swiperOptions: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        freeMode: true,
+        freeModeSticky: false,
+        scrollbar: ".sw-scroll1",
+        scrollbarHide: true,
+        scrollbarDraggable: true,
+        grabCursor: true,
+        loop: false,
+        pagination: {
+          type: "progressbar",
+          el: ".swiper-pagination",
+        },
+        slidesOffsetBefore: 0, // slidesOffsetBefore는 첫번째 슬라이드의 시작점에 대한 변경할 때 사용
+        slidesOffsetAfter: 0, // slidesOffsetAfter는 마지막 슬라이드 시작점 + 마지막 슬라이드 너비에 해당하는 위치의 변경이 필요할 때 사용
+        centerInsufficientSlides: false, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
+        // 반응형 breakpoints
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+          1400: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 3,
-        snapAlign: 'start',
-      },
-      1024: {
-        itemsToShow: 2,
-        snapAlign: 'center',
-      },
-    },
-  }),
-
-  setup(props, context) {    
-    const design = apidata
-
+    }
+  },
+  setup(props, context) {
     const scrollTap = ref(0)
     let scrollcheckwork = ref(true)
-    
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
     const onSlideChange = () => {
       console.log('slide change');
     };
@@ -256,20 +256,81 @@ export default {
       }
     }
     watchEffect(()=>{
+      // if(currentHome.value === '/works' && scrollTap.value){  
+      //   window.addEventListener("scroll", function(){
+      //     if(window.scrollY == 0) {
+      //       if(!scrollcheckwork.value){               
+      //         scrollcheckwork.value = true;
+      //         scrollTap.value.classList.remove('scrollArea')
+      //       }
+      //     }
+      //     else if(window.scrollY > 1){
+      //       if(scrollcheckwork.value){               
+      //         scrollcheckwork.value = false;
+      //         scrollTap.value.classList.add('scrollArea')
+      //       }
+      //     }
+      //   })
+      // } else {
+      //   return
+      // }
       
     })
     onUpdated(()=>{
       props.scrollRight.addEventListener("scroll", scrollFuncPc)
     })
     onMounted(()=>{
-      document.addEventListener('scroll', scrollFunc);      
-     
+      // console.log(data)
+      //console.log(props.scrollRight)
+      
+      //console.log(currentRight.value)
+      document.addEventListener('scroll', scrollFunc);
+      // if(props.scrollRight || props.scrollRight !== 0){
+      //   props.scrollRight.addEventListener("scroll", scrollFuncPc)
+      // }      
+
+      // if(currentHome.value === '/works' && scrollTap.value){        
+      //   // props.scrollRight.addEventListener("scroll", function(){
+      //   //   if(props.scrollRight.scrollTop == 0) {
+      //   //     if(!scrollcheck.value){               
+      //   //       scrollcheck.value = true;
+      //   //       scrollTap.value.classList.remove('scrollArea')
+      //   //     }
+      //   //   }
+      //   //   else if(props.scrollRight.scrollTop > 1){
+      //   //     if(scrollcheck.value){               
+      //   //       scrollcheck.value = false;
+      //   //       scrollTap.value.classList.add('scrollArea')
+      //   //     }
+      //   //   }
+      //   // })
+      //   window.addEventListener("scroll", function(){
+      //     if(window.scrollY == 0) {
+      //       if(!scrollcheckwork.value){               
+      //         scrollcheckwork.value = true;
+      //         return scrollTap.value.classList.remove('scrollArea')
+      //       }
+      //     }
+      //     else if(window.scrollY > 1){
+      //       if(scrollcheckwork.value){               
+      //         scrollcheckwork.value = false;
+      //         return scrollTap.value.classList.add('scrollArea')
+      //       }
+      //     }
+      //   })
+      // } else {
+      //   return
+      // }
     })
     onBeforeUnmount(()=>{
       document.removeEventListener('scroll', scrollFunc);
+      // if(props.scrollRight && props.scrollRight !== 0){ 
+      //   props.scrollRight.removeEventListener("scroll", scrollFuncPc)
+      // }
     })
 
     return {
+      onSwiper,
       onSlideChange,
       currentHome,
       scrollTap,
@@ -277,7 +338,7 @@ export default {
       scrollFunc,
       scrollFuncPc,
       currentRight,
-      design
+      modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
   created() {
@@ -287,8 +348,17 @@ export default {
     return
   },
   computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    },
   },
-  methods:{  
+  methods:{
+  // 	detail(index){
+  // 		this.$route.push({
+  // 			name:"Detail",
+  // 			params:{ contentId: index}
+  // 		})
+  // 	},
     clickList01(index){
     	this.$router.push({
         name:'worksDetailNew',//detail
@@ -307,6 +377,14 @@ export default {
         params:{contentId : index}
       })
     },
+    // clickAchor(){
+    //   this.$router.push(
+    //   { 
+    //       path: "/mypage", 
+    //       query: { section: "profile" }, 
+    //       hash: "#ref_code"}
+    //   )
+    // }
     scrollToAnchorPoint(refName) {
         const el = this.$refs[refName]
         el.scrollIntoView({ behavior: 'smooth'})
@@ -387,69 +465,4 @@ export default {
     background-color: rgb(17 33 107 / 87%);
   }
 } 
-
-.carousel__slide {
-  scroll-snap-stop: auto;
-    flex-shrink: 0;
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:10px;    
-    /* height: fit-content; */
-}
-
-.carousel__slide > .carousel_item {
-  transform: scale(1);
-  opacity: 0.5;
-  transition: 0.5s;
-  min-height: 100%;
-  width: 100%;
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel__slide--visible > .carousel_item {
-  opacity: 1;
-  transform: rotateY(0);
-}
-.carousel__slide--next > .carousel_item {
-  transform: scale(0.9) translate(-10px);
-}
-.carousel__slide--prev > .carousel_item {
-  transform: scale(0.9) translate(10px);
-}
-.carousel__slide > .carousel_item img {
-  /* transform: scale(1.1); */
-  max-height: 300px;
-}
-.carousel__slide--active > .carousel_item img  {
-  max-height: 600px;
-}
-
-/**button**/
-.carousel__prev, .carousel__next {
-    box-sizing: content-box;
-    border: 5px solid white;
-}
-
-.carousel__prev, .carousel__next {
-    background: red !important;
-    border-radius: var(--vc-nav-width);
-    width: var(--vc-nav-width);
-    height: var(--vc-nav-width);
-    text-align: center;
-    font-size: calc(var(--vc-nav-width) * 2 / 3);
-    padding: 0;
-    color: var(--vc-nav-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    border: 0;
-    cursor: pointer;
-}
 </style>
