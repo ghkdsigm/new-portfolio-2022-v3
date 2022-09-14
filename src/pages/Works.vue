@@ -428,6 +428,12 @@ export default {
 }
 .carousel__slide--active > .carousel_item img  {
   max-height: 600px;
+  box-shadow: 6px 3px 10px 0px #727272;
+  border-radius: 1rem;
+}
+
+.dark .carousel__slide--active > .carousel_item img  {
+  box-shadow: 6px 3px 10px 0px #000000;
 }
 
 /**button**/
