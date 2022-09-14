@@ -148,7 +148,7 @@
                 <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
                     <h3 class="font-bold py-1 text-xl">{{slide.title}}</h3>
-                    <h3 class="py-1 text-xl dark:text-primary text-third">{{slide.context}}</h3>
+                    <h3 class="py-1 text-base dark:text-primary text-third">{{slide.context}}</h3>
                     <p class="dark:text-gray-300 text-gray-900 text-base ">참여도 : {{slide.party}}</p>
                     <p class="dark:text-gray-300 text-gray-900 text-base">{{slide.created_at}}</p>
                   </div>
