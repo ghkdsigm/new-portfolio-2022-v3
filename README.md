@@ -18,19 +18,4 @@ https://motorh.shop/
 https://hshportfolio-api.herokuapp.com/portfolios
 
 
-### 사용 플러그인
-```
-- sass-loader
-- node-sass
-- VueMomentJS
-- vue-waypoint
-- vue-typed-js
-- vue2-animate
-- vee-validate
-- intersection-observer (IE11지원을 위해..)
-- vue-daum-map
-- prettier
-- file-saver
-- es6-promise
-- axios
-```
+
