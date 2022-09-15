@@ -1,0 +1,41 @@
+diff --git a/node_modules/vue3-carousel/dist/carousel.css b/node_modules/vue3-carousel/dist/carousel.css
+index e43d42a..46b5a10 100644
+--- a/node_modules/vue3-carousel/dist/carousel.css
++++ b/node_modules/vue3-carousel/dist/carousel.css
+@@ -22,22 +22,33 @@
+ }
+ .carousel__prev,
+ .carousel__next {
+-  background-color: var(--vc-nav-background-color);
++  background: rgb(17, 33, 107) !important;
+   border-radius: var(--vc-nav-width);
+   width: var(--vc-nav-width);
+   height: var(--vc-nav-width);
+   text-align: center;
+   font-size: calc(var(--vc-nav-width) * 2 / 3);
+   padding: 0;
+-  color: var(--vc-nav-color);
++  color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;  
+-  border: 0;
++  border: 5px solid #efefef;
+   cursor: pointer;
+ }
+ 
++.dark .carousel__prev{
++  background: rgb(255, 179, 0) !important;
++  color: #000;
++  border: 5px solid rgb(27, 29, 32);
++}
++.dark .carousel__next{
++  background: rgb(255, 179, 0) !important;
++  color: #000;
++  border: 5px solid rgb(27, 29, 32);
++}
++
+ .carousel__prev {
+   top: 50%;
+   left: 0;

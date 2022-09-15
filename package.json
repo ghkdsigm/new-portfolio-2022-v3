@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
@@ -18,6 +19,7 @@
     "firebase": "^8.2.7",
     "magicmouse.js": "^1.2.1",
     "moment": "^2.29.3",
+    "patch-package": "^6.4.7",
     "sweetalert": "^2.1.2",
     "swiper": "^8.3.1",
     "vue": "^3.2.25",
