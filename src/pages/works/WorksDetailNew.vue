@@ -32,8 +32,10 @@
           </ul>    
         </div>
         <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">투입 기간 :</span> <span class="lg:text-lg text-base">{{data.time}}</span></div>
+        <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">주 이용자 :</span> <span class="lg:text-lg text-base">{{data.target}}</span></div>
         <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">사용 언어 :</span> <span class="lg:text-lg text-base">{{data.language}}</span></div>
         <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">과업 내용 :</span> <span class="lg:text-lg text-base">{{data.content}}</span></div>
+        <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">관련기사 및 정보 :</span> <a :href="data.articles" target="_blank" class="lg:text-lg text-base text-blue-400">바로가기</a></div>            
         <div class="py-2 fd-list"><span class="dark:text-primary text-third pr-1 lg:text-lg text-base">해시 태그 :</span> <span class="lg:text-lg text-base">{{data.tag}}</span></div>            
       </div>
       <!-- <div class="mb-10">
