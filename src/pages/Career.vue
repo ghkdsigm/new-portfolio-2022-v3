@@ -149,7 +149,7 @@ export default {
       router.replace("/works")
     }
     const clickDocument = () => {
-      swal("이력서 및 경력기술서 업데이트중", "Works페이지를 참고해주세요", "warning")
+      swal("이력서 & 경력기술서 업데이트중", "WORKS 페이지를 참고해주세요", "warning")
     }
     return{
       clickToWorks,

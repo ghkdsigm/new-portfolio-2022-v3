@@ -9,15 +9,15 @@
     </p>
     
     <form id="myform" class="my-10 dark:text-white text-gray-800" ref="form" @submit.prevent="sendEmail">
-      <div class="formGroup py-4 flex lg:flex-row flex-col">
+      <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
         <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Name</label>
         <input type="text" name="user_name" ref="name" placeholder="성함을 입력해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"/>
       </div>
-      <div class="formGroup py-4 flex lg:flex-row flex-col">
+      <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
         <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Email</label>
         <input type="email" name="user_email" ref="email" placeholder="회신받으실 이메일을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"/>
       </div>
-      <div class="formGroup py-4 flex lg:flex-row flex-col">
+      <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
         <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Message</label>
         <textarea name="message" ref="message" rows="12" placeholder="문의하실 내용을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
       </div>
