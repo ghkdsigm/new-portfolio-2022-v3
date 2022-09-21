@@ -2,7 +2,7 @@
   <div class="dark:text-primary text-third">
     <div class="flex justify-between">
       <BackHome class="relative"></BackHome>
-      <a href="#" class="lg:mt-12 mt-0 dark:hover:bg-amber-400 relative xl:text-lg lg:text-base text-xs border py-2 px-4 rounded-full dark:border-gray-100 dark:hover:border-transparent border-third text-third dark:hover:text-black dark:text-gray-100 font-bold hover:bg-third hover:text-white">Career-Description.pdf</a>
+      <a href="#" ref="referdocument" @click="clickDocument" class="lg:mt-12 mt-0 dark:hover:bg-amber-400 relative xl:text-lg lg:text-base text-xs border py-2 px-4 rounded-full dark:border-gray-100 dark:hover:border-transparent border-third text-third dark:hover:text-black dark:text-gray-100 font-bold hover:bg-third hover:text-white">Career-Description.pdf</a>
     </div>
     <div class="relative lg:mt-20 mt-4 text-left">
       <div class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-20">
@@ -144,12 +144,18 @@ export default {
   },
   setup(){
     const router = useRouter()
+    const referdocument = ref()
     const clickToWorks = () => {
       router.replace("/works")
     }
+    const clickDocument = () => {
+      swal("이력서 및 경력기술서 업데이트중", "Works페이지를 참고해주세요", "warning")
+    }
     return{
       clickToWorks,
-      router
+      router,
+      referdocument,
+      clickDocument
     }
   }
   // data() {
