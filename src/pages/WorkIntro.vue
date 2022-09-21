@@ -21,7 +21,7 @@
             <div class="lg:flex block items-center justify-between">
               <div>
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">신규 구축 및 운영</h3>
-                <p class="dark:text-white text-black">LMS, 거래소, 일반홈페이지, 영상플랫폼 등 다양한 서비스 플랫폼 & 시스템 구축 노하우를 보유하고있습니다.</p>
+                <p class="dark:text-white text-black">LMS, NFT거래소, 일반홈페이지, 영상플랫폼, 대회운영앱 등 다양한 서비스 플랫폼 & 시스템 구축 노하우를 보유하고있습니다.</p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -63,7 +63,7 @@
             <div class="lg:flex block items-center justify-between">
               <div>
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">프론트엔드 & 퍼블리싱</h3>
-                <p class="dark:text-white text-black">웹표준 기반, 프론트에 전반적인 구축화면을 마크업 & 개발합니다.</p>
+                <p class="dark:text-white text-black">웹표준·접근성 기반, 프론트에 전반적인 구축화면을 마크업 & UI/UX 개발합니다.</p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -84,7 +84,7 @@
             <div class="lg:flex block items-center justify-between">
               <div>
                 <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">디자인</h3>
-                <p class="dark:text-white text-black">꾸준히 변화하는 웹시장에서의 트렌디한 디자인 변화를 감지하고 고객니즈를 파악하여 제작합니다.</p>
+                <p class="dark:text-white text-black">꾸준히 변화하는 웹시장에서의 트렌디한 디자인 변화를 감지하고 고객 니즈를 파악하여 제작합니다.</p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
