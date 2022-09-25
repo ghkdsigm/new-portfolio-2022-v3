@@ -11,7 +11,7 @@
             <img 
               src="@/assets/images/earth.gif"
               alt="earth gif" 
-              class="mix-blend-difference lg:block xl:m-0 lg:mx-auto mx-auto earth"
+              class="mix-blend-exclusion lg:block xl:m-0 lg:mx-auto mx-auto earth"
             />
           </div>
           <!-- <img 
