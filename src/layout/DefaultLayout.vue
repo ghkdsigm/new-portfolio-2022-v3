@@ -178,7 +178,7 @@
           </div>
       </div>
       <!-- particle -->
-      <Particle class="canvasBG"></Particle>
+      <!-- <Particle class="canvasBG"></Particle> -->
     </div>
   </div>
 </template>
