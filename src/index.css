@@ -1,118 +1,196 @@
-@tailwind base; 
-@tailwind components; 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
-html {scrollbar-face-color:#a5a5a5;scrollbar-track-color: #1b1b1b;scrollbar-arrow-color:#a5a5a5;scrollbar-3dlight-color: none;scrollbar-shadow-color: #a5a5a5;scrollbar-darkshadow-color: none;scrollbar-color: #a5a5a5 #1b1b1b}::-webkit-scrollbar{width:8px;height:8px;background-color:transparent}::-webkit-scrollbar-track{border-radius:0;background-color:transparent}::-webkit-scrollbar-thumb{height:8px;border-radius:5px;background-color:#1B1D20;opacity: 0.7;}
-.no-touchevents html {scrollbar-face-color:#a5a5a5;scrollbar-track-color: #1b1b1b;scrollbar-arrow-color:#a5a5a5;scrollbar-3dlight-color: none;scrollbar-shadow-color: #a5a5a5;scrollbar-darkshadow-color: none;scrollbar-color: #a5a5a5 #1b1b1b}::-webkit-scrollbar{width:8px;height:8px;background-color:transparent}::-webkit-scrollbar-track{border-radius:0;background-color:transparent}::-webkit-scrollbar-thumb{height:8px;border-radius:5px;background-color:transparent;opacity: 0.7;}
-body {color:#fff;font-family: 'Roboto', 'Noto Sans KR', sans-serif;font-size:16px; font-weight: 300;}
-a, button:hover {
-    cursor: none;
+html {
+  scroll-behavior: smooth;
+  scrollbar-face-color: #a5a5a5;
+  scrollbar-track-color: #1b1b1b;
+  scrollbar-arrow-color: #a5a5a5;
+  scrollbar-3dlight-color: none;
+  scrollbar-shadow-color: #a5a5a5;
+  scrollbar-darkshadow-color: none;
+  scrollbar-color: #a5a5a5 #1b1b1b;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #1b1d20;
+  opacity: 0.7;
+}
+.no-touchevents html {
+  scrollbar-face-color: #a5a5a5;
+  scrollbar-track-color: #1b1b1b;
+  scrollbar-arrow-color: #a5a5a5;
+  scrollbar-3dlight-color: none;
+  scrollbar-shadow-color: #a5a5a5;
+  scrollbar-darkshadow-color: none;
+  scrollbar-color: #a5a5a5 #1b1b1b;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  height: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  opacity: 0.7;
+}
+body {
+  color: #fff;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+a,
+button:hover {
+  cursor: none;
 }
 
-.containser {}
+.containser {
+}
 
 #noise {
-    animation: noise .5s steps(10) infinite;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: auto;
-    background-image: url('@/assets/images/noise.png');
-    height: 100vh;
-    left: 0;
-    opacity: 1;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    transition: opacity 1s ease-out;
-    width: 100vw;
-    z-index: -1;
+  animation: noise 0.5s steps(10) infinite;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+  background-image: url('@/assets/images/noise.png');
+  height: 100vh;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: opacity 1s ease-out;
+  width: 100vw;
+  z-index: -1;
 }
 
 /*매직마우스*/
 .no-touchevents body #magicMouseCursor {
-    position: fixed;
-    width: 55px !important;
-    height: 55px !important;
-    border: 1px solid #000 !important;
-    border-radius: 50%;
-    z-index: 99999 !important;
-    left: -12px;
-    top: -12px;
-    transition: transform 0.00s, width 0.3s, height 0.3s;
-    pointer-events: none;
-  }
-  .no-touchevents.dark #magicMouseCursor {
-    border: 1px solid #fff !important;
-  }
-  body #magicMouseCursor.cursor-square {
-    border-radius: 0;
-  }
-  .no-touchevents body #magicPointer {
-    height: 10px;
-    width: 10px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #000 !important;
-    border-radius: 50%;
-    z-index: 99999;
-    pointer-events: none;
-    transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
-  }
-  .no-touchevents.dark body #magicPointer {
-    background: rgb(255, 179, 0) !important;
-  }
-  body #magicPointer.is-hover {
-    background: red;
-  }
-  body #magicPointer.pointer-blur {
-    height: 50px;
-    width: 50px;
-    background: none;
-    border: 1px solid #fff;
-    box-shadow: 0px 0px 15px -5px white;
-  }
-  body #magicPointer.pointer-overlay {
-    height: 50px;
-    width: 50px;
-    mix-blend-mode: difference;
-    box-shadow: 0px 0px 15px -5px white;
-  }
-  body .magic-hover {
-    transition: all 0.2s;
-  }
-  body .magic-hover:hover {
-    cursor: none;
-  }
+  position: fixed;
+  width: 55px !important;
+  height: 55px !important;
+  border: 1px solid #000 !important;
+  border-radius: 50%;
+  z-index: 99999 !important;
+  left: -12px;
+  top: -12px;
+  transition: transform 0s, width 0.3s, height 0.3s;
+  pointer-events: none;
+}
+.no-touchevents.dark #magicMouseCursor {
+  border: 1px solid #fff !important;
+}
+body #magicMouseCursor.cursor-square {
+  border-radius: 0;
+}
+.no-touchevents body #magicPointer {
+  height: 10px;
+  width: 10px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #000 !important;
+  border-radius: 50%;
+  z-index: 99999;
+  pointer-events: none;
+  transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
+}
+.no-touchevents.dark body #magicPointer {
+  background: rgb(255, 179, 0) !important;
+}
+body #magicPointer.is-hover {
+  background: red;
+}
+body #magicPointer.pointer-blur {
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 15px -5px white;
+}
+body #magicPointer.pointer-overlay {
+  height: 50px;
+  width: 50px;
+  mix-blend-mode: difference;
+  box-shadow: 0px 0px 15px -5px white;
+}
+body .magic-hover {
+  transition: all 0.2s;
+}
+body .magic-hover:hover {
+  cursor: none;
+}
 
-  .dark .swal-modal {
-    background-color:#252b31;
-  }
-  .dark .swal-title {
-    color:#fff
-  }
-  .dark .swal-text {
-    color:#fff
-  }
+.dark .swal-modal {
+  background-color: #252b31;
+}
+.dark .swal-title {
+  color: #fff;
+}
+.dark .swal-text {
+  color: #fff;
+}
 
-  .dark .swal-icon--success__hide-corners {
-    background-color:#252b31;
-  }
+.dark .swal-icon--success__hide-corners {
+  background-color: #252b31;
+}
 
-  .dark .swal-icon--success:after, .dark .swal-icon--success:before {
-    background-color:#252b31;
-  }
+.dark .swal-icon--success:after,
+.dark .swal-icon--success:before {
+  background-color: #252b31;
+}
 
- /* .canvasBG {display:none;}
+/* .canvasBG {display:none;}
  .homeWatch ~ .canvasBG {display:block;} */
 
-  .leading-3	{line-height: .75rem !important;} /* 12px */
-  .leading-4	{line-height: 1rem !important;} /* 16px */
-  .leading-5	{line-height: 1.25rem !important;} /* 20px */
-  .leading-6	{line-height: 1.5rem !important;} /* 24px */
-  .leading-7	{line-height: 1.75rem !important; }/* 28px */
-  .leading-8	{line-height: 2rem !important;} /* 32px */
-  .leading-9	{line-height: 2.25rem !important;} /* 36px */
-  .leading-10	{line-height: 2.5rem !important;} /* 40px */
+.leading-3 {
+  line-height: 0.75rem !important;
+} /* 12px */
+.leading-4 {
+  line-height: 1rem !important;
+} /* 16px */
+.leading-5 {
+  line-height: 1.25rem !important;
+} /* 20px */
+.leading-6 {
+  line-height: 1.5rem !important;
+} /* 24px */
+.leading-7 {
+  line-height: 1.75rem !important;
+} /* 28px */
+.leading-8 {
+  line-height: 2rem !important;
+} /* 32px */
+.leading-9 {
+  line-height: 2.25rem !important;
+} /* 36px */
+.leading-10 {
+  line-height: 2.5rem !important;
+} /* 40px */
 
-@keyframes noise{0%{background-position:0 0}to{background-position:100% 100%}}
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
