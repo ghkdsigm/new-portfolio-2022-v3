@@ -342,15 +342,16 @@ export default {
     });
     const scrollFunc = () => {
       window.addEventListener('scroll', function () {
+        //console.log(window.scrollY);
         if (window.scrollY == 0 && currentHome.value === '/works') {
           if (!scrollcheckwork.value) {
             scrollcheckwork.value = true;
-            return scrollTap.value.classList.remove('scrollArea');
+            scrollTap.value.classList.remove('scrollArea');
           }
         } else if (window.scrollY > 1 && currentHome.value === '/works') {
           if (scrollcheckwork.value) {
             scrollcheckwork.value = false;
-            return scrollTap.value.classList.add('scrollArea');
+            scrollTap.value.classList.add('scrollArea');
           }
         }
       });
@@ -377,9 +378,13 @@ export default {
     });
     onMounted(() => {
       document.addEventListener('scroll', scrollFunc);
+      if (props.scrollRight !== 0) {
+        props.scrollRight.addEventListener('scroll', scrollFuncPc);
+      }
     });
     onBeforeUnmount(() => {
       document.removeEventListener('scroll', scrollFunc);
+      props.scrollRight.removeEventListener('scroll', scrollFuncPc);
     });
 
     return {
