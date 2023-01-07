@@ -438,28 +438,6 @@
       ]
     },
     {
-      "title": "낙원공원묘원 홈페이지 유지보수",
-      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img25_1.png",
-      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img25_1.png",
-      "sub": "홈페이지 운영·관리",
-      "url": "http://www.nagwon.co.kr/",
-      "tag": "#퍼블리싱 #호스팅 및 도메인 관리",
-      "articles": "",
-      "party": "100%",
-      "content": "홈페이지 수정 요청 사항 반영, 도메인&호스팅 관리, 민원 확인 및 적극 반영",
-      "time": "2022.05 ~ 2022.11",
-      "target": "묘원이용고객",
-      "language": "Html, Css, jQuery",
-      "part": [
-        {
-          "pb": "퍼블리싱(100%)",
-          "ds": "디자인(100%)",
-          "op": "기획(100%)",
-          "pt": "사용자페이지,관리자페이지"
-        }
-      ]
-    },
-    {
       "title": "대한탁구협회 홈페이지 유지보수",
       "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img001_1.png",
       "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img001_1.png",
@@ -581,6 +559,28 @@
       "content": "고객사 수정 요청 사항 반영,대회 운영 관련 민원 확인 및 적극 반영",
       "time": "2021.05 ~ 2021.09",
       "target": "일반 국민/펜싱협회 관계자 및 등록 선수",
+      "language": "Html, Css, jQuery",
+      "part": [
+        {
+          "pb": "퍼블리싱(100%)",
+          "ds": "디자인(100%)",
+          "op": "기획(100%)",
+          "pt": "사용자페이지,관리자페이지"
+        }
+      ]
+    },
+    {
+      "title": "낙원공원묘원 홈페이지 유지보수",
+      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img25_1.png",
+      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img25_1.png",
+      "sub": "홈페이지 운영·관리",
+      "url": "http://www.nagwon.co.kr/",
+      "tag": "#퍼블리싱 #호스팅 및 도메인 관리",
+      "articles": "",
+      "party": "100%",
+      "content": "홈페이지 수정 요청 사항 반영, 도메인&호스팅 관리, 민원 확인 및 적극 반영",
+      "time": "2022.05 ~ 2022.11",
+      "target": "묘원이용고객",
       "language": "Html, Css, jQuery",
       "part": [
         {
