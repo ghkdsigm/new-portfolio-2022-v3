@@ -59,6 +59,22 @@
           <h5
             class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
           >
+            Career Days
+          </h5>
+          <span class="py-1 lg:text-lg text-base"
+            ><span class="font-base">경력 만 </span
+            ><b class="font-lg">{{ careerDate }}</b
+            ><span class="font-base"> 입니다.</span></span
+          >
+          <span
+            class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+            >{{ today }} 기준
+          </span>
+        </div>
+        <div class="career mb-10">
+          <h5
+            class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
+          >
             History
           </h5>
           <ul>
@@ -395,11 +411,38 @@ export default {
         'warning'
       );
     };
+    const careerDate = ref('');
+    const today = new Date().toLocaleDateString();
+
+    onMounted(() => {
+      //경력 계산
+      const dateA = new Date('2016/12/19');
+      const dateB = new Date('2021/10/31');
+      const dateC = new Date('2022/05/09');
+      const dateD = new Date('2022/11/11');
+      const dateE = new Date('2022/11/14');
+      const dateF = new Date();
+      const diffMSec1 = dateB.getTime() - dateA.getTime();
+      const diffMSec2 = dateD.getTime() - dateC.getTime();
+      const diffMSec3 = dateF.getTime() - dateE.getTime();
+      const diffDate =
+        (diffMSec1 + diffMSec2 + diffMSec3) / (24 * 60 * 60 * 1000);
+
+      let carrerNum = (diffDate / 365) % 1;
+      const timeRes = String(carrerNum); // 문자형으로 바꾼다음에
+      var newArry = timeRes.split('.'); // 점으로 구분배열
+      var carrerMonth = newArry[1].substring(0, 1); // 두자리만 뽑고 (위치만 하나 뒤로)
+
+      careerDate.value = `${Math.floor(diffDate / 365)}년 ${carrerMonth}개월 `;
+    });
+
     return {
       clickToWorks,
       router,
       referdocument,
       clickDocument,
+      careerDate,
+      today,
     };
   },
   // data() {
