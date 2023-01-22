@@ -101,8 +101,8 @@
             Career Days
           </h5>
           <span class="py-1 lg:text-lg text-base"
-            ><span class="font-base">경력 만 </span
-            ><b class="font-lg">{{ careerDate }}</b
+            ><span class="font-base">경력 </span
+            ><b class="font-lg">만 {{ careerDate }}</b
             ><span class="font-base"> 입니다.</span></span
           >
           <span
