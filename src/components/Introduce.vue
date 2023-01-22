@@ -79,7 +79,7 @@
           <li class="py-1 lg:text-lg text-base flex">
             <span class="font-medium">2022.03.</span>
             <span class="pl-4"
-              >한 번에 끝내는 Node.js 웹 프로그래밍 초격차 패키지 Online
+              >패스트캠퍼스 Node.js 웹 프로그래밍 초격차 패키지 Online
               수료</span
             >
           </li>
