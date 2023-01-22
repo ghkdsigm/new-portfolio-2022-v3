@@ -59,22 +59,6 @@
           <h5
             class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
           >
-            Career Days
-          </h5>
-          <span class="py-1 lg:text-lg text-base"
-            ><span class="font-base">경력 만 </span
-            ><b class="font-lg">{{ careerDate }}</b
-            ><span class="font-base"> 입니다.</span></span
-          >
-          <span
-            class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-            >{{ today }} 기준
-          </span>
-        </div>
-        <div class="career mb-10">
-          <h5
-            class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
-          >
             History
           </h5>
           <ul>
@@ -109,6 +93,22 @@
               >
             </li>
           </ul>
+        </div>
+        <div class="career mb-10">
+          <h5
+            class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
+          >
+            Career Days
+          </h5>
+          <span class="py-1 lg:text-lg text-base"
+            ><span class="font-base">경력 만 </span
+            ><b class="font-lg">{{ careerDate }}</b
+            ><span class="font-base"> 입니다.</span></span
+          >
+          <span
+            class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+            >{{ today }} 기준
+          </span>
         </div>
         <div class="career mb-22">
           <h5
