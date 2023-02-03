@@ -1,6 +1,29 @@
 {
   "portfolios": [
     {
+      "title": "아이템베이 Reborn 관리자",
+      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img033_1.png",
+      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img33_1.png",
+      "sub": "아이템베이 플랫폼 관리자",
+      "url": "https://www.itembay.com/event/eventMainView",
+      "tag": "#프론트개발",
+      "articles": "https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%EC%95%84%EC%9D%B4%ED%85%9C%EB%B2%A0%EC%9D%B4+%EC%9D%B4%EB%B2%A4%ED%8A%B8+",
+      "party": "100%",
+      "content": "아이템베이 아이템 거래 플랫폼 회원관리, 입출금관리, 통계관리, 서비스관리, 상담관리 등 통합관리자시스템 구축",
+      "things": "관리자",
+      "time": "2022.11 ~ ",
+      "target": "아이템베이 & 아이템매니아 담당 관리 직원",
+      "language": "Nuxt.js, Javascript",
+      "part": [
+        {
+          "pb": "프론트개발(100%)",
+          "ds": "디자인(0%)",
+          "op": "기획(0%)",
+          "pt": "관리자페이지"
+        }
+      ]
+    },
+    {
       "title": "아이템베이 이벤트 프로모션",
       "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img030_1.png",
       "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/works/img32_1.png",
