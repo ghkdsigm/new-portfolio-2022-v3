@@ -122,8 +122,8 @@
                 ><b class="font-base dark:font-base lg:inline-block block"
                   >[아이템베이]</b
                 >
-                아이템베이 게임 아이템 중개거래 플랫폼 운영 및 이벤트 프로모션
-                구축</span
+                아이템베이 게임 아이템 중개 거래 플랫폼, 리본 플랫폼 관리자 운영
+                및 이벤트 프로모션 구축</span
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
