@@ -4,7 +4,7 @@
     <div class="relative mt-4 text-left">
       <!-- <router-link to="/works/work01">zz</router-link>
       <router-link to="/works/work02">xx</router-link> -->
-      <div class="lg:my-20 my-12 text-center" ref="scrollTap">
+      <div class="lg:my-20 my-12 text-center left-0 w-full" ref="scrollTap">
         <a
           @click="scrollToAnchorPoint('workCategory01')"
           class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
