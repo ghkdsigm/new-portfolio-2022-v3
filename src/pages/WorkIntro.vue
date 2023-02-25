@@ -184,7 +184,7 @@
       <div class="flex items-center h-[100vh]">
         <router-link
           to="/works"
-          class="flex lg:text-2xl text-xl justify-center dark:text-white text-black border dark:border-gray-400 border-gray-600 w-fit m-auto px-8 py-3 rounded-sm dark:hover:text-black dark:hover:bg-primary hover:text-white hover:bg-third dark:hover:border-primary hover:border-third linkAll"
+          class="worksBT flex lg:text-2xl text-xl justify-center dark:text-white text-third border dark:border-gray-400 border-gray-500 w-fit m-auto px-8 py-3 rounded-sm dark:hover:text-black dark:hover:bg-primary hover:text-white hover:bg-third dark:hover:border-primary hover:border-third linkAll"
           >ALL WORKS</router-link
         >
       </div>
@@ -208,30 +208,6 @@ export default {
     });
     return {};
   },
-  methods: {
-    // clickList01(index){
-    // 	this.$router.push({
-    //     name:'worksDetailNew',//detail
-    //     params:{contentId : index}
-    //   })
-    // },
-    // clickList02(index){
-    // 	this.$router.push({
-    //     name:'worksDetailOperation',//detail
-    //     params:{contentId : index}
-    //   })
-    // },
-    // clickList03(index){
-    // 	this.$router.push({
-    //     name:'worksDetailFront',//detail
-    //     params:{contentId : index}
-    //   })
-    // },
-    // scrollToAnchorPoint(refName) {
-    //     const el = this.$refs[refName]
-    //     el.scrollIntoView({ behavior: 'smooth'})
-    // }
-  },
 };
 </script>
 
@@ -241,5 +217,32 @@ export default {
 }
 .linkAll {
   font-family: 'Squada One', cursive;
+}
+.worksBT {
+  position: relative;
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.worksBT:after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 50px);
+  left: -50px;
+  width: 20px;
+  height: 100px;
+  background: white;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+}
+.worksBT:hover:after {
+  left: calc(100% + 50px);
+  opacity: 1;
 }
 </style>
