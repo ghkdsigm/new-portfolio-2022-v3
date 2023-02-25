@@ -13,15 +13,29 @@
       <div class="flex justify-center mt-12 mb-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
-            <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">01</h2>
+            <h2
+              class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0"
+            >
+              01
+            </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro1.jpg" alt="">
-            <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
+            <img src="../assets/images/worksThumb/pro1.jpg" alt="" />
+            <div
+              class="my-5 border dark:border-gray-700 border-gray-300 h-0"
+            ></div>
             <div class="lg:flex block items-center justify-between">
               <div>
-                <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">신규 구축 및 운영</h3>
-                <p class="dark:text-white text-black">LMS, NFT거래소, 일반홈페이지, 영상플랫폼, 대회운영앱 등 다양한 서비스 플랫폼 & 시스템 구축 노하우를 보유하고있습니다.</p>
+                <h3
+                  class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold"
+                >
+                  신규 구축 및 운영
+                </h3>
+                <p class="dark:text-white text-black">
+                  LMS, NFT거래소, 일반홈페이지, 영상플랫폼, 이벤트프로모션,
+                  대회운영앱 등 다양한 서비스 플랫폼 & 시스템 구축 노하우를
+                  보유하고있습니다.
+                </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -34,15 +48,28 @@
       <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
-            <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">02</h2>
+            <h2
+              class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0"
+            >
+              02
+            </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro2.jpg" alt="">
-            <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
+            <img src="../assets/images/worksThumb/pro2.jpg" alt="" />
+            <div
+              class="my-5 border dark:border-gray-700 border-gray-300 h-0"
+            ></div>
             <div class="lg:flex block items-center justify-between">
               <div>
-                <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">관리 및 유지보수</h3>
-                <p class="dark:text-white text-black">고객사 요구사항 및 이용자 피드백 등 을 반영한 안정적인 서비스 관리 경험을 보유하고있습니다.</p>
+                <h3
+                  class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold"
+                >
+                  관리 및 유지보수
+                </h3>
+                <p class="dark:text-white text-black">
+                  자사, 고객사 요구사항 및 이용자 피드백 등 을 반영한 안정적인
+                  서비스 관리 경험을 보유하고있습니다.
+                </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -55,15 +82,28 @@
       <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
-            <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">03</h2>
+            <h2
+              class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0"
+            >
+              03
+            </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro4.jpg" alt="">
-            <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
+            <img src="../assets/images/worksThumb/pro4.jpg" alt="" />
+            <div
+              class="my-5 border dark:border-gray-700 border-gray-300 h-0"
+            ></div>
             <div class="lg:flex block items-center justify-between">
               <div>
-                <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">프론트엔드 & 퍼블리싱</h3>
-                <p class="dark:text-white text-black">웹표준·접근성 기반, 프론트에 전반적인 구축화면을 마크업 & UI/UX 개발합니다.</p>
+                <h3
+                  class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold"
+                >
+                  프론트엔드 & 퍼블리싱
+                </h3>
+                <p class="dark:text-white text-black">
+                  웹표준·접근성 기반, 사용자 접점에서의 전반적인 화면을 마크업,
+                  UI/UX 개발 및 프론트엔드 개발합니다.
+                </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -76,15 +116,28 @@
       <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
-            <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">04</h2>
+            <h2
+              class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0"
+            >
+              04
+            </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro3.jpg" alt="">
-            <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
+            <img src="../assets/images/worksThumb/pro3.jpg" alt="" />
+            <div
+              class="my-5 border dark:border-gray-700 border-gray-300 h-0"
+            ></div>
             <div class="lg:flex block items-center justify-between">
               <div>
-                <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">디자인</h3>
-                <p class="dark:text-white text-black">꾸준히 변화하는 웹시장에서의 트렌디한 디자인 변화를 감지하고 고객 니즈를 파악하여 제작합니다.</p>
+                <h3
+                  class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold"
+                >
+                  디자인
+                </h3>
+                <p class="dark:text-white text-black">
+                  꾸준히 변화하는 WEB/MOBILE 플랫폼 시장에서의 트렌디한 디자인
+                  변화를 감지하고 이용자 니즈를 파악하여 제작합니다.
+                </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -97,15 +150,28 @@
       <div class="flex justify-center my-20">
         <div class="lg:flex block w-full">
           <div class="flex flex-1 justify-center item-start">
-            <h2 class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0">05</h2>
+            <h2
+              class="workTitle lg:text-[22vh] text-[12vh] dark:text-white text-black sticky top-0 h-fit leading-none lg:px-10 px-0"
+            >
+              05
+            </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro5.jpg" alt="">
-            <div class="my-5 border dark:border-gray-700 border-gray-300 h-0"></div>
+            <img src="../assets/images/worksThumb/pro5.jpg" alt="" />
+            <div
+              class="my-5 border dark:border-gray-700 border-gray-300 h-0"
+            ></div>
             <div class="lg:flex block items-center justify-between">
               <div>
-                <h3 class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold">기획 및 문서</h3>
-                <p class="dark:text-white text-black">시스템 설계 및 기획력과 제안요청서, 제안서, 기획서, 보고서 등의 문서 작성 역량또한 보유하고 있습니다.</p>
+                <h3
+                  class="lg:text-[4vh] text-[3vh] dark:text-primary text-third font-bold"
+                >
+                  기획 및 문서
+                </h3>
+                <p class="dark:text-white text-black">
+                  시스템 설계 및 신규 사업 기획력과 제안요청서, 제안서, 기획서,
+                  보고서 등의 문서 작성 경험, 노하우를 보유하고 있습니다.
+                </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
                 GO DETAIL
@@ -114,36 +180,35 @@
           </div>
         </div>
       </div>
-      
+
       <div class="flex items-center h-[100vh]">
-        <router-link to="/works" class="flex lg:text-2xl text-xl justify-center dark:text-white text-black border dark:border-gray-400 border-gray-600 w-fit m-auto px-8 py-3 rounded-sm dark:hover:text-black dark:hover:bg-primary hover:text-white hover:bg-third dark:hover:border-primary hover:border-third linkAll">ALL WORKS</router-link>
+        <router-link
+          to="/works"
+          class="flex lg:text-2xl text-xl justify-center dark:text-white text-black border dark:border-gray-400 border-gray-600 w-fit m-auto px-8 py-3 rounded-sm dark:hover:text-black dark:hover:bg-primary hover:text-white hover:bg-third dark:hover:border-primary hover:border-third linkAll"
+          >ALL WORKS</router-link
+        >
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
-import BackHome from '@/components/common/BackHome.vue'
+import BackHome from '@/components/common/BackHome.vue';
 
 // import Swiper core and required modules
-import { onMounted } from 'vue'
-
-
+import { onMounted } from 'vue';
 
 export default {
-  components:{
+  components: {
     BackHome,
   },
   setup() {
-    
-    onMounted(()=>{
+    onMounted(() => {
       // console.log(data)
-    })
-    return {
-    };
-  },  
-  methods:{
+    });
+    return {};
+  },
+  methods: {
     // clickList01(index){
     // 	this.$router.push({
     //     name:'worksDetailNew',//detail
@@ -166,11 +231,15 @@ export default {
     //     const el = this.$refs[refName]
     //     el.scrollIntoView({ behavior: 'smooth'})
     // }
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-.workTitle {font-family: "Squada One", cursive;}
-.linkAll  {font-family: "Squada One", cursive;}
+.workTitle {
+  font-family: 'Squada One', cursive;
+}
+.linkAll {
+  font-family: 'Squada One', cursive;
+}
 </style>

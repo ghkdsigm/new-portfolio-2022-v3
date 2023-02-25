@@ -37,14 +37,14 @@
             수행을 통해<br />
             <b class="lg:text-2xl text-lg lg:font-semibold font-semibold"
               >성공적인 결과</b
-            >를 이끌어낸 경험과 결과는<br />
-            누구도 쉽게 겪어보지못할
+            >를 이끌어낸 경험과 노하우는<br />
+            누구도 쉽게 겪어보지 못할
             <b class="lg:text-2xl text-lg lg:font-semibold font-semibold"
               >소중한 경험</b
             >이라 생각하며,<br />
-            그 순간들을 겪으며 얻은
+            그러한 경험들을 겪으며 얻어낸
             <b class="lg:text-2xl text-lg lg:font-semibold font-semibold"
-              >생각</b
+              >교훈</b
             >과
             <b class="lg:text-2xl text-lg lg:font-semibold font-semibold"
               >배움</b
