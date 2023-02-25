@@ -48,8 +48,8 @@
         <b class="lg:text-4xl text-2xl block font-extrabold mb-3"
           >'적자생존은 만고불변의 진리'</b
         >
-        주어진 어떠한 환경과 역할에서도<br />
-        동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다.
+        주어진 어떠한 역할과 환경에서도<br />
+        동료들과 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다.
       </h4>
       <div class="career mb-6">
         <h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">

@@ -21,13 +21,13 @@
         </li>
         <li class="py-1 lg:text-lg text-base">
           <span class="font-light"
-            >Javascript / Jquery / Typescript / Vue2,3 / Nuxt.js / Firebase / Node.js(in
-            progress)
+            >Javascript / Jquery / Typescript / Vue2,3 / Nuxt.js / Firebase /
+            Node.js(in progress)
           </span>
         </li>
         <li class="py-1 lg:text-lg text-base">
           <span class="font-light"
-            >Git / Github / Gitlab / Svn / Netlify / Heroku
+            >Git / Github / Gitlab / Svn / Netlify / Heroku / Gulp
           </span>
         </li>
       </ul>
@@ -40,12 +40,12 @@
         <li class="py-1 lg:text-lg text-base">
           <span class="font-light"
             >VSCode / Visual Studio / Eclipse / Powerpoint / Excel / Photoshop /
-            Illustrator / Figma / Zeplin
+            Figma / Zeplin
           </span>
         </li>
       </ul>
     </div>
-    <div class="career mb-6">
+    <!-- <div class="career mb-6">
       <ul>
         <li>
           <img src="" alt="" />
@@ -72,7 +72,7 @@
           <img src="" alt="" />
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
