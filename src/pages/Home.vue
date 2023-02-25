@@ -47,9 +47,12 @@
           alt="design image"
         />
         <div>
-          <p class="neon-text lg:text-lg text-base font-light">
-            클릭하시면 다양한 WORKS를 보실 수 있습니다.
-          </p>
+          <div class="txtwrapper">
+            <div class="focus">Works</div>
+            <div class="mask">
+              <div class="text">Works</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -204,7 +207,7 @@ export default {
   animation-delay: 0s;
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
-.mainImg div {
+.mainImg > div {
   position: absolute;
   top: 0;
   background: #000000c9;
@@ -217,46 +220,89 @@ export default {
 .mainImg:hover > div {
   display: flex;
 }
-.mainImg div p {
-  position: relative;
+
+@-webkit-keyframes mask {
+  to {
+    transform: translateX(170px);
+  }
 }
-.mainImg div p:before {
-  content: '';
+
+@keyframes mask {
+  to {
+    transform: translateX(170px);
+  }
+}
+@-webkit-keyframes text {
+  to {
+    transform: translateX(-170px);
+  }
+}
+@keyframes text {
+  to {
+    transform: translateX(-170px);
+  }
+}
+
+.txtwrapper {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  transform: scale(0);
-  transition: all 0.5s;
-}
-.mainImg p:before {
-  background: #01c9ca;
-  transform: scale(1);
-}
-@keyframes flicker {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
-      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
-  }
-
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-  }
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 255px;
+  height: 70px;
+  white-space: nowrap;
 }
 
-.neon-text {
-  animation: flicker 1.5s infinite alternate;
+.focus {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Arial;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  filter: blur(3px);
+  font-size: 58px;
+  opacity: 0.6;
   color: #fff;
+}
+
+.mask {
+  position: absolute;
+  left: -5px;
+  top: -2px;
+  width: 70px;
+  height: 100%;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 58px;
+  clip: rect(0px, 70px, 75px, 0px);
+  background: linear-gradient(#fff, #fff 0) no-repeat,
+    linear-gradient(to right, #fff, #fff 0) no-repeat,
+    linear-gradient(to right, #fff, #fff 0) bottom left no-repeat,
+    linear-gradient(to right, #fff, #fff 0) bottom left no-repeat,
+    linear-gradient(#fff, #fff 0) bottom right no-repeat,
+    linear-gradient(#fff, #fff 0) bottom right no-repeat,
+    linear-gradient(#fff, #fff 0) top right no-repeat,
+    linear-gradient(#fff, #fff 0) top right no-repeat;
+  background-size: 10px 2px, 2px 10px, 2px 10px, 10px 2px, 2px 10px, 10px 2px,
+    10px 2px, 2px 10px, 10px 2px;
+  color: #fff;
+  padding: 5px;
+  transform: translateX(0);
+  box-sizing: border-box;
+  -webkit-animation: mask 2.5s ease infinite alternate;
+  animation: mask 2.5s ease infinite alternate;
+}
+
+.text {
+  transform: translateX(0);
+  -webkit-animation: text 2.5s ease infinite alternate;
+  animation: text 2.5s ease infinite alternate;
+  height: 100%;
+  width: 100%;
+  top: -12px;
+  position: relative;
 }
 </style>
