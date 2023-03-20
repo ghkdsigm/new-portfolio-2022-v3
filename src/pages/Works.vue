@@ -18,7 +18,7 @@
         <a
           @click="scrollToAnchorPoint('workCategory03')"
           class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
-          >프론트엔드</a
+          >사이드프로젝트</a
         >
         <a
           @click="scrollToAnchorPoint('workCategory04')"
@@ -151,7 +151,7 @@
         <h2
           class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third"
         >
-          프론트엔드
+          사이드프로젝트
         </h2>
         <div class="my-4">
           <!-- <ul class="grid 3xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
