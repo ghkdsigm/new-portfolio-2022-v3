@@ -55,7 +55,7 @@
             합니다.
           </h4>
         </div>
-        <div class="career mb-10">
+        <!-- <div class="career mb-10">
           <h5
             class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"
           >
@@ -93,7 +93,7 @@
               >
             </li>
           </ul>
-        </div>
+        </div> -->
         <div class="career mb-10">
           <h5
             class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1"

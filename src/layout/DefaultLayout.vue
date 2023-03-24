@@ -132,7 +132,7 @@
               class="dark:text-secondary text-secondary-dark lg:text-xl text-lg"
               style="font-family: 'Squada One', cursive"
             >
-              Frontend Developer
+              Web Developer
             </p>
           </router-link>
           <!--git + 다크모드-->

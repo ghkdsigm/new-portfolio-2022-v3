@@ -44,7 +44,7 @@
         <img
           class="align-top"
           src="@/assets/images/worksImg.jpg"
-          alt="design image"
+          alt="내가 디자인한 페이지들"
         />
         <div>
           <div class="txtwrapper">

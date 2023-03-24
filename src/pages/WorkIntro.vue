@@ -32,7 +32,7 @@
                   신규 구축 및 운영
                 </h3>
                 <p class="dark:text-white text-black">
-                  LMS, NFT거래소, 일반홈페이지, 영상플랫폼, 이벤트프로모션,
+                  LMS, NFT거래소, 기업홈페이지, 영상플랫폼, 이벤트프로모션,
                   대회운영앱 등 다양한 서비스 플랫폼 & 시스템 구축 노하우를
                   보유하고있습니다.
                 </p>
@@ -55,7 +55,7 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro2.jpg" alt="" />
+            <img src="../assets/images/worksThumb/pro6.jpg" alt="" />
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -135,7 +135,7 @@
                   디자인
                 </h3>
                 <p class="dark:text-white text-black">
-                  꾸준히 변화하는 WEB/MOBILE 플랫폼 시장에서의 트렌디한 디자인
+                  꾸준히 변화하는 Web/Mobile 플랫폼 시장에서의 트렌디한 디자인
                   변화를 감지하고 이용자 니즈를 파악하여 제작합니다.
                 </p>
               </div>
@@ -169,7 +169,7 @@
                   기획 및 문서
                 </h3>
                 <p class="dark:text-white text-black">
-                  시스템 설계 및 신규 사업 기획력과 제안요청서, 제안서, 기획서,
+                  신규 사업 기획력과 제안요청서, 제안서, 기획서,
                   보고서 등의 문서 작성 경험, 노하우를 보유하고 있습니다.
                 </p>
               </div>
