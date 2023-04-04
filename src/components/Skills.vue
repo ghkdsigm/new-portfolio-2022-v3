@@ -21,8 +21,8 @@
         </li>
         <li class="py-1 lg:text-lg text-base">
           <span class="font-light"
-            >Javascript / Jquery / Typescript / Vue2,3 / Nuxt.js / Firebase /
-            Node.js(in progress)
+            >Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase / Typescript(in
+            progress)
           </span>
         </li>
         <li class="py-1 lg:text-lg text-base">

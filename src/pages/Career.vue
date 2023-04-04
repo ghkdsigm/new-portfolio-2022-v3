@@ -33,8 +33,8 @@
           <h4
             class="xl:text-2xl lg:text-xl md:text-lg text-base mb-10 font-light xl:leading-10 lg:leading-10 md:leading-8 sm:leading-7 careerTitle"
           >
-            수많은 대국민 서비스 프로젝트에서 <br />다양한 역할로서의 업무
-            수행을 통해<br />
+            수많은 대국민 서비스, 신규 플랫폼 프로젝트에서 <br />다양한
+            역할로서의 업무 수행을 통해<br />
             <b class="lg:text-2xl text-lg lg:font-semibold font-semibold"
               >성공적인 결과</b
             >를 이끌어낸 경험과 노하우는<br />
