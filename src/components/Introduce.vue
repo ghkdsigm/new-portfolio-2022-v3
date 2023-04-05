@@ -71,9 +71,9 @@
             >
           </li>
           <li class="py-1 lg:text-lg text-base flex">
-            <span class="font-medium">2022.01.</span>
+            <span class="font-medium">~2022.06.</span>
             <span class="pl-4"
-              >패스트캠퍼스 프론트엔드 초격차 패키지 온라인 교육 과정 수료</span
+              >패스트캠퍼스 프론트엔드 초격차 패키지 온라인 교육 과정중</span
             >
           </li>
           <li class="py-1 lg:text-lg text-base flex">
