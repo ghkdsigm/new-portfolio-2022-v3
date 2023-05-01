@@ -65,7 +65,7 @@ button:hover {
 .containser {
 }
 
-#noise {
+.dark #noise {
   animation: noise 0.5s steps(10) infinite;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -74,6 +74,23 @@ button:hover {
   height: 100vh;
   left: 0;
   opacity: 1;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: opacity 1s ease-out;
+  width: 100vw;
+  z-index: -1;
+}
+
+#noise {
+  animation: noise 0.5s steps(10) infinite;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+  background-image: url('@/assets/images/noise.png');
+  height: 100vh;
+  left: 0;
+  opacity: 0.51;
   pointer-events: none;
   position: fixed;
   top: 0;
