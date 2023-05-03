@@ -444,7 +444,6 @@ export default {
       let carrerNum = (diffDate / 365) % 1;
 
       const timeRes = String(carrerNum); // 문자형으로 바꾼다음에
-      console.log('vv', timeRes);
       var newArry = timeRes.split('.'); // 점으로 구분배열
       var carrerMonth = newArry[1].substring(0, 1); // 두자리만 뽑고 (위치만 하나 뒤로)
       var carrerMonth2 = newArry[1].substring(1, 2);
