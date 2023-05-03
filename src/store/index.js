@@ -89,7 +89,12 @@ const store = createStore({
     //     });
     // },
   },
-  plugins: [createPersistedState()],
+  plugins: [
+    createPersistedState({
+      key: 'vuexStore',
+      storage: window.sessionStorage,
+    }),
+  ],
 });
 
 export default store;
