@@ -120,6 +120,19 @@
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base dark:font-thin"
                 ><b class="font-base dark:font-base lg:inline-block block"
+                  >[아이템베이 & Fandom Korea]</b
+                >
+                아이템베이 & Fandom Korea NFT 거래소 프론트 운영 및
+                유지보수</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2023.07. -</span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
                   >[아이템베이]</b
                 >
                 아이템베이 게임 아이템 중개 거래 플랫폼, 리본 플랫폼 관리자 운영
