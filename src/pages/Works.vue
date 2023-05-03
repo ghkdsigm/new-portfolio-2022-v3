@@ -438,7 +438,11 @@ export default {
 }
 .worksUl li .imgZbg {
   /* mix-blend-mode: multiply; */
-  filter: grayscale(80%) contrast(1) brightness(90%);
+  filter: grayscale(20%) contrast(1) brightness(90%);
+}
+.dark .worksUl li .imgZbg {
+  /* mix-blend-mode: multiply; */
+  filter: grayscale(50%) contrast(1) brightness(90%);
 }
 .worksUl li:hover {
   transform: translateY(-7px);
