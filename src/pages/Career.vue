@@ -450,11 +450,11 @@ export default {
 
       let carrentYear = `${Math.floor(diffDate / 365)}`;
 
-      if(Number(carrerMonth2) >= 5){
-        Number(carrerMonth) + 1
-      } else if(Number(carrerMonth2) >= 12) {
-        Number(carrerMonth) = 0
-        Number(carrentYear) + 1
+      if (Number(carrerMonth2) >= 5) {
+        Number(carrerMonth) + 1;
+      } else if (Number(carrerMonth2) >= 12) {
+        carrerMonth = 0;
+        carrentYear + 1;
       }
 
       careerDate.value = `${carrentYear}년 ${carrerMonth}개월 `;
