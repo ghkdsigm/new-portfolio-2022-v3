@@ -7,22 +7,22 @@
       <div class="lg:my-20 my-12 text-center left-0 w-full" ref="scrollTap">
         <a
           @click="scrollToAnchorPoint('workCategory01')"
-          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
+          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:px-4 lg:py-2 px-3 py-2 lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
           >신규구축 및 운영</a
         >
         <a
           @click="scrollToAnchorPoint('workCategory02')"
-          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
+          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:px-4 lg:py-2 px-3 py-2 lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
           >관리 및 유지보수</a
         >
         <a
           @click="scrollToAnchorPoint('workCategory03')"
-          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
+          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:px-4 lg:py-2 px-3 py-2 lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
           >사이드프로젝트</a
         >
         <a
           @click="scrollToAnchorPoint('workCategory04')"
-          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
+          class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:px-4 lg:py-2 px-3 py-2 lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit"
           >디자인</a
         >
         <!-- <a @click="scrollToAnchorPoint('workCategory05')" class="dark:text-white text-black dark:hover:text-primary hover:text-third inline-block lg:mx-4 mx-1 lg:my-0 my-1 lg:text-xl text-base lg:w-fit w-fit">기획 및 문서</a> -->
@@ -469,7 +469,6 @@ export default {
   background-color: rgb(255 200 70 / 50%);
   color: #000;
   border-radius: 50px;
-  padding: 8px 16px;
 }
 .dark .scrollArea a:hover {
   background-color: rgb(255, 200, 70);
@@ -479,7 +478,6 @@ export default {
   background-color: rgb(17 33 107 / 50%);
   color: #fff;
   border-radius: 50px;
-  padding: 8px 16px;
   font-size: 1.5vh;
   box-shadow: 2px 2px 10px 0px #0000004f;
   font-weight: 400;
