@@ -1,33 +1,73 @@
 <template>
   <div class="text-left">
     <div class="flex justify-between items-center mt-14 mb-2">
-      <h2 class="lg:text-4xl text-2xl block font-extrabold dark:text-primary text-third">CONTACT</h2>
+      <h2
+        class="lg:text-4xl text-2xl block font-extrabold dark:text-primary text-third"
+      >
+        CONTACT
+      </h2>
     </div>
     <p class="dark:text-white text-black">
       문의글이나 관심글은 아래 입력란에 작성 후 전송하여 주시거나, 빠른 답변을
       위해 유선상 연락주시면 감사하겠습니다. :)
     </p>
-    
-    <form id="myform" class="my-10 dark:text-white text-gray-800" ref="form" @submit.prevent="sendEmail">
+
+    <form
+      id="myform"
+      class="my-10 dark:text-white text-gray-800"
+      ref="form"
+      @submit.prevent="sendEmail"
+    >
       <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
-        <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Name</label>
-        <input type="text" name="user_name" ref="name" placeholder="성함을 입력해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"/>
+        <label
+          class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex"
+          >Name</label
+        >
+        <input
+          type="text"
+          name="user_name"
+          ref="name"
+          placeholder="성함을 입력해주세요"
+          class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"
+        />
       </div>
       <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
-        <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Email</label>
-        <input type="email" name="user_email" ref="email" placeholder="회신받으실 이메일을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"/>
+        <label
+          class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex"
+          >Email</label
+        >
+        <input
+          type="email"
+          name="user_email"
+          ref="email"
+          placeholder="회신받으실 이메일을 작성해주세요"
+          class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"
+        />
       </div>
       <div class="formGroup lg:py-4 py-2 flex lg:flex-row flex-col">
-        <label class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex">Message</label>
-        <textarea name="message" ref="message" rows="12" placeholder="문의하실 내용을 작성해주세요" class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"></textarea>
+        <label
+          class="basis-1/6 text-third dark:text-white lg:text-base text-base font-bold lg:text-center lg:justify-center justify-start items-center flex"
+          >Message</label
+        >
+        <textarea
+          name="message"
+          ref="message"
+          rows="12"
+          placeholder="문의하실 내용을 작성해주세요"
+          class="basis-5/6 bg-transparent w-full border border-gray-400 dark:border-gray-500 py-3 pl-3 rounded-lg"
+        ></textarea>
       </div>
       <div class="flex lg:justify-end justify-center lg:mb-0 mb-6 mt-4">
-        <input type="submit" value="Send" class="button text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium rounded-md" />
-      </div>      
+        <input
+          type="submit"
+          value="Send"
+          class="button text-medium py-3 px-6 border dark:border-gray-400 border-gray-500 dark:hover:border-transparent dark:hover:bg-primary hover:bg-third dark:hover:text-black dark:text-gray-300 text-gray-700 hover:text-gray-100 font-medium rounded-md"
+        />
+      </div>
     </form>
     <div class="flex justify-center pt-10 pb-10">
-      <span
-        class="px-4"><svg
+      <span class="px-4"
+        ><svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -45,8 +85,8 @@
           </g></svg
         >+82 10.9406-3935</span
       >
-      <span
-        class="px-4"><svg
+      <span class="px-4"
+        ><svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -62,7 +102,7 @@
               d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"
             ></path>
           </g></svg
-        >ghkdsigm3@gmail.com</span
+        >ghkdsigm3@gmail.com / @naver.com</span
       >
     </div>
     <!-- <h1 class="Mh1">문의 하기</h1>
@@ -71,7 +111,7 @@
 </template>
 
 <script>
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 export default {
   data() {
     return {
@@ -79,8 +119,8 @@ export default {
       template_id: import.meta.env.VITE_APP_TEMPLATE_ID,
       user_id: import.meta.env.VITE_APP_USER_ID,
       template_params: {
-        username: "James",
-        "g-recaptcha-response": "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
+        username: 'James',
+        'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...',
       },
     };
   },
@@ -89,37 +129,39 @@ export default {
       const formName = this.$refs.name.value;
       const formEmail = this.$refs.email.value;
       const formMessage = this.$refs.message.value;
-      if (formName !== "" && formEmail !== "" && formMessage !== "") {
+      if (formName !== '' && formEmail !== '' && formMessage !== '') {
         emailjs
           .sendForm(
             this.service_id,
             this.template_id,
             this.$refs.form,
-            this.user_id,
+            this.user_id
           )
           .then(
-            result => {
+            (result) => {
               swal(
-                "문의완료!", "메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)", "success"
+                '문의완료!',
+                '메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)',
+                'success'
                 //result.text,
               );
               this.$refs.form.reset();
             },
-            error => {
+            (error) => {
               swal(
-                "전송실패","전송에 실패하였습니다 확인 후 다시 시도해주세요", "error"
+                '전송실패',
+                '전송에 실패하였습니다 확인 후 다시 시도해주세요',
+                'error'
                 //error.text,
               );
-            },
+            }
           );
       } else {
-        swal("Fail", "내용을 입력후 메일을 보내주세요", "error");
+        swal('Fail', '내용을 입력후 메일을 보내주세요', 'error');
       }
     },
   },
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
