@@ -20,7 +20,9 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro1.jpg" alt="" />
+            <router-link to="/works">
+              <img src="../assets/images/worksThumb/pro1.jpg" alt="" />
+            </router-link>
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -55,7 +57,9 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro6.jpg" alt="" />
+            <router-link to="/works">
+              <img src="../assets/images/worksThumb/pro6.jpg" alt="" />
+            </router-link>
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -89,7 +93,9 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro4.jpg" alt="" />
+            <router-link to="/works">
+              <img src="../assets/images/worksThumb/pro4.jpg" alt="" />
+            </router-link>
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -123,7 +129,9 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro3.jpg" alt="" />
+            <router-link to="/works">
+              <img src="../assets/images/worksThumb/pro3.jpg" alt="" />
+            </router-link>
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -157,7 +165,9 @@
             </h2>
           </div>
           <div class="flex-2">
-            <img src="../assets/images/worksThumb/pro5.jpg" alt="" />
+            <router-link to="/works">
+              <img src="../assets/images/worksThumb/pro5.jpg" alt="" />
+            </router-link>
             <div
               class="my-5 border dark:border-gray-700 border-gray-300 h-0"
             ></div>
@@ -169,8 +179,8 @@
                   기획 및 문서
                 </h3>
                 <p class="dark:text-white text-black">
-                  신규 사업 기획력과 제안요청서, 제안서, 기획서,
-                  보고서 등의 문서 작성 경험, 노하우를 보유하고 있습니다.
+                  신규 사업 기획력과 제안요청서, 제안서, 기획서, 보고서 등의
+                  문서 작성 경험, 노하우를 보유하고 있습니다.
                 </p>
               </div>
               <!-- <p class="dark:text-white text-black font-semibold lg:mt-0 mt-4">
