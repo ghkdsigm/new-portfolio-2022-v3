@@ -1,6 +1,6 @@
 <template>
   <div class="dark:text-primary text-third">
-    <div class="flex justify-between">
+    <div class="flex justify-between lg:sticky lg:top-0 lg:z-50">
       <BackHome class="relative"></BackHome>
       <a
         href="#"

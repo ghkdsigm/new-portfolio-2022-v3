@@ -1,6 +1,6 @@
 <template>
   <div class="dark:text-primary text-third">
-    <div class="flex justify-between lg:mt-0 mt-10">
+    <div class="flex justify-between lg:mt-0 mt-10 lg:sticky lg:top-0 lg:z-50">
       <BackWorks class="relative"></BackWorks>
       <a
         :href="data.url"
