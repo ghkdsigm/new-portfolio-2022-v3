@@ -34,7 +34,8 @@ export default {
       context: '전광판 송출 디자인 작업',
       created_at: '2019.06. - 19.07.',
       party: '100%',
-      content_url: '/src/assets/images/design/d01.gif',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d01.gif',
     },
     {
       content_id: 2,
@@ -43,7 +44,8 @@ export default {
       context: '대한체육회 국민지지도조사 팝업, 배너, 홈페이지 디자인 작업',
       created_at: '2016, ,17, 18, 19, 20, 21',
       party: '100%',
-      content_url: '/src/assets/images/design/d02.png',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d02.png',
     },
     {
       content_id: 3,
@@ -52,7 +54,8 @@ export default {
       context: '전광판 송출 디자인 작업',
       created_at: '2019.09. - 19.10.',
       party: '100%',
-      content_url: '/src/assets/images/design/d03.gif',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d03.gif',
     },
     {
       content_id: 4,
@@ -62,7 +65,8 @@ export default {
       context: '대국민 대상 공모 사이트 및 포스터 디자인 작업',
       created_at: '2018.05. - 18.06.',
       party: '100%',
-      content_url: '/src/assets/images/design/d04.jpg',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d04.jpg',
     },
     {
       content_id: 5,
@@ -71,7 +75,8 @@ export default {
       context: '대한체육회 후보자추천 팝업, 배너, 홈페이지 디자인 작업',
       created_at: '2016, ,17, 18, 19, 20, 21',
       party: '100%',
-      content_url: '/src/assets/images/design/d05.jpg',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d05.jpg',
     },
     {
       content_id: 6,
@@ -80,7 +85,8 @@ export default {
       context: '소상공인 대상 온라인 판매 유치 팜플릿 및 레플릿 제작',
       created_at: '2021.06.',
       party: '100%',
-      content_url: '/src/assets/images/design/d06.png',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d06.png',
     },
     {
       content_id: 7,
@@ -89,7 +95,8 @@ export default {
       context: '데이터센터 플랫폼 디자인 작업',
       created_at: '2020.03.',
       party: '100%',
-      content_url: '/src/assets/images/design/d07.gif',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d07.gif',
     },
     {
       content_id: 8,
@@ -100,7 +107,8 @@ export default {
         "대한체육회 미래100년 후대에게 보내는 타임캡슐 '손편지' 공모 포스터 제작",
       created_at: '2018.05. - 18.06',
       party: '100%',
-      content_url: '/src/assets/images/design/d08.jpg',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d08.jpg',
     },
     {
       content_id: 7,
@@ -109,7 +117,8 @@ export default {
       context: '내손안의 전광판 컨텐츠 제작',
       created_at: '2021.03. - 21.09',
       party: '100%',
-      content_url: '/src/assets/images/design/d09.jpg',
+      content_url:
+        'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/design/d09.jpg',
     },
   ],
   // Comment: [
