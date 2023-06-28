@@ -685,6 +685,28 @@
   ],
   "fontdevelopment": [
     {
+      "title": "승현이의 Blind",
+      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img26_1.png",
+      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/webs/e08.gif",
+      "sub": "Blind 사용자 및 관리자 페이지 클론 + 커스터마이징 기획 코딩",
+      "url": "https://stellular-cranachan-e5cdbf.netlify.app/",
+      "tag": "#Nuxt.js #Node.js #mongoDB #프론트개발 #백엔드개발 #기획 #디자인",
+      "articles": "",
+      "party": "100%",
+      "content": "직장인 커뮤니티 '블라인드'를 클론하여 제작하였습니다. Nuxt.js를 활용하여 SSR 프론트개발 Node.js를 활용하여 백엔드개발 제작하였습니다.",
+      "time": "2023.07 ~ ",
+      "target": "일반 유저",
+      "language": "Nuxt2.js, Node.js, Tailwind.css, MongoDB",
+      "part": [
+        {
+          "pb": "프론트개발(100%)",
+          "ds": "디자인(100%)",
+          "op": "기획(100%)",
+          "pt": "사용자페이지,관리자페이지"
+        }
+      ]
+    },
+    {
       "title": "DOKI",
       "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img26_1.png",
       "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/webs/e08.gif",
@@ -756,7 +778,7 @@
       "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/webs/e11.gif",
       "sub": "실제 트위터와 동일한 디자인, 기능의 서비스를 제공하는 개인용 소셜네트워크 서비스",
       "url": "https://ephemeral-pothos-75cf57.netlify.app/",
-      "tag": "#프론트개발 #백엔드개발 #디자인",
+      "tag": "#Firebase #프론트개발 #No SQL 백엔드개발 #디자인",
       "articles": "",
       "party": "100%",
       "content": "오랜 동네 친구들과 함께 사용하기 위해 제작된 개인 SNS입니다. 파이어 베이스(파이어 스토어)NoSQL 그리고 VU3를 활용하여 기본 CRUD 기반 프로필수정, 게시글 작성, 이미지 업로드, 회원가입 및 로그인 등 인스타그램이나 트위터가 제공하는 서비스와 유사하게 구현하였으며 요즘 유행하는 Tailwind.css 또한 학습한 계기가 되었습니다.",
