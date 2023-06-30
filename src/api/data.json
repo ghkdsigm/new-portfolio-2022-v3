@@ -686,10 +686,10 @@
   "fontdevelopment": [
     {
       "title": "승현이의 Blind",
-      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img26_1.png",
-      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/webs/e08.gif",
+      "image": "",
+      "innerImage": "",
       "sub": "Blind 사용자 및 관리자 페이지 클론 + 커스터마이징 기획 코딩",
-      "url": "https://stellular-cranachan-e5cdbf.netlify.app/",
+      "url": "",
       "tag": "#Nuxt.js #Node.js #mongoDB #프론트개발 #백엔드개발 #기획 #디자인 #배포",
       "articles": "",
       "party": "100%",
