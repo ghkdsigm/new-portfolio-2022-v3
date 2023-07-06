@@ -693,7 +693,7 @@
       "tag": "#Nuxt.js #Node.js #mongoDB #프론트개발 #백엔드개발 #기획 #디자인 #배포",
       "articles": "",
       "party": "100%",
-      "content": "직장인 커뮤니티 '블라인드'를 클론하여 제작하였습니다. Nuxt.js를 활용하여 SSR 프론트개발 Node.js를 활용하여 백엔드개발 제작하였습니다.",
+      "content": "커뮤니티 플랫폼을 만드는것에 갈증을 느껴왔었기에 근래 최대 직장인 커뮤니티가 된 '블라인드'를 약간의 커스터마이징을 가미, 클론하여 제작하였습니다. Nuxt.js를 활용하여 SSR 프론트개발, Node.js를 활용하여 백엔드개발 제작하였습니다.",
       "time": "2023.07 ~ ",
       "target": "일반 유저",
       "language": "Nuxt2.js, Node.js, Tailwind.css, MongoDB",
