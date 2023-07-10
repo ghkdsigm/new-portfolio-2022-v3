@@ -11,12 +11,12 @@
       "party": "60%",
       "content": "아이템베이 & Fandom Korea NFT 거래소 협업 프론트엔드 구축 및 유지보수",
       "things": "관리자",
-      "time": "2023.07 ~ ",
+      "time": "2023.08 ~ ",
       "target": "Fandom Korea NFT 거래소 이용 유저",
       "language": "Vue3, Typescript, Javascript",
       "part": [
         {
-          "pb": "프론트개발(60%)",
+          "pb": "프론트개발(10%)",
           "ds": "디자인(0%)",
           "op": "기획(0%)",
           "pt": "관리자페이지"
