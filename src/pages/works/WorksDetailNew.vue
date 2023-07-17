@@ -16,12 +16,23 @@
         {{ data.title }}
       </div>
       <p class="lg:mb-10 mb-6">{{ data.sub }}</p>
-      <div class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite">
+      <div v-if="typeof data.innerImage === 'string'" class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite" >
         <img
           :src="data.innerImage"
           class="mx-auto block"
           :alt="data.title + '이미지'"
         />
+      </div>
+      <div v-else class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite">
+        <ul>
+          <li v-for="(item, index) in data.innerImage" :key="index">
+            <img
+            :src="item"
+            class="mx-auto block"
+            :alt="item.title + '이미지'"
+          />
+          </li>
+        </ul>
       </div>
       <!-- <rounter-link :to="data.url">ss</rounter-link> -->
       <div class="lg:mt-20 mt-6 mb-40 dark:text-white text-black text-left">
