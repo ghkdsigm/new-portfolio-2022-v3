@@ -23,9 +23,9 @@
           :alt="data.title + '이미지'"
         />
       </div>
-      <div v-else class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite">
-        <ul>
-          <li v-for="(item, index) in data.innerImage" :key="index">
+      <div v-else>
+        <ul class="flex flex-wrap">
+          <li v-for="(item, index) in data.innerImage" :key="index" class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite lg:w-1/2">
             <img
             :src="item"
             class="mx-auto block"
