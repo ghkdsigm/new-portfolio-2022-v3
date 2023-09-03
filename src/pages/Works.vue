@@ -215,7 +215,7 @@
       </div> -->
       <div
         ref="workCategory04"
-        class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-52"
+        class="lg:mt-4 block dark:text-secondary text-secondary-dark mb-12"
       >
         <h2
           class="lg:text-4xl text-2xl block font-extrabold mb-4 dark:text-primary text-third"
@@ -230,7 +230,7 @@
           >
             <slide v-for="(slide, index) in design.Content" :key="index">
               <div
-                class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full"
+                class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full flex-1 justify-center items-center"
               >
                 <div class="imgZbg">
                   <div class="carousel_item">
@@ -268,8 +268,11 @@
         </div>
       </div> -->
     </div>
-    <div class="relative mt-4 text-left">
-      <video src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/ronaldo.mp4" autoplay muted loop></video>
+    <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-20 mb-52">
+      <div class="flex">
+        <video class="lg:w-6/12 w-full" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/ronaldo.mp4" autoplay muted loop></video>
+        <video class="lg:w-6/12 w-full" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/snsvideo.mp4" autoplay muted loop></video>
+      </div>
     </div>
   </div>
 </template>
