@@ -269,7 +269,7 @@
       </div> -->
     </div>
     <div class="relative mt-4 text-left">
-      <video src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/video/ronaldo.mp4"></video>
+      <video src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/ronaldo.mp4" autoplay muted loop></video>
     </div>
   </div>
 </template>
