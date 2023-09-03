@@ -268,10 +268,10 @@
         </div>
       </div> -->
     </div>
-    <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-20 mb-52">
-      <div class="flex">
+    <div class="rounded-2xl bg-bgWhite hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 mb-52">
+      <div class="flex lg:flex-row flex-col">
         <video class="lg:w-6/12 w-full" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/ronaldo.mp4" autoplay muted loop></video>
-        <video class="lg:w-6/12 w-full" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/snsvideo.mp4" autoplay muted loop></video>
+        <video class="lg:w-6/12 w-full lg:pt-0 pt-6" src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/videos/snsvideo.mp4" autoplay muted loop></video>
       </div>
     </div>
   </div>
