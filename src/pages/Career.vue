@@ -64,12 +64,20 @@
           <ul>
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base"
-                ><b class="font-base">(現) 아이템베이</b> 개발팀 웹 퍼블리싱 &
-                프론트개발</span
+                ><b class="font-base">(現) 동화그룹</b> 온라인서비스팀 프론트엔드 개발</span
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2022.11. -
+                >2023.10. -
+              </span>
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base"
+                ><b class="font-base">(前) 아이템베이</b> 플랫폼운영실 UI마크업 및 프론트엔드 개발</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2022.11. - 23.10
               </span>
             </li>
             <li class="py-1 lg:text-lg text-base">
@@ -84,8 +92,7 @@
             </li>
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base"
-                ><b class="font-base">(前) UNBIZ</b> 기업부설연구소 SI 개발
-                팀장</span
+                ><b class="font-base">(前) UNBIZ</b> 기업부설연구소 비지니스 리드 및 마크업 개발</span
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
