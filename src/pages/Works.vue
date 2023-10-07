@@ -74,7 +74,7 @@
                 class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full"
               >
                 <div class="imgZbg">
-                  <img :src="portfolio.image" alt="" class="rounded-2xl" />
+                  <img :src="portfolio.image !== '' ? portfolio.image : 'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/no-Img.png'" alt="" class="rounded-2xl" />
                 </div>
                 <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
@@ -120,7 +120,7 @@
                 class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full"
               >
                 <div class="imgZbg">
-                  <img :src="portfolio.image" alt="" class="rounded-2xl" />
+                  <img :src="portfolio.image !== '' ? portfolio.image : 'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/no-Img.png'" alt="" class="rounded-2xl" />
                 </div>
                 <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">
@@ -175,7 +175,7 @@
                 class="rounded-2xl bg-fourth hover:bg-gray-300 dark:bg-fourth-dark dark:hover:bg-gray-800 p-6 flex flex-col h-full"
               >
                 <div class="imgZbg">
-                  <img :src="portfolio.image" alt="" class="rounded-2xl" />
+                  <img :src="portfolio.image !== '' ? portfolio.image : 'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/no-Img.png'" alt="" class="rounded-2xl" />
                 </div>
                 <div class="pt-6 pb-3 px-0 flex-1 flex justify-center flex-col">
                   <div class="py-3">

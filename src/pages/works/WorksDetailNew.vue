@@ -18,7 +18,7 @@
       <p class="lg:mb-10 mb-6">{{ data.sub }}</p>
       <div v-if="typeof data.innerImage === 'string'" class="my-4 lg:p-12 p-6 dark:bg-innerBg bg-innerBgWhite" >
         <img
-          :src="data.innerImage"
+          :src="data.innerImage !== '' ? data.innerImage : 'https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/no-Img.png'"
           class="mx-auto block"
           :alt="data.title + '이미지'"
         />
