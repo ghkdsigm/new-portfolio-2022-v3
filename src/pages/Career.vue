@@ -133,7 +133,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2023.08. - 23.09</span
+                >2023.08. - 23.10</span
               >
             </li>
             <!-- <li class="py-1 lg:text-lg text-base">
@@ -159,7 +159,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2022.11. -</span
+                >2022.11. - 23.10</span
               >
             </li>
             <li class="py-1 lg:text-lg text-base">
@@ -171,7 +171,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2022.11. -</span
+                >2022.11. - 23.10</span
               >
             </li>
             <li class="py-1 lg:text-lg text-base">
