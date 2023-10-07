@@ -1,22 +1,22 @@
 {
   "portfolios": [
     {
-      "title": "아이템베이 & Fandom Korea NFT 거래소 운영",
-      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img34_0.png",
-      "innerImage": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img34_1.png",
-      "sub": "아이템베이 & 플래스크 자회사 Fandom Korea NFT 거래소",
-      "url": "https://tiktok.fandom.co/",
-      "tag": "#프론트개발",
-      "articles": "https://www.edaily.co.kr/news/read?newsId=03421046635572840&mediaCodeNo=257&OutLnkChk=Y",
-      "party": "10%",
-      "content": "아이템베이 & Fandom Korea NFT 거래소 협업 프론트엔드 구축 및 유지보수",
-      "things": "관리자",
-      "time": "2023.08 ~ ",
-      "target": "Fandom Korea NFT 거래소 이용 유저",
-      "language": "Vue3, Typescript, Javascript",
+      "title": "아이템베이 Upfac 2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼 신규 구축",
+      "image": "",
+      "innerImage": "",
+      "sub": "2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼",
+      "url": "",
+      "tag": "#프론트 #마크업",
+      "articles": "",
+      "party": "100%",
+      "content": "아이템베이 Upfac 2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼 신규 구축",
+      "things": "사용자",
+      "time": "2023.07 ~ ",
+      "target": "2,3D 이미지 수요 고객",
+      "language": "Html, Css, Javascript",
       "part": [
         {
-          "pb": "프론트개발(10%)",
+          "pb": "프론트개발(20%)",
           "ds": "디자인(0%)",
           "op": "기획(0%)",
           "pt": "관리자페이지"

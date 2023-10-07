@@ -127,6 +127,18 @@
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base dark:font-thin"
                 ><b class="font-base dark:font-base lg:inline-block block"
+                  >[아이템베이]</b
+                >
+                아이템베이 Upfac 2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼 신규 구축</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2023.08. - 23.09</span
+              >
+            </li>
+            <!-- <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
                   >[아이템베이 & Fandom Korea]</b
                 >
                 아이템베이 & Fandom Korea NFT 거래소 프론트 운영 및
@@ -134,9 +146,9 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2023.07. -</span
+                >2023.07. - 23.09</span
               >
-            </li>
+            </li> -->
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base dark:font-thin"
                 ><b class="font-base dark:font-base lg:inline-block block"
