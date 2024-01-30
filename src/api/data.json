@@ -1,6 +1,29 @@
 {
   "portfolios": [
     {
+      "title": "국내 1위 규모 엠파크 중고차 매매단지 통합관리시스템 UMS 신규 구축",
+      "image": "",
+      "innerImage": "",
+      "sub": "동화그룹 자회사 엠파크 자동차 매매단지 단지/상사/자사 통합 관리 시스템",
+      "url": "https://www.greendongwha.com/",
+      "tag": "#프론트개발 #마크업",
+      "articles": "",
+      "party": "100%",
+      "content": "상사/단지 임대 산업 운영 기반의 시설/운영/기초정보/임대/계량기/관리비/입출고/차량통제 등 대한민국 1위 규모 매매단지 관리시스템 신규 구축",
+      "things": "클라이언트, 백오피스, 키오스크, RS통신을 이용한 입출고 관리, 데이터센터 등",
+      "time": "2024.12 ~ ",
+      "target": "매매딜러, 단지 및 상사 담당자, 그룹사 사업 담당자",
+      "language": "Html, Scss, Javascript, Nuxt.js, Aws",
+      "part": [
+        {
+          "pb": "프론트개발(100%)",
+          "ds": "디자인(0%)",
+          "op": "기획(0%)",
+          "pt": "관리자페이지"
+        }
+      ]
+    },
+    {
       "title": "LIVE IN PRIDE | 동화자연마루",
       "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img37_1.PNG",
       "innerImage": [
@@ -26,7 +49,7 @@
       "things": "클라이언트, 백오피스",
       "time": "2023.10 ~ ",
       "target": "마루 및 벽재 구매 고객, 대리점 담당자, 자사 담당자",
-      "language": "Html, Css, Javascript, Vue.js, Aws",
+      "language": "Html, Scss, Javascript, Vue.js, Aws, Node Server",
       "part": [
         {
           "pb": "프론트개발(100%)",
@@ -54,7 +77,7 @@
       "things": "클라이언트, 백오피스",
       "time": "2023.10 ~ ",
       "target": "중고 자동차 구입 고객, 딜러, 상사운영담당자, 계열사 담당자",
-      "language": "Html, Css, Javascript, Nuxt.js, Aws",
+      "language": "Html, Scss, Javascript, Nuxt.js, Aws",
       "part": [
         {
           "pb": "프론트개발(100%)",
