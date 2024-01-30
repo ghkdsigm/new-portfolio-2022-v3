@@ -127,6 +127,42 @@
             <li class="py-1 lg:text-lg text-base">
               <span class="font-base dark:font-thin"
                 ><b class="font-base dark:font-base lg:inline-block block"
+                  >[동화기업]</b
+                >
+                엠파크 국내 1위 규모 엠파크 중고차 매매단지 통합관리시스템 UMS 신규 구축</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2023.12. - </span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
+                  >[동화기업]</b
+                >
+                엠파크 자동차 유통 허브/임대 사업 매매 운영 플랫폼, KB차차차 + 케이카 등 국내 중고자동차 API연동 및 인프라 구성 플랫폼 운영</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2023.10. - </span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
+                  >[동화기업]</b
+                >
+                동화자연마루 친환경 바닥재 전문업체, 강화마루,강마루, 디자인월, 자연타일, 도어, 인테리어제품, 카탈로그 안내 홈페이지 운영 및 동화베트남 신규 구축</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2023.10. - </span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
                   >[아이템베이]</b
                 >
                 아이템베이 Upfac 2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼 신규 구축</span
