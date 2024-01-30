@@ -2,8 +2,14 @@
   "portfolios": [
     {
       "title": "국내 1위 규모 엠파크 중고차 매매단지 통합관리시스템 UMS 신규 구축",
-      "image": "",
-      "innerImage": "",
+      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img38_1.PNG",
+      "innerImage": [
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/green_13.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/green_14.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/green_15.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/green_17.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/green_16.png"
+      ],
       "sub": "동화그룹 자회사 엠파크 자동차 매매단지 단지/상사/자사 통합 관리 시스템",
       "url": "https://www.greendongwha.com/",
       "tag": "#프론트개발 #마크업",
