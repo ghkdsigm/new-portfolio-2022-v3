@@ -68,7 +68,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2023.10. -
+                >2023. -
               </span>
             </li>
             <li class="py-1 lg:text-lg text-base">
@@ -77,7 +77,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2022.11. - 23.10
+                >2022. - 2023
               </span>
             </li>
             <li class="py-1 lg:text-lg text-base">
@@ -87,7 +87,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2022.05. - 22.11
+                >2022. - 2022
               </span>
             </li>
             <li class="py-1 lg:text-lg text-base">
@@ -96,7 +96,7 @@
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-                >2016.12. - 21.11</span
+                >2016. - 2021</span
               >
             </li>
           </ul>
