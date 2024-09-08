@@ -421,7 +421,7 @@
                 ><b class="font-base dark:font-base lg:inline-block block"
                   >[대한체육회]</b
                 >
-                2016, 17, 18, 19, 20, 21 대한민국 스포츠영웅 선정절차 시스템
+                2016, 17, 18, 19, 20, 21 대한민국 스포츠영웅 선정 절차 시스템
                 구축 및 운영</span
               >
               <span
@@ -434,11 +434,23 @@
                 ><b class="font-base dark:font-lbaseight lg:inline-block block"
                   >[K-LEAGUE]</b
                 >
-                K리그 심판교육사이트 운영위탁</span
+                K리그 심판교육사이트 운영위탁 KRMS(심판관리시스템) 신규 구축 및 운영</span
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
                 >2018.03. - 18.12</span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
+                  >[경찰청]</b
+                >
+                사이버 경찰청 홍보관리시스템(PIMS) 시스템 유지보수</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2016.12. - 17.10</span
               >
             </li>
             <li class="py-1 lg:text-lg text-base">
