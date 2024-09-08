@@ -27,6 +27,11 @@
         </li>
         <li class="py-1 lg:text-lg text-base">
           <span class="font-light"
+            >PWA / I18N / Serial Commnunication
+          </span>
+        </li>
+        <li class="py-1 lg:text-lg text-base">
+          <span class="font-light"
             >Git / Github / Gitlab / Svn / Netlify / Heroku / Gulp
           </span>
         </li>
