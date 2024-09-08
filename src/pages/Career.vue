@@ -129,6 +129,18 @@
                 ><b class="font-base dark:font-base lg:inline-block block"
                   >[동화기업]</b
                 >
+                동화기업 베트남 법인 동화베트남(Dongwha Vietnam) 글로벌 홈페이지(DWVN) 신규 구축</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2024.03. - 2024.08</span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
+                  >[동화기업]</b
+                >
                 엠파크 국내 1위 규모 엠파크 중고차 매매단지 통합관리시스템 UMS 신규 구축</span
               >
               <span
@@ -153,7 +165,7 @@
                 ><b class="font-base dark:font-base lg:inline-block block"
                   >[동화기업]</b
                 >
-                동화자연마루 친환경 바닥재 전문업체, 강화마루,강마루, 디자인월, 자연타일, 도어, 인테리어제품, 카탈로그 안내 홈페이지 운영 및 동화베트남 신규 구축</span
+                동화자연마루 친환경 바닥재 전문업체, 강화마루,강마루, 디자인월, 자연타일, 도어, 인테리어제품, 카탈로그 안내 홈페이지 운영</span
               >
               <span
                 class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"

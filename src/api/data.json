@@ -1,6 +1,42 @@
 {
   "portfolios": [
     {
+      "title": "동화기업 베트남 법인 동화베트남(Dongwha Vietnam) 글로벌 홈페이지(DWVN) 신규 구축",
+      "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img39_1.png",
+      "innerImage": [
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn01.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn02.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn03.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn04.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn05.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn06.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn07.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn08.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn09.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn10.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn11.png",
+        "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/site/dvwn12.png"
+      ],
+      "sub": "동화기업 해외 법인 동화베트남(DWVN) 홈페이지 구축",
+      "url": "https://www.dongwhavietnam.com/",
+      "tag": "#프론트개발 #퍼블리싱",
+      "articles": "https://www.dongwhavietnam.com/en/news/detail/36",
+      "party": "100%",
+      "content": "베트남 MDF 생산 1위 건장재 마켓 타겟 글로벌 홈페이지 개선 프로젝트",
+      "things": "클라이언트오피스, 백오피스, 다국어(I18N/EN,VI), SEO(SSG기반)",
+      "time": "2024.3 ~ 2024.8",
+      "target": "베트남 현지 사업부 담당자, 베트남 MDF/강화마루 수요 고객",
+      "language": "Html, Scss, Javascript, Nuxt.js",
+      "part": [
+        {
+          "pb": "퍼블리싱(100%),프론트개발(100%)",
+          "ds": "디자인(0%)",
+          "op": "기획(0%)",
+          "pt": "관리자페이지"
+        }
+      ]
+    },
+    {
       "title": "국내 1위 규모 엠파크 중고차 매매단지 통합관리시스템 UMS 신규 구축",
       "image": "https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022-v3/main/src/assets/images/works/img38_1.png",
       "innerImage": [
@@ -22,7 +58,7 @@
       "language": "Html, Scss, Javascript, Nuxt.js, Aws",
       "part": [
         {
-          "pb": "프론트개발(100%)",
+          "pb": "퍼블리싱(100%),프론트개발(100%)",
           "ds": "디자인(0%)",
           "op": "기획(0%)",
           "pt": "관리자페이지"
@@ -52,13 +88,13 @@
       "articles": "https://www.hankookilbo.com/News/Read/A2023070409130000929?did=NA",
       "party": "100%",
       "content": "대한민국 1위 인테리어 자제 및 서비스 경쟁력 제고",
-      "things": "클라이언트, 백오피스",
+      "things": "클라이언트오피스, 백오피스",
       "time": "2023.10 ~ ",
       "target": "마루 및 벽재 구매 고객, 대리점 담당자, 자사 담당자",
       "language": "Html, Scss, Javascript, Vue.js, Aws, Node Server",
       "part": [
         {
-          "pb": "프론트개발(100%)",
+          "pb": "퍼블리싱(100%),프론트개발(100%)",
           "ds": "디자인(0%)",
           "op": "기획(0%)",
           "pt": "관리자페이지"
@@ -80,7 +116,7 @@
       "articles": "https://blog.naver.com/miny125/222705571569",
       "party": "100%",
       "content": "동화기업 계열사 자동차 유통 허브/임대 사업 매매 운영 플랫폼, KB차차차 + 케이카 등 국내 중고자동차 API연동 및 인프라 구성",
-      "things": "클라이언트, 백오피스",
+      "things": "클라이언트오피스, 백오피스",
       "time": "2023.10 ~ ",
       "target": "중고 자동차 구입 고객, 딜러, 상사운영담당자, 계열사 담당자",
       "language": "Html, Scss, Javascript, Nuxt.js, Aws",
@@ -103,7 +139,7 @@
       "articles": "",
       "party": "100%",
       "content": "아이템베이 Upfac 2D/3D 모델링 그래픽 이미지/영상 거래 플랫폼 신규 구축",
-      "things": "사용자",
+      "things": "클라이언트오피스",
       "time": "2023.07 ~ 2023.10",
       "target": "2,3D 이미지 수요 고객",
       "language": "Html, Css, Javascript",
