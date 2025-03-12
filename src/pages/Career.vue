@@ -129,6 +129,18 @@
                 ><b class="font-base dark:font-base lg:inline-block block"
                   >[동화기업]</b
                 >
+                동화기업 보드 수요 예측 시스템 구축</span
+              >
+              <span
+                class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+                >2025.02. - 25.06</span
+              >
+            </li>
+            <li class="py-1 lg:text-lg text-base">
+              <span class="font-base dark:font-thin"
+                ><b class="font-base dark:font-base lg:inline-block block"
+                  >[동화기업]</b
+                >
                 동화기업 베트남 법인 동화베트남(Dongwha Vietnam) 글로벌 홈페이지(DWVN) 신규 구축</span
               >
               <span
