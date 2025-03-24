@@ -20,7 +20,7 @@
 			"things": "클라이언트오피스",
 			"time": "2025.3 ~ 2025.6",
 			"target": "MDF/PB/강화마루 담당 부서",
-			"language": "Javascript, Vue.js",
+			"language": "Javascript, Vue.js, Websocket",
 			"part": [
 				{
 					"pb": "퍼블리싱(100%),프론트개발(100%)",
@@ -88,7 +88,7 @@
 			"things": "클라이언트, 백오피스, 키오스크, RS통신을 이용한 입출고 관리, 데이터센터 등",
 			"time": "2023.12 ~ ",
 			"target": "매매딜러, 단지 및 상사 담당자, 그룹사 사업 담당자",
-			"language": "Html, Scss, Javascript, Nuxt.js, Aws",
+			"language": "Html, Scss, Javascript, Nuxt.js, Aws, Node.js, Pwa",
 			"part": [
 				{
 					"pb": "퍼블리싱(100%),프론트개발(100%)",
