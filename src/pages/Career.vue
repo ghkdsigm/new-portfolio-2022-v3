@@ -51,7 +51,7 @@
 					<ul>
 						<li class="py-1 lg:text-lg text-base">
 							<span class="font-base"
-								><b class="font-base">(現) 동화그룹</b> 온라인서비스팀 프론트엔드 개발</span
+								><b class="font-base">(現) 동화기업</b> 서비스플랫폼팀 프론트엔드 개발</span
 							>
 							<span
 								class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
