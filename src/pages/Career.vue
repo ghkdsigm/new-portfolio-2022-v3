@@ -49,13 +49,22 @@
 				<div class="career mb-10">
 					<h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third lg:mb-4 mb-1">History</h5>
 					<ul>
+						<!-- <li class="py-1 lg:text-lg text-base">
+							<span class="font-base"
+								><b class="font-base">(現) 동화기업</b> AX팀 AI 비지니스 설계 및 AI 플랫폼 개발</span
+							>
+							<span
+								class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
+								>2026. - (여의도)
+							</span>
+						</li> -->
 						<li class="py-1 lg:text-lg text-base">
 							<span class="font-base"
 								><b class="font-base">(現) 동화기업</b> 서비스플랫폼팀 프론트엔드 개발</span
 							>
 							<span
 								class="font-base text-sm lg:pl-4 pl-0 lg:mb-0 mb-4 lg:font-base lg:inline-block block dark:text-gray-300 text-gray-600"
-								>2023. - (여의도)
+								>2023. -(여의도)
 							</span>
 						</li>
 						<li class="py-1 lg:text-lg text-base">

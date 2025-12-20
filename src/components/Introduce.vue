@@ -63,7 +63,7 @@
 						<span class="pl-4">패스트캠퍼스 프론트엔드 초격차 패키지 온라인 교육 과정 수료</span>
 					</li>
 					<li class="py-1 lg:text-lg text-base flex">
-						<span class="font-medium">2025.03 ~</span>
+						<span class="font-medium">2025.03.</span>
 						<span class="pl-4">패스트캠퍼스 Node.js 웹 프로그래밍 초격차 패키지 Online</span>
 					</li>
 				</ul>
@@ -106,6 +106,26 @@
 					</li>
 					<li class="py-1 lg:text-lg text-base">
 						<span class="font-light">Service Communication</span>
+					</li>
+				</ul>
+			</div>
+			<div class="career mb-6">
+				<h5 class="font-bold lg:text-3xl text-xl dark:text-primary text-third">AI Capability</h5>
+				<ul>
+					<li class="py-1 lg:text-lg text-base">
+						<span class="font-light">AI · AX Product Planning</span>
+					</li>
+					<li class="py-1 lg:text-lg text-base">
+						<span class="font-light">AI Service Architecture Design</span>
+					</li>
+					<li class="py-1 lg:text-lg text-base">
+						<span class="font-light">AI Agent Orchestration Design</span>
+					</li>
+					<li class="py-1 lg:text-lg text-base">
+						<span class="font-light">Prompt Engineering (Business / System / Tooling)</span>
+					</li>
+					<li class="py-1 lg:text-lg text-base">
+						<span class="font-light">Data-Driven UX Design (AI UX)</span>
 					</li>
 				</ul>
 			</div>
