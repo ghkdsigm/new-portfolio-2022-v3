@@ -74,7 +74,7 @@
 					<span class="font-light">Html5 / Css3 / Scss / Tailwind.css / Bootstrap / Mudblazor / Javascript / Jquery / Vue2,3 / Nuxt2.js / Nuxt3.js / Typescript (in progress) / PWA / I18N</span>
 				</li>
 				<li class="py-1 lg:text-lg text-base">
-					<span class="font-light">Node.js / Express.js / RESTful API / WebSocket / Firebase Functions / Firebase Authentication / Firestore / Prisma ORM / SQLite / MySQL / Spring Boot (in progress)</span>
+					<span class="font-light">Node.js / Express.js / Nest.js / RESTful API / WebSocket / Firebase Functions / Firebase Authentication / Firestore / Prisma ORM / SQLite / MySQL / Spring Boot (in progress)</span>
 				</li>
 				<li class="py-1 lg:text-lg text-base">
 					<span class="font-light">TensorFlow.js / MobileNet (Transfer Learning) / Serial Communication</span>
